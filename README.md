@@ -5,8 +5,8 @@
 This project analyzes aleatoric (data-inherent) uncertainty in video object tracking using test-time augmentation on MOT17 dataset with multiple YOLOv8 models.
 
 ### Project Structure
-- **MOT17/train/** - 7 sequences with FRCNN detections (525-1050 frames each)
-- **MOT17/video/** - Pre-rendered MP4 videos for quick visualization
+- **data/MOT17/train/** - 7 sequences with FRCNN detections (525-1050 frames each)
+- **data/MOT17/video/** - Pre-rendered MP4 videos for quick visualization
 - **github_repos/** - 18 cloned repos with production-ready uncertainty code
 - **models/** - YOLOv8 model weights (will be auto-downloaded)
 - **project_info.md** - Complete implementation guide

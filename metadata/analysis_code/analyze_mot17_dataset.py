@@ -32,7 +32,7 @@ import cv2
 
 # Base paths
 BASE_PATH = "/ssd_4TB/divake/temporal_uncertainty"
-MOT17_TRAIN_PATH = f"{BASE_PATH}/MOT17/train"
+MOT17_TRAIN_PATH = f"{BASE_PATH}/data/MOT17/train"
 OUTPUT_PATH = f"{BASE_PATH}/metadata"
 
 # Analysis parameters

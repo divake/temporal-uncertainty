@@ -119,7 +119,7 @@ MOT17 uses standard MOTChallenge format (`gt/gt.txt`):
     "total_frames": 900,
     "fps": 30,
     "resolution": [1920, 1080],
-    "path": "/ssd_4TB/divake/temporal_uncertainty/MOT17/train/MOT17-11-FRCNN"
+    "path": "/ssd_4TB/divake/temporal_uncertainty/data/MOT17/train/MOT17-11-FRCNN"
   },
 
   "statistics": {

@@ -389,7 +389,7 @@ if not os.path.exists(sequence_path):
     raise FileNotFoundError(
         f"Sequence not found at {sequence_path}\n"
         f"Expected structure: {sequence_path}/img1/*.jpg\n"
-        f"Available sequences: {os.listdir('/ssd_4TB/divake/temporal_uncertainty/MOT17/train')}"
+        f"Available sequences: {os.listdir('/ssd_4TB/divake/temporal_uncertainty/data/MOT17/train')}"
     )
 
 # Bad: Silent fallback (NEVER do this)

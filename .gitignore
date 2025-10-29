@@ -1,5 +1,5 @@
 # Dataset files (large)
-MOT17/
+data/
 
 # Model weights (large)
 models/

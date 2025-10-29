@@ -6,7 +6,7 @@ echo
 # Check MOT17 sequences
 echo "✓ Checking MOT17 sequences..."
 for seq in 02 04 05 09 10 11 13; do
-    dir="/ssd_4TB/divake/temporal_uncertainty/MOT17/train/MOT17-${seq}-FRCNN"
+    dir="/ssd_4TB/divake/temporal_uncertainty/data/MOT17/train/MOT17-${seq}-FRCNN"
     if [ -d "$dir" ]; then
         frames=$(find "$dir/img1" -name "*.jpg" | wc -l)
         echo "  ✓ MOT17-${seq}-FRCNN: $frames frames"
@@ -18,7 +18,7 @@ echo
 
 # Check videos
 echo "✓ Checking pre-rendered videos..."
-video_count=$(find /ssd_4TB/divake/temporal_uncertainty/MOT17/video -name "*.mp4" | wc -l)
+video_count=$(find /ssd_4TB/divake/temporal_uncertainty/data/MOT17/video -name "*.mp4" | wc -l)
 echo "  ✓ Found $video_count MP4 videos"
 echo
 
@@ -32,7 +32,7 @@ echo
 
 # Summary
 echo "=== Summary ==="
-total_frames=$(find /ssd_4TB/divake/temporal_uncertainty/MOT17/train/*/img1 -name "*.jpg" | wc -l)
+total_frames=$(find /ssd_4TB/divake/temporal_uncertainty/data/MOT17/train/*/img1 -name "*.jpg" | wc -l)
 total_repos=$(find /ssd_4TB/divake/temporal_uncertainty/github_repos -mindepth 2 -maxdepth 2 -type d -name ".git" | wc -l)
 echo "Total frames: $total_frames"
 echo "Total repositories: $total_repos"

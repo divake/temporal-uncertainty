@@ -4,7 +4,7 @@
 
 ### What We Have
 - **Dataset**: MOT17 train set with 7 sequences (525-1050 frames each)
-  - Located at: `/ssd_4TB/divake/temporal_uncertainty/MOT17/train/`
+  - Located at: `/ssd_4TB/divake/temporal_uncertainty/data/MOT17/train/`
   - MOT17-02-FRCNN: 600 frames (street scene with occlusions)
   - MOT17-04-FRCNN: 1050 frames (shopping mall - longest sequence)
   - MOT17-05-FRCNN: 837 frames (street with crowds)
@@ -13,7 +13,7 @@
   - MOT17-11-FRCNN: 900 frames (crowded scene)
   - MOT17-13-FRCNN: 750 frames (street scene)
   - **Note**: Using FRCNN (Faster R-CNN) detections, which are more accurate than DPM
-  - **Videos**: Pre-rendered MP4 videos available at `/ssd_4TB/divake/temporal_uncertainty/MOT17/video/`
+  - **Videos**: Pre-rendered MP4 videos available at `/ssd_4TB/divake/temporal_uncertainty/data/MOT17/video/`
 
 - **Models**: 5 YOLOv8 variants (pre-trained on COCO)
   - YOLOv8n (nano): 3.2M parameters
@@ -34,16 +34,17 @@
 ### Project Directory Structure
 ```
 /ssd_4TB/divake/temporal_uncertainty/
-├── MOT17/
-│   ├── train/
-│   │   ├── MOT17-02-FRCNN/
-│   │   ├── MOT17-04-FRCNN/
-│   │   ├── MOT17-05-FRCNN/
-│   │   ├── MOT17-09-FRCNN/
-│   │   ├── MOT17-10-FRCNN/
-│   │   ├── MOT17-11-FRCNN/
-│   │   └── MOT17-13-FRCNN/
-│   └── video/          # Pre-rendered MP4 videos
+├── data/
+│   └── MOT17/
+│       ├── train/
+│       │   ├── MOT17-02-FRCNN/
+│       │   ├── MOT17-04-FRCNN/
+│       │   ├── MOT17-05-FRCNN/
+│       │   ├── MOT17-09-FRCNN/
+│       │   ├── MOT17-10-FRCNN/
+│       │   ├── MOT17-11-FRCNN/
+│       │   └── MOT17-13-FRCNN/
+│       └── video/          # Pre-rendered MP4 videos
 ├── github_repos/
 │   ├── core_uncertainty/
 │   ├── tracking_implementations/
