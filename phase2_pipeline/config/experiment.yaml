@@ -1,0 +1,71 @@
+# Main Experiment Configuration
+# Phase 2: Single Model Pipeline - YOLOv8n on MOT17-11-FRCNN
+
+experiment:
+  name: "seq11_yolov8n_track25_aleatoric"
+  description: "Aleatoric uncertainty quantification for Track 25 in MOT17-11"
+  phase: "phase2_single_model"
+  timestamp: null  # Will be set at runtime
+
+  # Primary settings
+  sequence: "MOT17-11-FRCNN"
+  model: "yolov8n"
+  track_id: 25  # Our hero track from Phase 1 analysis
+
+  # Frame range
+  start_frame: 1
+  # end_frame: 900  # Full sequence
+  end_frame: 100  # Use for quick testing
+
+  # GPU settings
+  device: "cuda:0"  # Primary GPU
+  device_secondary: "cuda:1"  # For parallel TTA processing
+  use_dual_gpu: true
+  batch_size: 1  # Process frame by frame for temporal analysis
+
+  # Output settings
+  save_raw_detections: true
+  save_uncertainty_metrics: true
+  save_visualizations: true
+  verbose: true
+
+# Paths (all relative to project root)
+paths:
+  project_root: "/ssd_4TB/divake/temporal_uncertainty"
+  mot17_root: "/ssd_4TB/divake/temporal_uncertainty/data/MOT17/train"
+  metadata_root: "/ssd_4TB/divake/temporal_uncertainty/metadata/raw_outputs"
+  models_root: "/ssd_4TB/divake/temporal_uncertainty/models"
+  results_root: "/ssd_4TB/divake/temporal_uncertainty/phase2_pipeline/results"
+  github_repos: "/ssd_4TB/divake/temporal_uncertainty/github_repos"
+
+# Track 25 metadata (from Phase 1 analysis)
+track_metadata:
+  track_id: 25
+  total_frames: 900
+  lifetime_frames: [1, 900]
+  avg_visibility: 0.618
+  occlusion_events:
+    - {start: 1, end: 7, duration: 7}
+    - {start: 9, end: 66, duration: 58}
+    - {start: 186, end: 247, duration: 62}
+    - {start: 257, end: 260, duration: 4}
+    - {start: 262, end: 264, duration: 3}
+    - {start: 266, end: 286, duration: 21}
+    - {start: 689, end: 719, duration: 31}
+    - {start: 736, end: 753, duration: 18}
+  clean_recovery_period: [67, 185]  # Long clean period for studying decay
+
+# Analysis settings
+analysis:
+  min_track_length: 30  # Minimum frames for track analysis
+  occlusion_threshold: 0.3  # Visibility < 0.3 considered occluded
+  temporal_window: 5  # Frames for temporal smoothing
+
+  # Uncertainty thresholds
+  high_uncertainty_threshold: 0.5
+  low_uncertainty_threshold: 0.1
+
+  # Statistical tests
+  compute_correlation: true
+  compute_significance: true
+  significance_level: 0.05

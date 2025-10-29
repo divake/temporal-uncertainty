@@ -9,6 +9,7 @@ github_repos/
 
 # Results/outputs (regeneratable)
 results/
+phase2_pipeline/results/
 
 # Python cache
 __pycache__/
@@ -23,3 +24,5 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+*.log

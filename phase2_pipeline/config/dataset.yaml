@@ -1,0 +1,74 @@
+# Dataset Configuration
+# MOT17 sequence settings
+
+dataset:
+  name: "MOT17"
+  split: "train"
+  sequence: "MOT17-11-FRCNN"
+
+  # Sequence properties (from Phase 1 analysis)
+  sequence_info:
+    total_frames: 900
+    fps: 30
+    resolution: [1920, 1080]
+    scene_type: "street_medium_density"
+    avg_tracks_per_frame: 10.48
+    total_tracks: 75
+    tracks_min_length_30: 61
+
+  # File structure
+  paths:
+    images: "img1"  # Subdirectory with frames
+    gt: "gt/gt.txt"  # Ground truth annotations
+    det: "det/det.txt"  # Public detections (not used)
+
+  # Image settings
+  image:
+    format: "jpg"
+    name_pattern: "{:06d}.jpg"  # 000001.jpg format
+    channels: 3
+    normalize: true
+
+  # Ground truth format
+  gt_format:
+    # MOT17 format: frame, id, bb_left, bb_top, bb_width, bb_height, conf, class, visibility
+    columns: ["frame", "track_id", "bb_left", "bb_top", "bb_width", "bb_height", "conf", "class", "visibility"]
+    delimiter: ","
+    skip_rows: 0
+
+  # Track filtering
+  track_filter:
+    min_length: 30  # Minimum track length
+    min_visibility: 0.0  # Include all visibility levels
+    classes: [1, 2]  # 1: pedestrian, 2: person on vehicle
+    considered_tracks: [1, 2, 7]  # Track classes to consider
+
+  # Data loading
+  loading:
+    preload_frames: false  # Load frames on-demand
+    cache_size: 100  # Number of frames to cache
+    num_workers: 4
+
+# Specific tracks of interest (from Phase 1 hero tracks)
+hero_tracks:
+  primary: 25  # Main analysis track
+
+  long_stable:
+    - 1   # 900 frames, visibility=0.893
+    - 25  # 900 frames, visibility=0.618
+    - 14  # 679 frames, visibility=0.885
+    - 32  # 484 frames, visibility=0.585
+    - 39  # 364 frames, visibility=0.690
+
+  occlusion_heavy:
+    - 25  # 8 events, 204 occluded frames
+    - 30  # 8 events, 120 occluded frames
+    - 29  # 6 events, 19 occluded frames
+    - 18  # 5 events, 12 occluded frames
+    - 32  # 5 events, 171 occluded frames
+
+  high_motion:
+    - 44  # max_disp=97.1 px
+    - 27  # max_disp=64.5 px
+    - 42  # max_disp=63.6 px
+    - 37  # max_disp=56.1 px

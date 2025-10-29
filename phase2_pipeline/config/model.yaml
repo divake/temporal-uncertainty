@@ -1,0 +1,50 @@
+# Model Configuration
+# YOLOv8 settings for detection
+
+model:
+  # Model selection
+  name: "yolov8n"  # Options: yolov8n, yolov8s, yolov8m, yolov8l, yolov8x
+  weights_path: "/ssd_4TB/divake/temporal_uncertainty/models/yolov8n.pt"
+
+  # Detection settings
+  confidence_threshold: 0.25  # Default YOLO confidence
+  iou_threshold: 0.45  # NMS threshold
+  max_detections: 300  # Max detections per image
+
+  # Classes (COCO dataset)
+  target_class: 0  # Person class for MOT17
+  class_names: ["person"]  # Only detect persons
+
+  # Inference settings
+  image_size: 640  # YOLOv8 default
+  augment: false  # Disable built-in augmentation (we do our own TTA)
+  agnostic_nms: false
+  retina_masks: false
+
+  # Model modifications for uncertainty
+  enable_mc_dropout: true  # Enable dropout at test time
+  mc_dropout_layers: ["detect"]  # Which layers to apply dropout
+
+# Model variants (for future cross-model analysis)
+model_variants:
+  yolov8n:
+    params: 3.2  # Million parameters
+    weights: "yolov8n.pt"
+  yolov8s:
+    params: 11.2
+    weights: "yolov8s.pt"
+  yolov8m:
+    params: 25.9
+    weights: "yolov8m.pt"
+  yolov8l:
+    params: 43.7
+    weights: "yolov8l.pt"
+  yolov8x:
+    params: 68.2
+    weights: "yolov8x.pt"
+
+# Performance optimization
+optimization:
+  use_fp16: false  # Half precision (faster but less precise)
+  compile_model: false  # PyTorch 2.0 compilation
+  num_workers: 4  # DataLoader workers

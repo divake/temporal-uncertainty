@@ -1,0 +1,96 @@
+# Uncertainty Quantification Configuration
+# MC Dropout and Test-Time Augmentation settings
+
+uncertainty:
+  # Monte Carlo Dropout
+  mc_dropout:
+    enabled: true
+    num_forward_passes: 30  # Number of stochastic forward passes
+    dropout_rate: 0.2  # 20% dropout probability
+    apply_to_layers: ["backbone", "neck", "head"]  # YOLOv8 architecture
+
+  # Test-Time Augmentation (TTA)
+  tta:
+    enabled: true
+    num_augmentations: 5  # 5 augmented + 1 clean = 6 total
+
+    # Augmentation types (from albumentations)
+    augmentations:
+      gaussian_blur:
+        enabled: true
+        blur_limit: [3, 7]  # Kernel size range
+        sigma_limit: 0  # Auto-calculate sigma
+
+      gaussian_noise:
+        enabled: true
+        var_limit: [10.0, 50.0]  # Variance range
+        mean: 0
+        per_channel: true
+
+      brightness_contrast:
+        enabled: true
+        brightness_limit: 0.2  # ±20% brightness
+        contrast_limit: 0.2  # ±20% contrast
+        brightness_by_max: true
+
+      scale:
+        enabled: true
+        scale_limit: 0.1  # ±10% scale
+        interpolation: 1  # cv2.INTER_LINEAR
+
+      jpeg_compression:
+        enabled: true
+        quality_lower: 40
+        quality_upper: 100
+
+    # Ensemble method
+    ensemble:
+      method: "variance"  # Options: variance, entropy, mutual_information
+      aggregate_boxes: "mean"  # How to combine bbox predictions
+      aggregate_confidence: "mean"  # How to combine confidences
+
+  # Uncertainty metrics
+  metrics:
+    # Bbox uncertainty
+    compute_bbox_variance: true
+    bbox_components: ["x", "y", "w", "h", "iou"]
+
+    # Confidence uncertainty
+    compute_confidence_variance: true
+
+    # Combined metric
+    combined_metric:
+      enabled: true
+      bbox_weight: 0.7  # 70% weight to bbox uncertainty
+      confidence_weight: 0.3  # 30% weight to confidence uncertainty
+
+    # Temporal metrics
+    temporal:
+      compute_correlation: true  # Uncertainty correlation over time
+      smoothing_factor: 0.3  # α for exponential smoothing
+      window_size: 5  # Frames for moving average
+
+  # Calibration
+  calibration:
+    compute_ece: true  # Expected Calibration Error
+    num_bins: 10
+    compute_reliability_diagram: true
+
+  # Thresholds
+  thresholds:
+    high_uncertainty: 0.5  # Above this is "high uncertainty"
+    low_uncertainty: 0.1  # Below this is "low uncertainty"
+
+# Computational settings
+computation:
+  # Parallel processing
+  parallel_augmentations: true  # Process augmentations in parallel
+  max_parallel_jobs: 6  # Max simultaneous augmentations
+
+  # Memory management
+  clear_cache_every: 100  # Clear GPU cache every N frames
+  mixed_precision: false  # Use automatic mixed precision
+
+  # Reproducibility
+  seed: 42
+  deterministic: false  # True for reproducibility, False for speed
