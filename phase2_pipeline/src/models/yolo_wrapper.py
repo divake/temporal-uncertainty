@@ -70,27 +70,54 @@ class YOLOv8WithUncertainty:
     def _enable_dropout_layers(self):
         """
         Enable dropout at test time for MC Dropout
+        Since YOLOv8 doesn't have dropout layers, we inject them
         Borrowed concept from Bayesian-Neural-Networks/src/MC_dropout/model.py
         """
-        def enable_dropout(module):
-            """Recursively enable dropout in all layers"""
-            if isinstance(module, nn.Dropout) or isinstance(module, nn.Dropout2d):
-                module.p = self.dropout_rate
-                module.train()  # Set to training mode to enable dropout
-                logger.debug(f"Enabled dropout with p={self.dropout_rate}")
-
-        # Apply to model
+        # YOLOv8 doesn't have native dropout, so we add dropout after Conv layers
         if hasattr(self.model, 'model'):
-            # Access the PyTorch model inside YOLO wrapper
-            self.model.model.apply(enable_dropout)
+            pytorch_model = self.model.model
 
-            # Keep model in eval mode but with dropout active
-            self.model.model.eval()
+            # Count existing dropout (should be 0)
+            dropout_count = sum(1 for m in pytorch_model.modules()
+                              if isinstance(m, (nn.Dropout, nn.Dropout2d)))
 
-            # Override forward to always use dropout
-            for module in self.model.model.modules():
-                if isinstance(module, nn.Dropout) or isinstance(module, nn.Dropout2d):
-                    module.train()
+            if dropout_count == 0:
+                logger.warning("YOLOv8 has no native dropout layers!")
+                logger.info("Adding dropout layers after Conv2d layers for MC Dropout...")
+
+                # Inject dropout after specific Conv2d layers in the backbone
+                self._inject_dropout_layers(pytorch_model)
+            else:
+                # If model has dropout, enable them
+                for module in pytorch_model.modules():
+                    if isinstance(module, nn.Dropout) or isinstance(module, nn.Dropout2d):
+                        module.p = self.dropout_rate
+                        module.train()
+
+    def _inject_dropout_layers(self, model):
+        """
+        Inject Dropout2d layers into YOLOv8 architecture
+        Target: Add dropout after Conv layers in C2f blocks
+        """
+        dropout_added = 0
+
+        # Add dropout to C2f modules (backbone feature extraction)
+        for name, module in model.named_modules():
+            if 'C2f' in type(module).__name__:
+                # C2f has multiple Bottleneck blocks
+                for bottleneck in module.m:  # m contains the bottleneck modules
+                    if hasattr(bottleneck, 'cv2'):  # cv2 is the second conv in bottleneck
+                        # Store original conv
+                        original_conv = bottleneck.cv2
+
+                        # Create sequential with conv + dropout
+                        bottleneck.cv2 = nn.Sequential(
+                            original_conv,
+                            nn.Dropout2d(p=self.dropout_rate)
+                        )
+                        dropout_added += 1
+
+        logger.info(f"Injected {dropout_added} Dropout2d layers into YOLOv8 model")
 
     def predict_single(
         self,
@@ -155,7 +182,8 @@ class YOLOv8WithUncertainty:
         self,
         image: np.ndarray,
         num_forward_passes: int = 30,
-        target_bbox: Optional[np.ndarray] = None
+        target_bbox: Optional[np.ndarray] = None,
+        iou_threshold: float = 0.3
     ) -> Dict:
         """
         Multiple forward passes for uncertainty estimation
@@ -186,7 +214,7 @@ class YOLOv8WithUncertainty:
         # If target bbox provided, extract predictions for that region
         if target_bbox is not None:
             return self._compute_uncertainty_for_target(
-                all_predictions, target_bbox
+                all_predictions, target_bbox, iou_threshold
             )
         else:
             return self._compute_uncertainty_global(all_predictions)

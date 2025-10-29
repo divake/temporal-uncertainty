@@ -1,8 +1,8 @@
 # Dataset files (large)
-data/
+/data/
 
 # Model weights (large)
-models/
+/models/
 
 # GitHub repos (cloned, not our code)
 github_repos/

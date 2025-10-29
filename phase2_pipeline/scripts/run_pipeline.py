@@ -151,17 +151,23 @@ class Track25UncertaintyPipeline:
                 logger.warning(f"No GT bbox for Track 25 at frame {frame_num}")
                 continue
 
+            # Adapt IoU threshold based on occlusion status
+            # Lower threshold during occlusions for better detection
+            is_occluded = self.track_analyzer.extractor.is_track_occluded(25, frame_num)
+            iou_threshold = 0.2 if is_occluded else 0.3
+
             # Run MC Dropout inference
             mc_result = self.yolo_model.predict_with_uncertainty(
                 frame_img,
                 num_forward_passes=num_passes,
-                target_bbox=gt_bbox
+                target_bbox=gt_bbox,
+                iou_threshold=iou_threshold
             )
 
             # Run TTA if enabled
             tta_result = None
             if tta_enabled:
-                tta_result = self._run_tta_inference(frame_img, gt_bbox)
+                tta_result = self._run_tta_inference(frame_img, gt_bbox, frame_num)
 
             # Combine results
             frame_result = self._combine_results(
@@ -185,7 +191,7 @@ class Track25UncertaintyPipeline:
 
         logger.info(f"Inference complete. Processed {len(self.frame_results)} frames")
 
-    def _run_tta_inference(self, image: np.ndarray, gt_bbox: np.ndarray) -> dict:
+    def _run_tta_inference(self, image: np.ndarray, gt_bbox: np.ndarray, frame_num: int) -> dict:
         """Run TTA inference on a single frame"""
         # Generate augmented images
         augmented_images = self.tta_transforms(image)
@@ -204,9 +210,11 @@ class Track25UncertaintyPipeline:
             if len(pred['boxes']) == 0:
                 continue
 
-            # Find best matching box
+            # Find best matching box (use lower threshold during occlusions)
+            is_occluded = self.track_analyzer.extractor.is_track_occluded(25, frame_num)
+            iou_thresh_tta = 0.2 if is_occluded else 0.3
             ious = self.yolo_model._compute_iou(gt_bbox, pred['boxes'])
-            if len(ious) > 0 and np.max(ious) > 0.3:
+            if len(ious) > 0 and np.max(ious) > iou_thresh_tta:
                 best_idx = np.argmax(ious)
                 matched_boxes.append(pred['boxes'][best_idx])
                 matched_confs.append(pred['confidences'][best_idx])
@@ -242,8 +250,10 @@ class Track25UncertaintyPipeline:
             bbox_unc = mc_result.get('bbox_uncertainty', 0)
             conf_unc = mc_result.get('confidence_variance', 0)
         else:
-            bbox_unc = 1.0  # Max uncertainty if not found
-            conf_unc = 1.0
+            # When track not found, set VERY HIGH uncertainty
+            # Use 99th percentile of typical uncertainty values
+            bbox_unc = 100.0  # High spatial uncertainty when track not detected
+            conf_unc = 1.0    # Max confidence uncertainty
 
         # Add TTA if available
         if tta_result:
