@@ -710,7 +710,7 @@ def generate_visualizations(metadata: Dict, sequence_name: str):
 
 
 def plot_gantt_chart(metadata: Dict, save_path: str):
-    """Plot Gantt chart of track lifetimes."""
+    """Plot Gantt chart of track lifetimes with actual MOT track IDs on Y-axis."""
     tracks = metadata['tracks']
     total_frames = metadata['sequence_info']['total_frames']
 
@@ -721,7 +721,10 @@ def plot_gantt_chart(metadata: Dict, save_path: str):
     if len(sorted_tracks) > 50:
         sorted_tracks = sorted_tracks[:50]
 
-    fig, ax = plt.subplots(figsize=(14, 8))
+    fig, ax = plt.subplots(figsize=(14, 10))
+
+    # Extract track IDs for Y-axis labels
+    track_ids = [track_id for track_id, _ in sorted_tracks]
 
     for idx, (track_id, track_meta) in enumerate(sorted_tracks):
         start, end = track_meta['lifetime_frames']
@@ -740,9 +743,15 @@ def plot_gantt_chart(metadata: Dict, save_path: str):
         ax.barh(idx, end - start + 1, left=start, height=0.8, color=color, alpha=0.6)
 
     ax.set_xlabel('Frame Number', fontsize=12)
-    ax.set_ylabel('Track ID (sorted by start frame)', fontsize=12)
+    ax.set_ylabel('MOT Track ID (sorted by appearance)', fontsize=12)
     ax.set_title(f'Track Lifetimes - {metadata["sequence_info"]["name"]}', fontsize=14, fontweight='bold')
     ax.set_xlim(0, total_frames)
+
+    # Set Y-axis to show actual track IDs
+    ax.set_yticks(range(len(track_ids)))
+    ax.set_yticklabels(track_ids, fontsize=8)
+    ax.set_ylim(-0.5, len(track_ids) - 0.5)
+
     ax.grid(axis='x', alpha=0.3)
 
     # Legend
@@ -761,12 +770,15 @@ def plot_gantt_chart(metadata: Dict, save_path: str):
 
 
 def plot_visibility_heatmap(metadata: Dict, save_path: str):
-    """Plot visibility heatmap for top tracks."""
+    """Plot visibility heatmap for top tracks with actual MOT track IDs on Y-axis."""
     tracks = metadata['tracks']
     total_frames = metadata['sequence_info']['total_frames']
 
     # Select top 30 longest tracks
     sorted_tracks = sorted(tracks.items(), key=lambda x: x[1]['duration'], reverse=True)[:30]
+
+    # Extract track IDs for Y-axis labels
+    track_ids = [track_id for track_id, _ in sorted_tracks]
 
     # Create visibility matrix
     vis_matrix = np.ones((len(sorted_tracks), total_frames)) * -1  # -1 = no detection
@@ -783,7 +795,7 @@ def plot_visibility_heatmap(metadata: Dict, save_path: str):
                 vis_matrix[row_idx, frame_idx] = det['visibility']
 
     # Plot
-    fig, ax = plt.subplots(figsize=(16, 8))
+    fig, ax = plt.subplots(figsize=(16, 10))
 
     # Custom colormap: gray for no detection, red-yellow-green for visibility
     colors = ['gray', 'red', 'yellow', 'green']
@@ -793,8 +805,12 @@ def plot_visibility_heatmap(metadata: Dict, save_path: str):
     im = ax.imshow(vis_matrix, aspect='auto', cmap=cmap, vmin=-1, vmax=1, interpolation='nearest')
 
     ax.set_xlabel('Frame Number', fontsize=12)
-    ax.set_ylabel('Track ID (top 30 longest)', fontsize=12)
+    ax.set_ylabel('MOT Track ID (sorted by duration, longest first)', fontsize=12)
     ax.set_title(f'Visibility Heatmap - {metadata["sequence_info"]["name"]}', fontsize=14, fontweight='bold')
+
+    # Set Y-axis to show actual track IDs
+    ax.set_yticks(range(len(track_ids)))
+    ax.set_yticklabels(track_ids, fontsize=9)
 
     # Colorbar
     cbar = plt.colorbar(im, ax=ax, fraction=0.046, pad=0.04)
@@ -888,7 +904,7 @@ def plot_entry_exit_map(metadata: Dict, save_path: str):
 
 
 def plot_occlusion_timeline(metadata: Dict, save_path: str):
-    """Plot occlusion events timeline."""
+    """Plot occlusion events timeline with track ID labels."""
     tracks = metadata['tracks']
     total_frames = metadata['sequence_info']['total_frames']
 
@@ -918,16 +934,28 @@ def plot_occlusion_timeline(metadata: Dict, save_path: str):
     # Sort by start frame
     occlusion_events = sorted(occlusion_events, key=lambda x: x['start'])
 
-    fig, ax = plt.subplots(figsize=(14, 6))
+    # Limit to 50 for readability
+    display_events = occlusion_events[:50]
 
-    for idx, event in enumerate(occlusion_events[:50]):  # Limit to 50 for readability
+    fig, ax = plt.subplots(figsize=(14, 8))
+
+    # Create Y-axis labels showing event index and track ID
+    y_labels = [f"Evt {idx} (TID:{event['track_id']})" for idx, event in enumerate(display_events)]
+
+    for idx, event in enumerate(display_events):
         duration = event['end'] - event['start'] + 1
         ax.barh(idx, duration, left=event['start'], height=0.8, color='red', alpha=0.6)
 
     ax.set_xlabel('Frame Number', fontsize=12)
-    ax.set_ylabel('Occlusion Event Index', fontsize=12)
+    ax.set_ylabel('Occlusion Event (with MOT Track ID)', fontsize=12)
     ax.set_title(f'Occlusion Events Timeline - {metadata["sequence_info"]["name"]}', fontsize=14, fontweight='bold')
     ax.set_xlim(0, total_frames)
+
+    # Set Y-axis labels
+    ax.set_yticks(range(len(display_events)))
+    ax.set_yticklabels(y_labels, fontsize=8)
+    ax.set_ylim(-0.5, len(display_events) - 0.5)
+
     ax.grid(axis='x', alpha=0.3)
 
     plt.tight_layout()
