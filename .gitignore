@@ -1,0 +1,25 @@
+# Dataset files (large)
+MOT17/
+
+# Model weights (large)
+models/
+
+# GitHub repos (cloned, not our code)
+github_repos/
+
+# Results/outputs (regeneratable)
+results/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store

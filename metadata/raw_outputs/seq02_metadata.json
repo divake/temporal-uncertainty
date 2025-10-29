@@ -1,0 +1,8044 @@
+{
+  "sequence_info": {
+    "name": "MOT17-02-FRCNN",
+    "total_frames": 600,
+    "fps": 30,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "path": "/ssd_4TB/divake/temporal_uncertainty/MOT17/train/MOT17-02-FRCNN"
+  },
+  "statistics": {
+    "unique_track_ids": 62,
+    "total_detections": 18581,
+    "avg_tracks_per_frame": 30.968333333333334,
+    "max_simultaneous_tracks": 36,
+    "min_simultaneous_tracks": 22,
+    "tracks_meeting_min_length": 56
+  },
+  "track_lifetimes": {
+    "min": 1,
+    "max": 600,
+    "mean": 299.69354838709677,
+    "median": 303.5,
+    "std": 200.39015080343108,
+    "distribution": [
+      {
+        "range": "0-30",
+        "count": 6
+      },
+      {
+        "range": "30-100",
+        "count": 9
+      },
+      {
+        "range": "100-300",
+        "count": 15
+      },
+      {
+        "range": "300+",
+        "count": 32
+      }
+    ]
+  },
+  "tracks": {
+    "2": {
+      "lifetime_frames": [
+        1,
+        56
+      ],
+      "duration": 56,
+      "num_detections": 56,
+      "avg_visibility": 0.9359366071428571,
+      "min_visibility": 0.49749,
+      "has_occlusion": false,
+      "occlusion_events": [],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 88193.92857142857,
+      "bbox_variance": 512404964.0311689,
+      "avg_displacement": 9.18536259182081,
+      "max_displacement": 14.080127840328723,
+      "motion_category": "moving",
+      "trajectory_length": 505.1949425501446,
+      "class": "pedestrian"
+    },
+    "3": {
+      "lifetime_frames": [
+        1,
+        575
+      ],
+      "duration": 575,
+      "num_detections": 575,
+      "avg_visibility": 0.41764258172521734,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 228,
+          "end_frame": 249,
+          "duration": 22,
+          "min_visibility": 0.03125
+        },
+        {
+          "start_frame": 252,
+          "end_frame": 420,
+          "duration": 169,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 433,
+          "end_frame": 538,
+          "duration": 106,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 564,
+          "end_frame": 575,
+          "duration": 12,
+          "min_visibility": 0.0058795
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 69375.05217391305,
+      "bbox_variance": 1099763580.1854265,
+      "avg_displacement": 2.4682687511756187,
+      "max_displacement": 11.5,
+      "motion_category": "static",
+      "trajectory_length": 1416.786263174805,
+      "class": "pedestrian"
+    },
+    "8": {
+      "lifetime_frames": [
+        1,
+        43
+      ],
+      "duration": 43,
+      "num_detections": 43,
+      "avg_visibility": 0.45324339534883723,
+      "min_visibility": 0.021978,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 20,
+          "end_frame": 20,
+          "duration": 1,
+          "min_visibility": 0.29648
+        },
+        {
+          "start_frame": 36,
+          "end_frame": 43,
+          "duration": 8,
+          "min_visibility": 0.021978
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 70702.44186046511,
+      "bbox_variance": 197378785.7286822,
+      "avg_displacement": 10.345859055262562,
+      "max_displacement": 24.0,
+      "motion_category": "moving",
+      "trajectory_length": 434.52608032102756,
+      "class": "pedestrian"
+    },
+    "9": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.3653586815,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 182,
+          "end_frame": 221,
+          "duration": 40,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 243,
+          "end_frame": 342,
+          "duration": 100,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 351,
+          "end_frame": 468,
+          "duration": 118,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 504,
+          "end_frame": 600,
+          "duration": 97,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4796.453333333333,
+      "bbox_variance": 754169.9811240957,
+      "avg_displacement": 0.18062638322897157,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 108.19520355415396,
+      "class": "pedestrian"
+    },
+    "10": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.44505760666666666,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 196,
+          "end_frame": 225,
+          "duration": 30,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 250,
+          "end_frame": 459,
+          "duration": 210,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 514,
+          "end_frame": 600,
+          "duration": 87,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4631.38,
+      "bbox_variance": 777217.8620367278,
+      "avg_displacement": 0.16625948211539188,
+      "max_displacement": 2.23606797749979,
+      "motion_category": "static",
+      "trajectory_length": 99.58942978711973,
+      "class": "pedestrian"
+    },
+    "14": {
+      "lifetime_frames": [
+        1,
+        306
+      ],
+      "duration": 306,
+      "num_detections": 306,
+      "avg_visibility": 0.7070822581699346,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 209,
+          "end_frame": 236,
+          "duration": 28,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 252,
+          "end_frame": 306,
+          "duration": 55,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3618.1372549019607,
+      "bbox_variance": 44847.01060752169,
+      "avg_displacement": 0.5107481134198427,
+      "max_displacement": 2.0,
+      "motion_category": "static",
+      "trajectory_length": 155.77817459305203,
+      "class": "pedestrian"
+    },
+    "15": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.30049528324999997,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 173,
+          "end_frame": 213,
+          "duration": 41,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 218,
+          "end_frame": 412,
+          "duration": 195,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 432,
+          "end_frame": 596,
+          "duration": 165,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2966.8516666666665,
+      "bbox_variance": 1000978.8477434615,
+      "avg_displacement": 0.3876636782571262,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 232.2105432760186,
+      "class": "pedestrian"
+    },
+    "16": {
+      "lifetime_frames": [
+        426,
+        487
+      ],
+      "duration": 62,
+      "num_detections": 62,
+      "avg_visibility": 0.612033064516129,
+      "min_visibility": 0.11081,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 426,
+          "end_frame": 427,
+          "duration": 2,
+          "min_visibility": 0.17653
+        },
+        {
+          "start_frame": 483,
+          "end_frame": 487,
+          "duration": 5,
+          "min_visibility": 0.11081
+        }
+      ],
+      "entry_point": "right",
+      "exit_point": "left",
+      "avg_bbox_area": 409406.17741935485,
+      "bbox_variance": 2083685956.541777,
+      "avg_displacement": 36.1940333251406,
+      "max_displacement": 59.53990258641679,
+      "motion_category": "fast_moving",
+      "trajectory_length": 2207.8360328335766,
+      "class": "pedestrian"
+    },
+    "17": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.25398212316666663,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 198,
+          "end_frame": 457,
+          "duration": 260,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 494,
+          "end_frame": 591,
+          "duration": 98,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 594,
+          "end_frame": 600,
+          "duration": 7,
+          "min_visibility": 0.12912
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4166.5633333333335,
+      "bbox_variance": 5569.448402893712,
+      "avg_displacement": 0.27441738630673423,
+      "max_displacement": 1.5,
+      "motion_category": "static",
+      "trajectory_length": 164.3760143977338,
+      "class": "pedestrian"
+    },
+    "18": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.15147548016666668,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 157,
+          "end_frame": 437,
+          "duration": 281,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 442,
+          "end_frame": 450,
+          "duration": 9,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 486,
+          "end_frame": 585,
+          "duration": 100,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 587,
+          "end_frame": 599,
+          "duration": 13,
+          "min_visibility": 0.092308
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4016.806666666667,
+      "bbox_variance": 266427.92917084025,
+      "avg_displacement": 0.42361875137307287,
+      "max_displacement": 3.0413812651491097,
+      "motion_category": "static",
+      "trajectory_length": 253.74763207247065,
+      "class": "pedestrian"
+    },
+    "19": {
+      "lifetime_frames": [
+        1,
+        549
+      ],
+      "duration": 549,
+      "num_detections": 549,
+      "avg_visibility": 0.9667495591985428,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 439,
+          "end_frame": 443,
+          "duration": 5,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 108678.59016393442,
+      "bbox_variance": 2915771693.1839175,
+      "avg_displacement": 3.077227119079139,
+      "max_displacement": 12.658988901172163,
+      "motion_category": "static",
+      "trajectory_length": 1686.3204612553682,
+      "class": "pedestrian"
+    },
+    "20": {
+      "lifetime_frames": [
+        1,
+        322
+      ],
+      "duration": 322,
+      "num_detections": 322,
+      "avg_visibility": 0.8718774534161492,
+      "min_visibility": 0.35111,
+      "has_occlusion": false,
+      "occlusion_events": [],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 39290.757763975154,
+      "bbox_variance": 887388187.4302355,
+      "avg_displacement": 4.167456861479567,
+      "max_displacement": 21.005951537600005,
+      "motion_category": "static",
+      "trajectory_length": 1337.753652534941,
+      "class": "pedestrian"
+    },
+    "21": {
+      "lifetime_frames": [
+        1,
+        80
+      ],
+      "duration": 80,
+      "num_detections": 80,
+      "avg_visibility": 0.8026073374999999,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 8,
+          "duration": 8,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 7294.6375,
+      "bbox_variance": 774228.006170886,
+      "avg_displacement": 2.6484095078660608,
+      "max_displacement": 4.123105625617661,
+      "motion_category": "static",
+      "trajectory_length": 209.2243511214188,
+      "class": "pedestrian"
+    },
+    "22": {
+      "lifetime_frames": [
+        1,
+        39
+      ],
+      "duration": 39,
+      "num_detections": 39,
+      "avg_visibility": 0.1342905128205128,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 29,
+          "duration": 29,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 6492.794871794872,
+      "bbox_variance": 347376.0620782726,
+      "avg_displacement": 2.342929609026599,
+      "max_displacement": 4.123105625617661,
+      "motion_category": "static",
+      "trajectory_length": 89.03132514301078,
+      "class": "pedestrian"
+    },
+    "23": {
+      "lifetime_frames": [
+        1,
+        586
+      ],
+      "duration": 586,
+      "num_detections": 586,
+      "avg_visibility": 0.5284037052901024,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 90,
+          "duration": 90,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 93,
+          "end_frame": 156,
+          "duration": 64,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 164,
+          "end_frame": 237,
+          "duration": 74,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 441,
+          "end_frame": 448,
+          "duration": 8,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 72479.20307167235,
+      "bbox_variance": 2002430901.8133922,
+      "avg_displacement": 2.4348664813647227,
+      "max_displacement": 11.510864433221338,
+      "motion_category": "static",
+      "trajectory_length": 1424.3968915983628,
+      "class": "pedestrian"
+    },
+    "26": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.6480633366666667,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 13,
+          "end_frame": 100,
+          "duration": 88,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 337,
+          "end_frame": 357,
+          "duration": 21,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 374,
+          "end_frame": 405,
+          "duration": 32,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 416,
+          "end_frame": 431,
+          "duration": 16,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 458,
+          "end_frame": 471,
+          "duration": 14,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 478,
+          "end_frame": 489,
+          "duration": 12,
+          "min_visibility": 0.10435
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4622.283333333334,
+      "bbox_variance": 922270.0331107402,
+      "avg_displacement": 0.3438920023036572,
+      "max_displacement": 2.0,
+      "motion_category": "static",
+      "trajectory_length": 205.99130937989065,
+      "class": "pedestrian"
+    },
+    "27": {
+      "lifetime_frames": [
+        31,
+        600
+      ],
+      "duration": 570,
+      "num_detections": 570,
+      "avg_visibility": 0.4100211415789474,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 31,
+          "end_frame": 77,
+          "duration": 47,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 111,
+          "end_frame": 135,
+          "duration": 25,
+          "min_visibility": 0.10476
+        },
+        {
+          "start_frame": 355,
+          "end_frame": 374,
+          "duration": 20,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 387,
+          "end_frame": 444,
+          "duration": 58,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 450,
+          "end_frame": 600,
+          "duration": 151,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3546.2649122807015,
+      "bbox_variance": 171480.4200320661,
+      "avg_displacement": 0.24304082242549543,
+      "max_displacement": 1.5,
+      "motion_category": "static",
+      "trajectory_length": 138.2902279601069,
+      "class": "pedestrian"
+    },
+    "28": {
+      "lifetime_frames": [
+        153,
+        600
+      ],
+      "duration": 448,
+      "num_detections": 448,
+      "avg_visibility": 0.2911262796875,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 153,
+          "end_frame": 153,
+          "duration": 1,
+          "min_visibility": 0.27792
+        },
+        {
+          "start_frame": 161,
+          "end_frame": 182,
+          "duration": 22,
+          "min_visibility": 0.034739
+        },
+        {
+          "start_frame": 324,
+          "end_frame": 600,
+          "duration": 277,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3184.7723214285716,
+      "bbox_variance": 3329.8943552253113,
+      "avg_displacement": 0.17583163904556817,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 78.59674265336898,
+      "class": "pedestrian"
+    },
+    "29": {
+      "lifetime_frames": [
+        64,
+        600
+      ],
+      "duration": 537,
+      "num_detections": 537,
+      "avg_visibility": 0.5544017169459962,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 64,
+          "end_frame": 64,
+          "duration": 1,
+          "min_visibility": 0.2
+        },
+        {
+          "start_frame": 230,
+          "end_frame": 236,
+          "duration": 7,
+          "min_visibility": 0.27083
+        },
+        {
+          "start_frame": 242,
+          "end_frame": 266,
+          "duration": 25,
+          "min_visibility": 0.12245
+        },
+        {
+          "start_frame": 339,
+          "end_frame": 372,
+          "duration": 34,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 384,
+          "end_frame": 442,
+          "duration": 59,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 457,
+          "end_frame": 486,
+          "duration": 30,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4601.968342644321,
+      "bbox_variance": 354519.26578698686,
+      "avg_displacement": 0.20904242112307425,
+      "max_displacement": 1.5811388300841898,
+      "motion_category": "static",
+      "trajectory_length": 112.0467377219678,
+      "class": "pedestrian"
+    },
+    "31": {
+      "lifetime_frames": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "num_detections": 600,
+      "avg_visibility": 0.218693052,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 111,
+          "end_frame": 130,
+          "duration": 20,
+          "min_visibility": 0.11905
+        },
+        {
+          "start_frame": 149,
+          "end_frame": 232,
+          "duration": 84,
+          "min_visibility": 0.041667
+        },
+        {
+          "start_frame": 251,
+          "end_frame": 600,
+          "duration": 350,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2755.735,
+      "bbox_variance": 67235.82782136896,
+      "avg_displacement": 0.2728966787056089,
+      "max_displacement": 3.0,
+      "motion_category": "static",
+      "trajectory_length": 163.46511054465975,
+      "class": "pedestrian"
+    },
+    "32": {
+      "lifetime_frames": [
+        303,
+        600
+      ],
+      "duration": 298,
+      "num_detections": 298,
+      "avg_visibility": 0.8421297651006712,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 446,
+          "end_frame": 454,
+          "duration": 9,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 486,
+          "end_frame": 506,
+          "duration": 21,
+          "min_visibility": 0.10299
+        }
+      ],
+      "entry_point": "left",
+      "exit_point": "center",
+      "avg_bbox_area": 44307.13087248322,
+      "bbox_variance": 639361782.8144647,
+      "avg_displacement": 4.061881976417408,
+      "max_displacement": 15.008331019803634,
+      "motion_category": "static",
+      "trajectory_length": 1206.3789469959702,
+      "class": "pedestrian"
+    },
+    "33": {
+      "lifetime_frames": [
+        335,
+        600
+      ],
+      "duration": 266,
+      "num_detections": 266,
+      "avg_visibility": 0.5982955,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 448,
+          "end_frame": 473,
+          "duration": 26,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 550,
+          "end_frame": 581,
+          "duration": 32,
+          "min_visibility": 0.028807
+        }
+      ],
+      "entry_point": "left",
+      "exit_point": "center",
+      "avg_bbox_area": 31377.06766917293,
+      "bbox_variance": 166239805.74634698,
+      "avg_displacement": 4.671749618218928,
+      "max_displacement": 14.0,
+      "motion_category": "static",
+      "trajectory_length": 1238.013648828016,
+      "class": "pedestrian"
+    },
+    "34": {
+      "lifetime_frames": [
+        353,
+        600
+      ],
+      "duration": 248,
+      "num_detections": 248,
+      "avg_visibility": 0.9517281451612903,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 450,
+          "end_frame": 458,
+          "duration": 9,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "left",
+      "exit_point": "center",
+      "avg_bbox_area": 40337.10080645161,
+      "bbox_variance": 266031731.80761063,
+      "avg_displacement": 5.354990944854311,
+      "max_displacement": 18.006943105369107,
+      "motion_category": "moving",
+      "trajectory_length": 1322.682763379015,
+      "class": "pedestrian"
+    },
+    "35": {
+      "lifetime_frames": [
+        371,
+        600
+      ],
+      "duration": 230,
+      "num_detections": 230,
+      "avg_visibility": 0.8985936416086956,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 371,
+          "end_frame": 372,
+          "duration": 2,
+          "min_visibility": 0.25789
+        },
+        {
+          "start_frame": 454,
+          "end_frame": 462,
+          "duration": 9,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "left",
+      "exit_point": "center",
+      "avg_bbox_area": 35496.69130434783,
+      "bbox_variance": 276253997.33223844,
+      "avg_displacement": 4.979464803125275,
+      "max_displacement": 16.507574019219177,
+      "motion_category": "static",
+      "trajectory_length": 1140.2974399156878,
+      "class": "pedestrian"
+    },
+    "36": {
+      "lifetime_frames": [
+        1,
+        516
+      ],
+      "duration": 516,
+      "num_detections": 516,
+      "avg_visibility": 0.4233096705426357,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 23,
+          "duration": 23,
+          "min_visibility": 0.11111
+        },
+        {
+          "start_frame": 26,
+          "end_frame": 31,
+          "duration": 6,
+          "min_visibility": 0.22425
+        },
+        {
+          "start_frame": 61,
+          "end_frame": 182,
+          "duration": 122,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 337,
+          "end_frame": 441,
+          "duration": 105,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 20772.647286821706,
+      "bbox_variance": 495500341.97632277,
+      "avg_displacement": 2.7135919479550874,
+      "max_displacement": 15.297058540778355,
+      "motion_category": "static",
+      "trajectory_length": 1397.49985319687,
+      "class": "pedestrian"
+    },
+    "37": {
+      "lifetime_frames": [
+        58,
+        336
+      ],
+      "duration": 279,
+      "num_detections": 279,
+      "avg_visibility": 0.2957200035842294,
+      "min_visibility": 0.014984,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 58,
+          "end_frame": 134,
+          "duration": 77,
+          "min_visibility": 0.014984
+        },
+        {
+          "start_frame": 208,
+          "end_frame": 217,
+          "duration": 10,
+          "min_visibility": 0.055944
+        },
+        {
+          "start_frame": 230,
+          "end_frame": 299,
+          "duration": 70,
+          "min_visibility": 0.025424
+        },
+        {
+          "start_frame": 315,
+          "end_frame": 315,
+          "duration": 1,
+          "min_visibility": 0.28111
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "right",
+      "avg_bbox_area": 36116.27598566308,
+      "bbox_variance": 564555876.5962199,
+      "avg_displacement": 4.419291481387017,
+      "max_displacement": 11.597413504743201,
+      "motion_category": "static",
+      "trajectory_length": 1228.5630318255905,
+      "class": "pedestrian"
+    },
+    "38": {
+      "lifetime_frames": [
+        250,
+        600
+      ],
+      "duration": 351,
+      "num_detections": 351,
+      "avg_visibility": 0.6030312481481481,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 283,
+          "end_frame": 289,
+          "duration": 7,
+          "min_visibility": 0.0039683
+        },
+        {
+          "start_frame": 330,
+          "end_frame": 381,
+          "duration": 52,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 436,
+          "end_frame": 462,
+          "duration": 27,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 467,
+          "end_frame": 479,
+          "duration": 13,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 490,
+          "end_frame": 506,
+          "duration": 17,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "right",
+      "exit_point": "center",
+      "avg_bbox_area": 17122.843304843303,
+      "bbox_variance": 319357119.6696622,
+      "avg_displacement": 3.840461425878167,
+      "max_displacement": 17.613914953808536,
+      "motion_category": "static",
+      "trajectory_length": 1344.1614990573585,
+      "class": "pedestrian"
+    },
+    "39": {
+      "lifetime_frames": [
+        1,
+        376
+      ],
+      "duration": 376,
+      "num_detections": 376,
+      "avg_visibility": 0.49430907712765954,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 1,
+          "duration": 1,
+          "min_visibility": 0.29371
+        },
+        {
+          "start_frame": 21,
+          "end_frame": 57,
+          "duration": 37,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 98,
+          "end_frame": 133,
+          "duration": 36,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 178,
+          "end_frame": 186,
+          "duration": 9,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 228,
+          "end_frame": 262,
+          "duration": 35,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 268,
+          "end_frame": 270,
+          "duration": 3,
+          "min_visibility": 0.14634
+        },
+        {
+          "start_frame": 298,
+          "end_frame": 308,
+          "duration": 11,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3694.747340425532,
+      "bbox_variance": 1499697.175992908,
+      "avg_displacement": 1.6291131481515124,
+      "max_displacement": 5.5,
+      "motion_category": "static",
+      "trajectory_length": 610.9174305568172,
+      "class": "pedestrian"
+    },
+    "40": {
+      "lifetime_frames": [
+        11,
+        539
+      ],
+      "duration": 529,
+      "num_detections": 529,
+      "avg_visibility": 0.17458562105860115,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 11,
+          "end_frame": 220,
+          "duration": 210,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 270,
+          "end_frame": 282,
+          "duration": 13,
+          "min_visibility": 0.061224
+        },
+        {
+          "start_frame": 308,
+          "end_frame": 484,
+          "duration": 177,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 539,
+          "end_frame": 539,
+          "duration": 1,
+          "min_visibility": 0.28581
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 4393.221172022684,
+      "bbox_variance": 964971.7180357449,
+      "avg_displacement": 1.4352528875147121,
+      "max_displacement": 5.522680508593631,
+      "motion_category": "static",
+      "trajectory_length": 757.813524607768,
+      "class": "pedestrian"
+    },
+    "41": {
+      "lifetime_frames": [
+        208,
+        580
+      ],
+      "duration": 373,
+      "num_detections": 373,
+      "avg_visibility": 0.2066363533780161,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 208,
+          "end_frame": 254,
+          "duration": 47,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 273,
+          "end_frame": 290,
+          "duration": 18,
+          "min_visibility": 0.091954
+        },
+        {
+          "start_frame": 303,
+          "end_frame": 303,
+          "duration": 1,
+          "min_visibility": 0.29394
+        },
+        {
+          "start_frame": 311,
+          "end_frame": 450,
+          "duration": 140,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 469,
+          "end_frame": 482,
+          "duration": 14,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 492,
+          "end_frame": 515,
+          "duration": 24,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 526,
+          "end_frame": 534,
+          "duration": 9,
+          "min_visibility": 0.071429
+        },
+        {
+          "start_frame": 570,
+          "end_frame": 580,
+          "duration": 11,
+          "min_visibility": 0.0086207
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2394.932975871314,
+      "bbox_variance": 1203334.8100118192,
+      "avg_displacement": 1.5257476200519078,
+      "max_displacement": 4.527692569068709,
+      "motion_category": "static",
+      "trajectory_length": 567.5781146593097,
+      "class": "pedestrian"
+    },
+    "42": {
+      "lifetime_frames": [
+        209,
+        569
+      ],
+      "duration": 361,
+      "num_detections": 361,
+      "avg_visibility": 0.14960266343490303,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 209,
+          "end_frame": 271,
+          "duration": 63,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 274,
+          "end_frame": 275,
+          "duration": 2,
+          "min_visibility": 0.27273
+        },
+        {
+          "start_frame": 280,
+          "end_frame": 330,
+          "duration": 51,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 370,
+          "end_frame": 404,
+          "duration": 35,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 425,
+          "end_frame": 425,
+          "duration": 1,
+          "min_visibility": 0.29882
+        },
+        {
+          "start_frame": 427,
+          "end_frame": 466,
+          "duration": 40,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 476,
+          "end_frame": 492,
+          "duration": 17,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 498,
+          "end_frame": 569,
+          "duration": 72,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2342.808864265928,
+      "bbox_variance": 622773.1828100955,
+      "avg_displacement": 1.3761349352593881,
+      "max_displacement": 4.123105625617661,
+      "motion_category": "static",
+      "trajectory_length": 495.4085766933797,
+      "class": "pedestrian"
+    },
+    "43": {
+      "lifetime_frames": [
+        122,
+        600
+      ],
+      "duration": 479,
+      "num_detections": 479,
+      "avg_visibility": 0.43445961315240084,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 122,
+          "end_frame": 250,
+          "duration": 129,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 378,
+          "end_frame": 401,
+          "duration": 24,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 406,
+          "end_frame": 479,
+          "duration": 74,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 537,
+          "end_frame": 555,
+          "duration": 19,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2025.6659707724425,
+      "bbox_variance": 860141.0137140661,
+      "avg_displacement": 0.3338658087460194,
+      "max_displacement": 1.5811388300841898,
+      "motion_category": "static",
+      "trajectory_length": 159.58785658059728,
+      "class": "pedestrian"
+    },
+    "44": {
+      "lifetime_frames": [
+        231,
+        600
+      ],
+      "duration": 370,
+      "num_detections": 370,
+      "avg_visibility": 0.4034611486486487,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 231,
+          "end_frame": 244,
+          "duration": 14,
+          "min_visibility": 0.028473
+        },
+        {
+          "start_frame": 292,
+          "end_frame": 373,
+          "duration": 82,
+          "min_visibility": 0.081967
+        },
+        {
+          "start_frame": 394,
+          "end_frame": 471,
+          "duration": 78,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 484,
+          "end_frame": 516,
+          "duration": 33,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2105.145945945946,
+      "bbox_variance": 863695.4420566908,
+      "avg_displacement": 0.5003914180075837,
+      "max_displacement": 2.0615528128088303,
+      "motion_category": "static",
+      "trajectory_length": 184.64443324479836,
+      "class": "pedestrian"
+    },
+    "48": {
+      "lifetime_frames": [
+        350,
+        600
+      ],
+      "duration": 251,
+      "num_detections": 251,
+      "avg_visibility": 0.5674572151394423,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 357,
+          "end_frame": 381,
+          "duration": 25,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 383,
+          "end_frame": 386,
+          "duration": 4,
+          "min_visibility": 0.044289
+        },
+        {
+          "start_frame": 399,
+          "end_frame": 467,
+          "duration": 69,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2235.4422310756972,
+      "bbox_variance": 250205.79964940238,
+      "avg_displacement": 0.3560024843844128,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 89.0006210961032,
+      "class": "pedestrian"
+    },
+    "49": {
+      "lifetime_frames": [
+        383,
+        600
+      ],
+      "duration": 218,
+      "num_detections": 218,
+      "avg_visibility": 0.6354383119266055,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 389,
+          "end_frame": 427,
+          "duration": 39,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 436,
+          "end_frame": 471,
+          "duration": 36,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1884.605504587156,
+      "bbox_variance": 55508.66393269353,
+      "avg_displacement": 0.25207905607221315,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 54.70115516767026,
+      "class": "pedestrian"
+    },
+    "54": {
+      "lifetime_frames": [
+        211,
+        579
+      ],
+      "duration": 369,
+      "num_detections": 369,
+      "avg_visibility": 0.34628250948509487,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 211,
+          "end_frame": 239,
+          "duration": 29,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 242,
+          "end_frame": 243,
+          "duration": 2,
+          "min_visibility": 0.26087
+        },
+        {
+          "start_frame": 282,
+          "end_frame": 337,
+          "duration": 56,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 356,
+          "end_frame": 376,
+          "duration": 21,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 388,
+          "end_frame": 424,
+          "duration": 37,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 431,
+          "end_frame": 446,
+          "duration": 16,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 456,
+          "end_frame": 468,
+          "duration": 13,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 470,
+          "end_frame": 480,
+          "duration": 11,
+          "min_visibility": 0.14286
+        },
+        {
+          "start_frame": 575,
+          "end_frame": 579,
+          "duration": 5,
+          "min_visibility": 0.18182
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1927.8482384823849,
+      "bbox_variance": 37887.047558029924,
+      "avg_displacement": 0.26066920361257606,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 95.92626692942798,
+      "class": "pedestrian"
+    },
+    "55": {
+      "lifetime_frames": [
+        542,
+        584
+      ],
+      "duration": 43,
+      "num_detections": 43,
+      "avg_visibility": 0.741893488372093,
+      "min_visibility": 0.052632,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 579,
+          "end_frame": 584,
+          "duration": 6,
+          "min_visibility": 0.052632
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1246.6279069767443,
+      "bbox_variance": 24843.048726467336,
+      "avg_displacement": 1.1183517786253954,
+      "max_displacement": 1.5811388300841898,
+      "motion_category": "static",
+      "trajectory_length": 46.97077470226661,
+      "class": "pedestrian"
+    },
+    "56": {
+      "lifetime_frames": [
+        323,
+        600
+      ],
+      "duration": 278,
+      "num_detections": 278,
+      "avg_visibility": 0.1619135158273381,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 323,
+          "end_frame": 325,
+          "duration": 3,
+          "min_visibility": 0.2364
+        },
+        {
+          "start_frame": 350,
+          "end_frame": 538,
+          "duration": 189,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 551,
+          "end_frame": 557,
+          "duration": 7,
+          "min_visibility": 0.26087
+        },
+        {
+          "start_frame": 567,
+          "end_frame": 570,
+          "duration": 4,
+          "min_visibility": 0.28
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1174.7805755395684,
+      "bbox_variance": 92219.36323143652,
+      "avg_displacement": 0.16472559640610815,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 45.628990204491956,
+      "class": "pedestrian"
+    },
+    "57": {
+      "lifetime_frames": [
+        41,
+        507
+      ],
+      "duration": 467,
+      "num_detections": 467,
+      "avg_visibility": 0.32812248822269807,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 41,
+          "end_frame": 220,
+          "duration": 180,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 365,
+          "end_frame": 395,
+          "duration": 31,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 404,
+          "end_frame": 444,
+          "duration": 41,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 447,
+          "end_frame": 470,
+          "duration": 24,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 497,
+          "end_frame": 507,
+          "duration": 11,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1359.237687366167,
+      "bbox_variance": 129798.44767532694,
+      "avg_displacement": 0.13755371031798008,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 64.10002900817872,
+      "class": "pedestrian"
+    },
+    "58": {
+      "lifetime_frames": [
+        140,
+        442
+      ],
+      "duration": 303,
+      "num_detections": 303,
+      "avg_visibility": 0.5115700759075907,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 140,
+          "end_frame": 203,
+          "duration": 64,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 360,
+          "end_frame": 392,
+          "duration": 33,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 402,
+          "end_frame": 442,
+          "duration": 41,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1202.7326732673268,
+      "bbox_variance": 51240.34220706839,
+      "avg_displacement": 0.1953896353011004,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 59.00766986093232,
+      "class": "pedestrian"
+    },
+    "59": {
+      "lifetime_frames": [
+        51,
+        373
+      ],
+      "duration": 323,
+      "num_detections": 323,
+      "avg_visibility": 0.2922512719504644,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 51,
+          "end_frame": 127,
+          "duration": 77,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 145,
+          "end_frame": 175,
+          "duration": 31,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 279,
+          "end_frame": 373,
+          "duration": 95,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1503.8235294117646,
+      "bbox_variance": 77077.72963098282,
+      "avg_displacement": 0.16719284778161028,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 53.83609698567851,
+      "class": "pedestrian"
+    },
+    "60": {
+      "lifetime_frames": [
+        199,
+        600
+      ],
+      "duration": 402,
+      "num_detections": 402,
+      "avg_visibility": 0.22908803029850744,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 199,
+          "end_frame": 273,
+          "duration": 75,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 373,
+          "end_frame": 397,
+          "duration": 25,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 405,
+          "end_frame": 600,
+          "duration": 196,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1034.544776119403,
+      "bbox_variance": 37882.3683142889,
+      "avg_displacement": 0.17400221505796082,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 69.77488823824228,
+      "class": "pedestrian"
+    },
+    "61": {
+      "lifetime_frames": [
+        51,
+        600
+      ],
+      "duration": 550,
+      "num_detections": 550,
+      "avg_visibility": 0.08026594509090909,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 51,
+          "end_frame": 252,
+          "duration": 202,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 254,
+          "end_frame": 258,
+          "duration": 5,
+          "min_visibility": 0.26221
+        },
+        {
+          "start_frame": 261,
+          "end_frame": 600,
+          "duration": 340,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1238.6763636363637,
+      "bbox_variance": 88525.80399403874,
+      "avg_displacement": 0.15368837385504736,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 84.37491724642099,
+      "class": "pedestrian"
+    },
+    "62": {
+      "lifetime_frames": [
+        111,
+        414
+      ],
+      "duration": 304,
+      "num_detections": 304,
+      "avg_visibility": 0.3658670114144737,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 111,
+          "end_frame": 114,
+          "duration": 4,
+          "min_visibility": 0.038889
+        },
+        {
+          "start_frame": 155,
+          "end_frame": 265,
+          "duration": 111,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 358,
+          "end_frame": 390,
+          "duration": 33,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 400,
+          "end_frame": 414,
+          "duration": 15,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1534.5361842105262,
+      "bbox_variance": 144471.71485799894,
+      "avg_displacement": 0.2075710210505115,
+      "max_displacement": 1.5,
+      "motion_category": "static",
+      "trajectory_length": 62.89401937830499,
+      "class": "pedestrian"
+    },
+    "63": {
+      "lifetime_frames": [
+        490,
+        600
+      ],
+      "duration": 111,
+      "num_detections": 111,
+      "avg_visibility": 0.5649499099099097,
+      "min_visibility": 0.36364,
+      "has_occlusion": false,
+      "occlusion_events": [],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 392.8288288288288,
+      "bbox_variance": 692.1067977067979,
+      "avg_displacement": 0.21769510103178258,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 23.946461113496085,
+      "class": "pedestrian"
+    },
+    "64": {
+      "lifetime_frames": [
+        490,
+        600
+      ],
+      "duration": 111,
+      "num_detections": 111,
+      "avg_visibility": 0.3678874774774776,
+      "min_visibility": 0.14719,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 490,
+          "end_frame": 519,
+          "duration": 30,
+          "min_visibility": 0.14719
+        },
+        {
+          "start_frame": 521,
+          "end_frame": 523,
+          "duration": 3,
+          "min_visibility": 0.28788
+        },
+        {
+          "start_frame": 537,
+          "end_frame": 538,
+          "duration": 2,
+          "min_visibility": 0.28571
+        },
+        {
+          "start_frame": 540,
+          "end_frame": 548,
+          "duration": 9,
+          "min_visibility": 0.26407
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 416.0,
+      "bbox_variance": 0.0,
+      "avg_displacement": 0.18025842840678355,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 19.82842712474619,
+      "class": "pedestrian"
+    },
+    "67": {
+      "lifetime_frames": [
+        146,
+        494
+      ],
+      "duration": 349,
+      "num_detections": 349,
+      "avg_visibility": 0.017342229971346705,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 146,
+          "end_frame": 477,
+          "duration": 332,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 488,
+          "end_frame": 494,
+          "duration": 7,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2448.4355300859597,
+      "bbox_variance": 214792.05114777852,
+      "avg_displacement": 0.39040602233325394,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 135.86129577197238,
+      "class": "pedestrian"
+    },
+    "68": {
+      "lifetime_frames": [
+        1,
+        315
+      ],
+      "duration": 315,
+      "num_detections": 315,
+      "avg_visibility": 0.40194129206349205,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 103,
+          "end_frame": 103,
+          "duration": 1,
+          "min_visibility": 0.29004
+        },
+        {
+          "start_frame": 105,
+          "end_frame": 120,
+          "duration": 16,
+          "min_visibility": 0.23377
+        },
+        {
+          "start_frame": 122,
+          "end_frame": 183,
+          "duration": 62,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 860.0,
+      "bbox_variance": 0.0,
+      "avg_displacement": 0.15045426970420156,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 47.24264068711929,
+      "class": "pedestrian"
+    },
+    "69": {
+      "lifetime_frames": [
+        1,
+        280
+      ],
+      "duration": 280,
+      "num_detections": 280,
+      "avg_visibility": 0.29058045714285713,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 62,
+          "end_frame": 65,
+          "duration": 4,
+          "min_visibility": 0.26316
+        },
+        {
+          "start_frame": 82,
+          "end_frame": 90,
+          "duration": 9,
+          "min_visibility": 0.27907
+        },
+        {
+          "start_frame": 94,
+          "end_frame": 187,
+          "duration": 94,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 267,
+          "end_frame": 268,
+          "duration": 2,
+          "min_visibility": 0.29988
+        },
+        {
+          "start_frame": 271,
+          "end_frame": 274,
+          "duration": 4,
+          "min_visibility": 0.28886
+        },
+        {
+          "start_frame": 276,
+          "end_frame": 280,
+          "duration": 5,
+          "min_visibility": 0.28397
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 756.0,
+      "bbox_variance": 0.0,
+      "avg_displacement": 0.09912850985481139,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 27.65685424949238,
+      "class": "pedestrian"
+    },
+    "70": {
+      "lifetime_frames": [
+        1,
+        206
+      ],
+      "duration": 206,
+      "num_detections": 206,
+      "avg_visibility": 0.04196015533980582,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 206,
+          "duration": 206,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1628.995145631068,
+      "bbox_variance": 2978.853634856737,
+      "avg_displacement": 0.5964017751956415,
+      "max_displacement": 2.23606797749979,
+      "motion_category": "static",
+      "trajectory_length": 122.2623639151065,
+      "class": "pedestrian"
+    },
+    "71": {
+      "lifetime_frames": [
+        91,
+        150
+      ],
+      "duration": 60,
+      "num_detections": 60,
+      "avg_visibility": 0.11714859166666666,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 91,
+          "end_frame": 150,
+          "duration": 60,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 903.0,
+      "bbox_variance": 0.0,
+      "avg_displacement": 0.7937021546567151,
+      "max_displacement": 2.0,
+      "motion_category": "static",
+      "trajectory_length": 46.82842712474619,
+      "class": "pedestrian"
+    },
+    "72": {
+      "lifetime_frames": [
+        1,
+        152
+      ],
+      "duration": 152,
+      "num_detections": 152,
+      "avg_visibility": 0.08028624980263158,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 1,
+          "end_frame": 152,
+          "duration": 152,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3009.75,
+      "bbox_variance": 24061.79139072848,
+      "avg_displacement": 0.9845193037806639,
+      "max_displacement": 2.23606797749979,
+      "motion_category": "static",
+      "trajectory_length": 148.66241487088024,
+      "class": "pedestrian"
+    },
+    "73": {
+      "lifetime_frames": [
+        112,
+        232
+      ],
+      "duration": 121,
+      "num_detections": 121,
+      "avg_visibility": 0.033404235950413225,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 112,
+          "end_frame": 232,
+          "duration": 121,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1185.3057851239669,
+      "bbox_variance": 191.23071625344346,
+      "avg_displacement": 0.21622050927913403,
+      "max_displacement": 1.4142135623730951,
+      "motion_category": "static",
+      "trajectory_length": 25.946461113496085,
+      "class": "pedestrian"
+    },
+    "74": {
+      "lifetime_frames": [
+        533,
+        600
+      ],
+      "duration": 68,
+      "num_detections": 68,
+      "avg_visibility": 0.5632445588235295,
+      "min_visibility": 0.43376,
+      "has_occlusion": false,
+      "occlusion_events": [],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1509.3529411764705,
+      "bbox_variance": 5048.052677787534,
+      "avg_displacement": 0.830185335744365,
+      "max_displacement": 1.118033988749895,
+      "motion_category": "static",
+      "trajectory_length": 55.62241749487246,
+      "class": "pedestrian"
+    },
+    "76": {
+      "lifetime_frames": [
+        311,
+        465
+      ],
+      "duration": 155,
+      "num_detections": 155,
+      "avg_visibility": 0.000340683870967742,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 311,
+          "end_frame": 465,
+          "duration": 155,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3591.2,
+      "bbox_variance": 14637.966233766232,
+      "avg_displacement": 0.08251368039731524,
+      "max_displacement": 1.5,
+      "motion_category": "static",
+      "trajectory_length": 12.707106781186548,
+      "class": "pedestrian"
+    },
+    "77": {
+      "lifetime_frames": [
+        471,
+        482
+      ],
+      "duration": 12,
+      "num_detections": 12,
+      "avg_visibility": 0.05633633333333333,
+      "min_visibility": 0.014301,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 471,
+          "end_frame": 482,
+          "duration": 12,
+          "min_visibility": 0.014301
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3441.6666666666665,
+      "bbox_variance": 4469.69696969697,
+      "avg_displacement": 1.2308039650210711,
+      "max_displacement": 2.23606797749979,
+      "motion_category": "static",
+      "trajectory_length": 13.538843615231784,
+      "class": "pedestrian"
+    },
+    "78": {
+      "lifetime_frames": [
+        491,
+        515
+      ],
+      "duration": 25,
+      "num_detections": 25,
+      "avg_visibility": 0.013732237999999999,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 491,
+          "end_frame": 515,
+          "duration": 25,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3313.2,
+      "bbox_variance": 5611.999999999999,
+      "avg_displacement": 1.29271983883243,
+      "max_displacement": 3.0,
+      "motion_category": "static",
+      "trajectory_length": 31.02527613197832,
+      "class": "pedestrian"
+    },
+    "79": {
+      "lifetime_frames": [
+        530,
+        581
+      ],
+      "duration": 52,
+      "num_detections": 52,
+      "avg_visibility": 0.10697594615384617,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 530,
+          "end_frame": 545,
+          "duration": 16,
+          "min_visibility": 0.0
+        },
+        {
+          "start_frame": 555,
+          "end_frame": 581,
+          "duration": 27,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 2844.4423076923076,
+      "bbox_variance": 30245.50641025641,
+      "avg_displacement": 0.42391025807769805,
+      "max_displacement": 5.522680508593631,
+      "motion_category": "static",
+      "trajectory_length": 21.6194231619626,
+      "class": "pedestrian"
+    },
+    "80": {
+      "lifetime_frames": [
+        591,
+        594
+      ],
+      "duration": 4,
+      "num_detections": 4,
+      "avg_visibility": 0.0,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 591,
+          "end_frame": 594,
+          "duration": 4,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3079.75,
+      "bbox_variance": 2352.25,
+      "avg_displacement": 0.16666666666666666,
+      "max_displacement": 0.5,
+      "motion_category": "static",
+      "trajectory_length": 0.5,
+      "class": "pedestrian"
+    },
+    "81": {
+      "lifetime_frames": [
+        600,
+        600
+      ],
+      "duration": 1,
+      "num_detections": 1,
+      "avg_visibility": 0.0,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 600,
+          "end_frame": 600,
+          "duration": 1,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 1656.0,
+      "bbox_variance": NaN,
+      "avg_displacement": 0.0,
+      "max_displacement": 0.0,
+      "motion_category": "static",
+      "trajectory_length": 0.0,
+      "class": "pedestrian"
+    },
+    "82": {
+      "lifetime_frames": [
+        600,
+        600
+      ],
+      "duration": 1,
+      "num_detections": 1,
+      "avg_visibility": 0.0,
+      "min_visibility": 0.0,
+      "has_occlusion": true,
+      "occlusion_events": [
+        {
+          "start_frame": 600,
+          "end_frame": 600,
+          "duration": 1,
+          "min_visibility": 0.0
+        }
+      ],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 903.0,
+      "bbox_variance": NaN,
+      "avg_displacement": 0.0,
+      "max_displacement": 0.0,
+      "motion_category": "static",
+      "trajectory_length": 0.0,
+      "class": "pedestrian"
+    },
+    "83": {
+      "lifetime_frames": [
+        600,
+        600
+      ],
+      "duration": 1,
+      "num_detections": 1,
+      "avg_visibility": 0.5,
+      "min_visibility": 0.5,
+      "has_occlusion": false,
+      "occlusion_events": [],
+      "entry_point": "center",
+      "exit_point": "center",
+      "avg_bbox_area": 3168.0,
+      "bbox_variance": NaN,
+      "avg_displacement": 0.0,
+      "max_displacement": 0.0,
+      "motion_category": "static",
+      "trajectory_length": 0.0,
+      "class": "pedestrian"
+    }
+  },
+  "frame_analysis": {
+    "1": {
+      "num_tracks": 22,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5270409090909092,
+      "avg_bbox_area": 12236.227272727272
+    },
+    "2": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5265602727272726,
+      "avg_bbox_area": 12279.40909090909
+    },
+    "3": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.525691909090909,
+      "avg_bbox_area": 12340.954545454546
+    },
+    "4": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5252210454545453,
+      "avg_bbox_area": 12378.636363636364
+    },
+    "5": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5244263636363636,
+      "avg_bbox_area": 12434.5
+    },
+    "6": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5242453636363636,
+      "avg_bbox_area": 12390.5
+    },
+    "7": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5258901818181818,
+      "avg_bbox_area": 12141.045454545454
+    },
+    "8": {
+      "num_tracks": 22,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5404643181818182,
+      "avg_bbox_area": 11865.136363636364
+    },
+    "9": {
+      "num_tracks": 22,
+      "num_occluded": 5,
+      "density": "crowded",
+      "avg_visibility": 0.5520824999999999,
+      "avg_bbox_area": 11555.227272727272
+    },
+    "10": {
+      "num_tracks": 22,
+      "num_occluded": 5,
+      "density": "crowded",
+      "avg_visibility": 0.5640174545454545,
+      "avg_bbox_area": 11267.0
+    },
+    "11": {
+      "num_tracks": 23,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5445272739130436,
+      "avg_bbox_area": 10992.695652173914
+    },
+    "12": {
+      "num_tracks": 23,
+      "num_occluded": 6,
+      "density": "crowded",
+      "avg_visibility": 0.5488380347826087,
+      "avg_bbox_area": 10932.478260869566
+    },
+    "13": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5509942086956522,
+      "avg_bbox_area": 11221.304347826086
+    },
+    "14": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.552992847826087,
+      "avg_bbox_area": 11545.347826086956
+    },
+    "15": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.548284795652174,
+      "avg_bbox_area": 12190.260869565218
+    },
+    "16": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5420635130434783,
+      "avg_bbox_area": 12896.391304347826
+    },
+    "17": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5334990217391306,
+      "avg_bbox_area": 13400.739130434782
+    },
+    "18": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5258067608695652,
+      "avg_bbox_area": 13858.608695652174
+    },
+    "19": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5241787304347827,
+      "avg_bbox_area": 13993.130434782608
+    },
+    "20": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5224623565217391,
+      "avg_bbox_area": 14164.869565217392
+    },
+    "21": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5262519217391304,
+      "avg_bbox_area": 14215.95652173913
+    },
+    "22": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.525736304347826,
+      "avg_bbox_area": 14268.826086956522
+    },
+    "23": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5329933913043478,
+      "avg_bbox_area": 14111.782608695652
+    },
+    "24": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5408008695652174,
+      "avg_bbox_area": 14046.521739130434
+    },
+    "25": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5454979130434783,
+      "avg_bbox_area": 13980.08695652174
+    },
+    "26": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5442753043478261,
+      "avg_bbox_area": 13737.260869565218
+    },
+    "27": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5455022608695652,
+      "avg_bbox_area": 13700.434782608696
+    },
+    "28": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5450900869565217,
+      "avg_bbox_area": 13677.08695652174
+    },
+    "29": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5523105217391303,
+      "avg_bbox_area": 13634.826086956522
+    },
+    "30": {
+      "num_tracks": 23,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5679800869565217,
+      "avg_bbox_area": 13622.434782608696
+    },
+    "31": {
+      "num_tracks": 24,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5468863333333334,
+      "avg_bbox_area": 13172.875
+    },
+    "32": {
+      "num_tracks": 24,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5467198333333333,
+      "avg_bbox_area": 13500.458333333334
+    },
+    "33": {
+      "num_tracks": 24,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.54395,
+      "avg_bbox_area": 13894.291666666666
+    },
+    "34": {
+      "num_tracks": 24,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.5416724999999999,
+      "avg_bbox_area": 14283.791666666666
+    },
+    "35": {
+      "num_tracks": 24,
+      "num_occluded": 7,
+      "density": "crowded",
+      "avg_visibility": 0.538468875,
+      "avg_bbox_area": 14691.583333333334
+    },
+    "36": {
+      "num_tracks": 24,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5341228333333333,
+      "avg_bbox_area": 15071.958333333334
+    },
+    "37": {
+      "num_tracks": 24,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5318297083333333,
+      "avg_bbox_area": 15419.541666666666
+    },
+    "38": {
+      "num_tracks": 24,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5265220833333334,
+      "avg_bbox_area": 15577.958333333334
+    },
+    "39": {
+      "num_tracks": 24,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.528375,
+      "avg_bbox_area": 15469.0
+    },
+    "40": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5367652173913043,
+      "avg_bbox_area": 15805.739130434782
+    },
+    "41": {
+      "num_tracks": 24,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5129767916666667,
+      "avg_bbox_area": 15182.125
+    },
+    "42": {
+      "num_tracks": 24,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5124714583333333,
+      "avg_bbox_area": 15113.458333333334
+    },
+    "43": {
+      "num_tracks": 24,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5109915833333333,
+      "avg_bbox_area": 15059.125
+    },
+    "44": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.53179,
+      "avg_bbox_area": 12317.695652173914
+    },
+    "45": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5305160869565217,
+      "avg_bbox_area": 12133.08695652174
+    },
+    "46": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5301147391304347,
+      "avg_bbox_area": 11942.739130434782
+    },
+    "47": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5292972608695653,
+      "avg_bbox_area": 11761.826086956522
+    },
+    "48": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.526221756521739,
+      "avg_bbox_area": 11610.95652173913
+    },
+    "49": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5250411347826087,
+      "avg_bbox_area": 11383.173913043478
+    },
+    "50": {
+      "num_tracks": 23,
+      "num_occluded": 8,
+      "density": "crowded",
+      "avg_visibility": 0.5246870826086957,
+      "avg_bbox_area": 11220.260869565218
+    },
+    "51": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.483906584,
+      "avg_bbox_area": 10264.32
+    },
+    "52": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.47649378000000003,
+      "avg_bbox_area": 10096.48
+    },
+    "53": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.47351470560000003,
+      "avg_bbox_area": 10248.36
+    },
+    "54": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.47106611600000003,
+      "avg_bbox_area": 10397.64
+    },
+    "55": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.467513316,
+      "avg_bbox_area": 10518.16
+    },
+    "56": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.464294516,
+      "avg_bbox_area": 10666.68
+    },
+    "57": {
+      "num_tracks": 24,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.46253954166666666,
+      "avg_bbox_area": 7029.791666666667
+    },
+    "58": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.441497416,
+      "avg_bbox_area": 7307.16
+    },
+    "59": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.437313256,
+      "avg_bbox_area": 7340.08
+    },
+    "60": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.4352799359999999,
+      "avg_bbox_area": 7351.08
+    },
+    "61": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.43202637600000005,
+      "avg_bbox_area": 7378.24
+    },
+    "62": {
+      "num_tracks": 25,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.42935131999999987,
+      "avg_bbox_area": 7384.08
+    },
+    "63": {
+      "num_tracks": 25,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.42841505599999996,
+      "avg_bbox_area": 7416.72
+    },
+    "64": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.41976689999999994,
+      "avg_bbox_area": 7263.192307692308
+    },
+    "65": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4224136307692307,
+      "avg_bbox_area": 7315.0
+    },
+    "66": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.4282201307692307,
+      "avg_bbox_area": 7358.384615384615
+    },
+    "67": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.43104801538461535,
+      "avg_bbox_area": 7388.192307692308
+    },
+    "68": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.43329097692307694,
+      "avg_bbox_area": 7405.192307692308
+    },
+    "69": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.4365450153846154,
+      "avg_bbox_area": 7410.884615384615
+    },
+    "70": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.43637739999999997,
+      "avg_bbox_area": 7438.884615384615
+    },
+    "71": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.4396541307692307,
+      "avg_bbox_area": 7440.192307692308
+    },
+    "72": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.4393265153846153,
+      "avg_bbox_area": 7434.7692307692305
+    },
+    "73": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.4400047038461538,
+      "avg_bbox_area": 7421.653846153846
+    },
+    "74": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.44275584999999995,
+      "avg_bbox_area": 7389.423076923077
+    },
+    "75": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.44220223461538466,
+      "avg_bbox_area": 7376.653846153846
+    },
+    "76": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.4451302269230769,
+      "avg_bbox_area": 7342.346153846154
+    },
+    "77": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.44886619230769226,
+      "avg_bbox_area": 7325.961538461538
+    },
+    "78": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.4481303461538462,
+      "avg_bbox_area": 7339.192307692308
+    },
+    "79": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.4500986538461538,
+      "avg_bbox_area": 7367.846153846154
+    },
+    "80": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.45157976923076915,
+      "avg_bbox_area": 7367.076923076923
+    },
+    "81": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.45947176,
+      "avg_bbox_area": 7448.16
+    },
+    "82": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45476524000000007,
+      "avg_bbox_area": 7479.68
+    },
+    "83": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45318164000000005,
+      "avg_bbox_area": 7501.8
+    },
+    "84": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45290015999999994,
+      "avg_bbox_area": 7535.6
+    },
+    "85": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45404448,
+      "avg_bbox_area": 7549.4
+    },
+    "86": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45740827999999994,
+      "avg_bbox_area": 7571.0
+    },
+    "87": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45724096000000003,
+      "avg_bbox_area": 7581.72
+    },
+    "88": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45928848,
+      "avg_bbox_area": 7583.88
+    },
+    "89": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45850445600000006,
+      "avg_bbox_area": 7629.24
+    },
+    "90": {
+      "num_tracks": 25,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.45781821200000006,
+      "avg_bbox_area": 7616.04
+    },
+    "91": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.44153665769230777,
+      "avg_bbox_area": 7360.307692307692
+    },
+    "92": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.4421221153846154,
+      "avg_bbox_area": 7354.0
+    },
+    "93": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.44010442307692305,
+      "avg_bbox_area": 7386.615384615385
+    },
+    "94": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.43606999999999996,
+      "avg_bbox_area": 7414.153846153846
+    },
+    "95": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.43644492307692306,
+      "avg_bbox_area": 7481.653846153846
+    },
+    "96": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.43554880769230764,
+      "avg_bbox_area": 7547.5
+    },
+    "97": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.43685065384615385,
+      "avg_bbox_area": 7616.0
+    },
+    "98": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.43523492307692313,
+      "avg_bbox_area": 7650.192307692308
+    },
+    "99": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4328868076923077,
+      "avg_bbox_area": 7694.615384615385
+    },
+    "100": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.43070719230769233,
+      "avg_bbox_area": 7738.192307692308
+    },
+    "101": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4472376153846154,
+      "avg_bbox_area": 7782.615384615385
+    },
+    "102": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4404357307692308,
+      "avg_bbox_area": 7809.2692307692305
+    },
+    "103": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.43809357692307693,
+      "avg_bbox_area": 7828.2692307692305
+    },
+    "104": {
+      "num_tracks": 26,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4404603846153846,
+      "avg_bbox_area": 7840.076923076923
+    },
+    "105": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.43795430769230764,
+      "avg_bbox_area": 7875.153846153846
+    },
+    "106": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.43850353846153844,
+      "avg_bbox_area": 7894.615384615385
+    },
+    "107": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.43672180769230773,
+      "avg_bbox_area": 7896.807692307692
+    },
+    "108": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4344381538461538,
+      "avg_bbox_area": 7950.038461538462
+    },
+    "109": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4350493076923077,
+      "avg_bbox_area": 7968.615384615385
+    },
+    "110": {
+      "num_tracks": 26,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4336454615384616,
+      "avg_bbox_area": 8026.2307692307695
+    },
+    "111": {
+      "num_tracks": 27,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.41825462962962956,
+      "avg_bbox_area": 7831.185185185185
+    },
+    "112": {
+      "num_tracks": 28,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4051068928571428,
+      "avg_bbox_area": 7597.0
+    },
+    "113": {
+      "num_tracks": 28,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.40790503571428566,
+      "avg_bbox_area": 7584.0
+    },
+    "114": {
+      "num_tracks": 28,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4118422835714286,
+      "avg_bbox_area": 7599.0
+    },
+    "115": {
+      "num_tracks": 28,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.41252637142857146,
+      "avg_bbox_area": 7664.928571428572
+    },
+    "116": {
+      "num_tracks": 28,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4133315607142857,
+      "avg_bbox_area": 7712.535714285715
+    },
+    "117": {
+      "num_tracks": 28,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.41450984178571426,
+      "avg_bbox_area": 7745.035714285715
+    },
+    "118": {
+      "num_tracks": 28,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4145936928571428,
+      "avg_bbox_area": 7824.678571428572
+    },
+    "119": {
+      "num_tracks": 28,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4173496982142857,
+      "avg_bbox_area": 7848.642857142857
+    },
+    "120": {
+      "num_tracks": 28,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.42087073928571433,
+      "avg_bbox_area": 7888.392857142857
+    },
+    "121": {
+      "num_tracks": 28,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4245443107142856,
+      "avg_bbox_area": 7967.928571428572
+    },
+    "122": {
+      "num_tracks": 29,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.40835708620689654,
+      "avg_bbox_area": 7817.137931034483
+    },
+    "123": {
+      "num_tracks": 29,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4109994827586206,
+      "avg_bbox_area": 7855.103448275862
+    },
+    "124": {
+      "num_tracks": 29,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4153117931034482,
+      "avg_bbox_area": 7908.3448275862065
+    },
+    "125": {
+      "num_tracks": 29,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4160991896551724,
+      "avg_bbox_area": 7921.6551724137935
+    },
+    "126": {
+      "num_tracks": 29,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.42093451724137937,
+      "avg_bbox_area": 7961.413793103448
+    },
+    "127": {
+      "num_tracks": 29,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4236044827586206,
+      "avg_bbox_area": 7981.551724137931
+    },
+    "128": {
+      "num_tracks": 29,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.42531567241379303,
+      "avg_bbox_area": 7997.068965517241
+    },
+    "129": {
+      "num_tracks": 29,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4279845413793103,
+      "avg_bbox_area": 8015.793103448276
+    },
+    "130": {
+      "num_tracks": 29,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4289149413793104,
+      "avg_bbox_area": 8044.620689655172
+    },
+    "131": {
+      "num_tracks": 29,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4334328275862069,
+      "avg_bbox_area": 8106.0
+    },
+    "132": {
+      "num_tracks": 29,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4379713103448276,
+      "avg_bbox_area": 8125.103448275862
+    },
+    "133": {
+      "num_tracks": 29,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4417154827586207,
+      "avg_bbox_area": 8163.931034482759
+    },
+    "134": {
+      "num_tracks": 29,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4452013448275862,
+      "avg_bbox_area": 8214.48275862069
+    },
+    "135": {
+      "num_tracks": 29,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4497645517241379,
+      "avg_bbox_area": 8255.48275862069
+    },
+    "136": {
+      "num_tracks": 29,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4556193793103448,
+      "avg_bbox_area": 8343.137931034482
+    },
+    "137": {
+      "num_tracks": 29,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4566535896551724,
+      "avg_bbox_area": 8389.551724137931
+    },
+    "138": {
+      "num_tracks": 29,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.45674103448275855,
+      "avg_bbox_area": 8444.689655172413
+    },
+    "139": {
+      "num_tracks": 29,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.45946079310344834,
+      "avg_bbox_area": 8537.724137931034
+    },
+    "140": {
+      "num_tracks": 30,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.44616576666666674,
+      "avg_bbox_area": 8382.6
+    },
+    "141": {
+      "num_tracks": 30,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.44892316666666665,
+      "avg_bbox_area": 8436.566666666668
+    },
+    "142": {
+      "num_tracks": 30,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.44787253333333327,
+      "avg_bbox_area": 8514.9
+    },
+    "143": {
+      "num_tracks": 30,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.44688046666666664,
+      "avg_bbox_area": 8625.833333333334
+    },
+    "144": {
+      "num_tracks": 30,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4449315666666667,
+      "avg_bbox_area": 8743.233333333334
+    },
+    "145": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4426627166666667,
+      "avg_bbox_area": 8826.466666666667
+    },
+    "146": {
+      "num_tracks": 31,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.42504712903225805,
+      "avg_bbox_area": 8664.0
+    },
+    "147": {
+      "num_tracks": 31,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.42269458064516136,
+      "avg_bbox_area": 8698.258064516129
+    },
+    "148": {
+      "num_tracks": 31,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.42053961290322583,
+      "avg_bbox_area": 8739.129032258064
+    },
+    "149": {
+      "num_tracks": 31,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.42025245161290326,
+      "avg_bbox_area": 8735.258064516129
+    },
+    "150": {
+      "num_tracks": 31,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4183478387096774,
+      "avg_bbox_area": 8712.41935483871
+    },
+    "151": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4332925333333334,
+      "avg_bbox_area": 8910.366666666667
+    },
+    "152": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43313663333333335,
+      "avg_bbox_area": 8867.666666666666
+    },
+    "153": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43066777,
+      "avg_bbox_area": 8890.333333333334
+    },
+    "154": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.42956477,
+      "avg_bbox_area": 8882.4
+    },
+    "155": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.42757237000000003,
+      "avg_bbox_area": 8885.2
+    },
+    "156": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4294971333333333,
+      "avg_bbox_area": 8854.466666666667
+    },
+    "157": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4262226666666667,
+      "avg_bbox_area": 8928.5
+    },
+    "158": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.42499050000000005,
+      "avg_bbox_area": 8990.0
+    },
+    "159": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4195253666666667,
+      "avg_bbox_area": 9051.766666666666
+    },
+    "160": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4175370666666666,
+      "avg_bbox_area": 9102.733333333334
+    },
+    "161": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.40135093333333327,
+      "avg_bbox_area": 9132.033333333333
+    },
+    "162": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.39696149666666664,
+      "avg_bbox_area": 9314.833333333334
+    },
+    "163": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.39282086666666666,
+      "avg_bbox_area": 9456.166666666666
+    },
+    "164": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.39048816666666664,
+      "avg_bbox_area": 9615.166666666666
+    },
+    "165": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3853565666666666,
+      "avg_bbox_area": 9748.433333333332
+    },
+    "166": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.382536,
+      "avg_bbox_area": 9893.466666666667
+    },
+    "167": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3791234333333333,
+      "avg_bbox_area": 10050.566666666668
+    },
+    "168": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3747870666666666,
+      "avg_bbox_area": 10213.3
+    },
+    "169": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3716401333333333,
+      "avg_bbox_area": 10356.366666666667
+    },
+    "170": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3651502666666666,
+      "avg_bbox_area": 10501.466666666667
+    },
+    "171": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3701522,
+      "avg_bbox_area": 10628.2
+    },
+    "172": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3684594333333333,
+      "avg_bbox_area": 10592.5
+    },
+    "173": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.36498852,
+      "avg_bbox_area": 10593.466666666667
+    },
+    "174": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.36424466666666677,
+      "avg_bbox_area": 10618.966666666667
+    },
+    "175": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.3681302000000001,
+      "avg_bbox_area": 10667.333333333334
+    },
+    "176": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3742464,
+      "avg_bbox_area": 10662.433333333332
+    },
+    "177": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.37341709,
+      "avg_bbox_area": 10635.633333333333
+    },
+    "178": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.37095336666666673,
+      "avg_bbox_area": 10604.0
+    },
+    "179": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.37386800000000003,
+      "avg_bbox_area": 10542.833333333334
+    },
+    "180": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.3727590333333334,
+      "avg_bbox_area": 10484.3
+    },
+    "181": {
+      "num_tracks": 30,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.37196623333333334,
+      "avg_bbox_area": 10468.5
+    },
+    "182": {
+      "num_tracks": 30,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.37210099999999996,
+      "avg_bbox_area": 10429.366666666667
+    },
+    "183": {
+      "num_tracks": 30,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.37009582466666663,
+      "avg_bbox_area": 10380.733333333334
+    },
+    "184": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.38244715333333335,
+      "avg_bbox_area": 10322.1
+    },
+    "185": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.39348946333333334,
+      "avg_bbox_area": 10270.233333333334
+    },
+    "186": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4037449066666666,
+      "avg_bbox_area": 10196.266666666666
+    },
+    "187": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4142124566666666,
+      "avg_bbox_area": 10110.6
+    },
+    "188": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4246201033333332,
+      "avg_bbox_area": 10095.466666666667
+    },
+    "189": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4275635333333333,
+      "avg_bbox_area": 10112.333333333334
+    },
+    "190": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.43131311666666666,
+      "avg_bbox_area": 10082.666666666666
+    },
+    "191": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4317147866666667,
+      "avg_bbox_area": 10064.033333333333
+    },
+    "192": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.43100129000000004,
+      "avg_bbox_area": 10132.033333333333
+    },
+    "193": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.42684622000000005,
+      "avg_bbox_area": 10297.166666666666
+    },
+    "194": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.42121153533333344,
+      "avg_bbox_area": 10446.666666666666
+    },
+    "195": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4203995833333334,
+      "avg_bbox_area": 10568.533333333333
+    },
+    "196": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4150823333333334,
+      "avg_bbox_area": 10791.933333333332
+    },
+    "197": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.40969254666666666,
+      "avg_bbox_area": 10918.333333333334
+    },
+    "198": {
+      "num_tracks": 30,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.40484424,
+      "avg_bbox_area": 11054.733333333334
+    },
+    "199": {
+      "num_tracks": 31,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.38737599032258063,
+      "avg_bbox_area": 10853.032258064517
+    },
+    "200": {
+      "num_tracks": 31,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.38541311935483874,
+      "avg_bbox_area": 10873.870967741936
+    },
+    "201": {
+      "num_tracks": 31,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3863344935483871,
+      "avg_bbox_area": 10873.677419354839
+    },
+    "202": {
+      "num_tracks": 31,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3871250709677419,
+      "avg_bbox_area": 10826.870967741936
+    },
+    "203": {
+      "num_tracks": 31,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.38926687741935484,
+      "avg_bbox_area": 10766.645161290322
+    },
+    "204": {
+      "num_tracks": 31,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.3921596838709677,
+      "avg_bbox_area": 10707.90322580645
+    },
+    "205": {
+      "num_tracks": 31,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.3960370516129033,
+      "avg_bbox_area": 10650.677419354839
+    },
+    "206": {
+      "num_tracks": 31,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.3938152580645161,
+      "avg_bbox_area": 10725.612903225807
+    },
+    "207": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4018759,
+      "avg_bbox_area": 11092.266666666666
+    },
+    "208": {
+      "num_tracks": 31,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.3850482258064516,
+      "avg_bbox_area": 10854.935483870968
+    },
+    "209": {
+      "num_tracks": 32,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.37204234375,
+      "avg_bbox_area": 10601.6875
+    },
+    "210": {
+      "num_tracks": 32,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.37153378125000003,
+      "avg_bbox_area": 10643.9375
+    },
+    "211": {
+      "num_tracks": 33,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.36389908181818176,
+      "avg_bbox_area": 10424.878787878788
+    },
+    "212": {
+      "num_tracks": 33,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.3686073060606061,
+      "avg_bbox_area": 10608.212121212122
+    },
+    "213": {
+      "num_tracks": 33,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.36837582424242427,
+      "avg_bbox_area": 10746.757575757576
+    },
+    "214": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.37021384242424243,
+      "avg_bbox_area": 10886.484848484848
+    },
+    "215": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.37280606969696967,
+      "avg_bbox_area": 11027.818181818182
+    },
+    "216": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.36917198181818184,
+      "avg_bbox_area": 11179.939393939394
+    },
+    "217": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.3663523696969697,
+      "avg_bbox_area": 11291.333333333334
+    },
+    "218": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.3650144878787879,
+      "avg_bbox_area": 11418.363636363636
+    },
+    "219": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.35986155757575755,
+      "avg_bbox_area": 11543.454545454546
+    },
+    "220": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.3601162121212121,
+      "avg_bbox_area": 11604.787878787878
+    },
+    "221": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.36670766666666665,
+      "avg_bbox_area": 11596.575757575758
+    },
+    "222": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.3736851818181818,
+      "avg_bbox_area": 11651.39393939394
+    },
+    "223": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.3818792727272727,
+      "avg_bbox_area": 11693.030303030304
+    },
+    "224": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.3912418181818182,
+      "avg_bbox_area": 11703.454545454546
+    },
+    "225": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.39874251515151515,
+      "avg_bbox_area": 11807.939393939394
+    },
+    "226": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4039779090909091,
+      "avg_bbox_area": 11967.09090909091
+    },
+    "227": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.40932663636363636,
+      "avg_bbox_area": 12120.151515151516
+    },
+    "228": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.414609196969697,
+      "avg_bbox_area": 12294.848484848484
+    },
+    "229": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4128362575757576,
+      "avg_bbox_area": 12555.545454545454
+    },
+    "230": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.4110048333333334,
+      "avg_bbox_area": 12825.575757575758
+    },
+    "231": {
+      "num_tracks": 34,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.3991261764705882,
+      "avg_bbox_area": 12734.35294117647
+    },
+    "232": {
+      "num_tracks": 34,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.40191961764705875,
+      "avg_bbox_area": 12768.029411764706
+    },
+    "233": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4178444545454546,
+      "avg_bbox_area": 13181.060606060606
+    },
+    "234": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.422572303030303,
+      "avg_bbox_area": 13153.030303030304
+    },
+    "235": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.43074066666666666,
+      "avg_bbox_area": 13161.181818181818
+    },
+    "236": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4349030303030303,
+      "avg_bbox_area": 13214.666666666666
+    },
+    "237": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.44238354545454545,
+      "avg_bbox_area": 13264.545454545454
+    },
+    "238": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4487571212121212,
+      "avg_bbox_area": 13175.212121212122
+    },
+    "239": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4518427878787879,
+      "avg_bbox_area": 13138.121212121212
+    },
+    "240": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45464575757575754,
+      "avg_bbox_area": 13046.636363636364
+    },
+    "241": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45808275757575756,
+      "avg_bbox_area": 12898.30303030303
+    },
+    "242": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45875515151515156,
+      "avg_bbox_area": 12726.212121212122
+    },
+    "243": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.45990454545454545,
+      "avg_bbox_area": 12540.09090909091
+    },
+    "244": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.459799393939394,
+      "avg_bbox_area": 12427.60606060606
+    },
+    "245": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.460936696969697,
+      "avg_bbox_area": 12330.787878787878
+    },
+    "246": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.45644330303030295,
+      "avg_bbox_area": 12209.0
+    },
+    "247": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4510539090909091,
+      "avg_bbox_area": 12157.272727272728
+    },
+    "248": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.44915266666666664,
+      "avg_bbox_area": 12291.39393939394
+    },
+    "249": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4414194360606061,
+      "avg_bbox_area": 12543.69696969697
+    },
+    "250": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4283786879411765,
+      "avg_bbox_area": 14753.558823529413
+    },
+    "251": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4330052117647059,
+      "avg_bbox_area": 14792.117647058823
+    },
+    "252": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43159218235294117,
+      "avg_bbox_area": 14849.088235294117
+    },
+    "253": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.42942339999999996,
+      "avg_bbox_area": 14915.676470588236
+    },
+    "254": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43120475294117644,
+      "avg_bbox_area": 14954.5
+    },
+    "255": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45393035294117645,
+      "avg_bbox_area": 15025.735294117647
+    },
+    "256": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4608005588235294,
+      "avg_bbox_area": 15203.735294117647
+    },
+    "257": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46169637352941173,
+      "avg_bbox_area": 15271.29411764706
+    },
+    "258": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46411799117647057,
+      "avg_bbox_area": 15348.29411764706
+    },
+    "259": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46506953823529407,
+      "avg_bbox_area": 15435.323529411764
+    },
+    "260": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46503024117647057,
+      "avg_bbox_area": 15404.764705882353
+    },
+    "261": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46718833529411763,
+      "avg_bbox_area": 15293.0
+    },
+    "262": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.475539494117647,
+      "avg_bbox_area": 15152.35294117647
+    },
+    "263": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4847857088235295,
+      "avg_bbox_area": 14793.64705882353
+    },
+    "264": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.49277494117647047,
+      "avg_bbox_area": 14597.558823529413
+    },
+    "265": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.5004292647058822,
+      "avg_bbox_area": 14367.64705882353
+    },
+    "266": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5048502941176471,
+      "avg_bbox_area": 14178.64705882353
+    },
+    "267": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5054645294117648,
+      "avg_bbox_area": 14262.5
+    },
+    "268": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.48097600000000007,
+      "avg_bbox_area": 14342.029411764706
+    },
+    "269": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4823301764705882,
+      "avg_bbox_area": 14429.20588235294
+    },
+    "270": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4818038235294117,
+      "avg_bbox_area": 14456.911764705883
+    },
+    "271": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.47998758823529414,
+      "avg_bbox_area": 14540.235294117647
+    },
+    "272": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4811822352941177,
+      "avg_bbox_area": 14643.470588235294
+    },
+    "273": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46917032352941174,
+      "avg_bbox_area": 14602.911764705883
+    },
+    "274": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46725935294117643,
+      "avg_bbox_area": 14818.382352941177
+    },
+    "275": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.46599999999999997,
+      "avg_bbox_area": 14974.558823529413
+    },
+    "276": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.47164,
+      "avg_bbox_area": 15157.088235294117
+    },
+    "277": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.47117455882352943,
+      "avg_bbox_area": 15141.029411764706
+    },
+    "278": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4687663823529412,
+      "avg_bbox_area": 15162.0
+    },
+    "279": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46373255882352943,
+      "avg_bbox_area": 15168.970588235294
+    },
+    "280": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45799697058823524,
+      "avg_bbox_area": 15085.323529411764
+    },
+    "281": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46630093939393935,
+      "avg_bbox_area": 15452.212121212122
+    },
+    "282": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46743190909090915,
+      "avg_bbox_area": 15149.363636363636
+    },
+    "283": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4654170606060606,
+      "avg_bbox_area": 14861.454545454546
+    },
+    "284": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4520015151515151,
+      "avg_bbox_area": 14924.0
+    },
+    "285": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4487642969696969,
+      "avg_bbox_area": 14996.878787878788
+    },
+    "286": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4489339787878788,
+      "avg_bbox_area": 15201.818181818182
+    },
+    "287": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4441288484848485,
+      "avg_bbox_area": 15408.515151515152
+    },
+    "288": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.44513569696969696,
+      "avg_bbox_area": 15847.939393939394
+    },
+    "289": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.448768303030303,
+      "avg_bbox_area": 16212.787878787878
+    },
+    "290": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.45060951515151515,
+      "avg_bbox_area": 16670.666666666668
+    },
+    "291": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4614017575757576,
+      "avg_bbox_area": 17158.969696969696
+    },
+    "292": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4482682727272727,
+      "avg_bbox_area": 17332.666666666668
+    },
+    "293": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.44486227272727275,
+      "avg_bbox_area": 17350.727272727272
+    },
+    "294": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.44232757575757575,
+      "avg_bbox_area": 17371.454545454544
+    },
+    "295": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.44162378787878787,
+      "avg_bbox_area": 17249.272727272728
+    },
+    "296": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43939233333333333,
+      "avg_bbox_area": 17047.878787878788
+    },
+    "297": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43557775757575756,
+      "avg_bbox_area": 16822.575757575756
+    },
+    "298": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.43398675757575755,
+      "avg_bbox_area": 16547.848484848484
+    },
+    "299": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4337266060606061,
+      "avg_bbox_area": 16060.69696969697
+    },
+    "300": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43541551515151516,
+      "avg_bbox_area": 15603.363636363636
+    },
+    "301": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4538348484848485,
+      "avg_bbox_area": 15166.272727272728
+    },
+    "302": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4427759454545455,
+      "avg_bbox_area": 15127.848484848484
+    },
+    "303": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4394739932941177,
+      "avg_bbox_area": 18865.470588235294
+    },
+    "304": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4382398689705882,
+      "avg_bbox_area": 18698.382352941175
+    },
+    "305": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43734802314705884,
+      "avg_bbox_area": 18577.676470588234
+    },
+    "306": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4387460217352941,
+      "avg_bbox_area": 18934.79411764706
+    },
+    "307": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4537120008787878,
+      "avg_bbox_area": 19771.848484848484
+    },
+    "308": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4555607272727273,
+      "avg_bbox_area": 20188.757575757576
+    },
+    "309": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4582910606060606,
+      "avg_bbox_area": 20527.515151515152
+    },
+    "310": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4659539393939394,
+      "avg_bbox_area": 20761.60606060606
+    },
+    "311": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4560964117647059,
+      "avg_bbox_area": 20503.5
+    },
+    "312": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46497667647058827,
+      "avg_bbox_area": 20401.470588235294
+    },
+    "313": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4648395588235294,
+      "avg_bbox_area": 20624.117647058825
+    },
+    "314": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4661329117647059,
+      "avg_bbox_area": 20812.382352941175
+    },
+    "315": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.46543408823529414,
+      "avg_bbox_area": 20739.764705882353
+    },
+    "316": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4730358181818182,
+      "avg_bbox_area": 21200.21212121212
+    },
+    "317": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.47227430303030304,
+      "avg_bbox_area": 21355.303030303032
+    },
+    "318": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4717164242424242,
+      "avg_bbox_area": 21480.060606060608
+    },
+    "319": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4660444545454546,
+      "avg_bbox_area": 21646.090909090908
+    },
+    "320": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4592264545454546,
+      "avg_bbox_area": 21579.939393939392
+    },
+    "321": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45522178787878786,
+      "avg_bbox_area": 21461.78787878788
+    },
+    "322": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4548072424242424,
+      "avg_bbox_area": 21407.636363636364
+    },
+    "323": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.45708075757575756,
+      "avg_bbox_area": 17798.0
+    },
+    "324": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.45405210303030297,
+      "avg_bbox_area": 17918.757575757576
+    },
+    "325": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.45515532727272723,
+      "avg_bbox_area": 17997.21212121212
+    },
+    "326": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.45293936363636367,
+      "avg_bbox_area": 17837.545454545456
+    },
+    "327": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4504984545454545,
+      "avg_bbox_area": 17644.242424242424
+    },
+    "328": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.44657969696969696,
+      "avg_bbox_area": 17453.424242424244
+    },
+    "329": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.44257942424242425,
+      "avg_bbox_area": 17227.333333333332
+    },
+    "330": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4399037272727273,
+      "avg_bbox_area": 17088.727272727272
+    },
+    "331": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.44158648484848484,
+      "avg_bbox_area": 16928.39393939394
+    },
+    "332": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4380029090909091,
+      "avg_bbox_area": 16777.363636363636
+    },
+    "333": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43855557575757576,
+      "avg_bbox_area": 16856.303030303032
+    },
+    "334": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4387163636363637,
+      "avg_bbox_area": 16947.090909090908
+    },
+    "335": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43887817647058824,
+      "avg_bbox_area": 18745.647058823528
+    },
+    "336": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.42916876470588233,
+      "avg_bbox_area": 18777.558823529413
+    },
+    "337": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.4177104545454545,
+      "avg_bbox_area": 16482.666666666668
+    },
+    "338": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4076718545454545,
+      "avg_bbox_area": 16586.969696969696
+    },
+    "339": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.3976511212121212,
+      "avg_bbox_area": 16665.303030303032
+    },
+    "340": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.38600130303030306,
+      "avg_bbox_area": 16673.969696969696
+    },
+    "341": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.38933327272727275,
+      "avg_bbox_area": 16496.666666666668
+    },
+    "342": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.3907242424242424,
+      "avg_bbox_area": 16310.60606060606
+    },
+    "343": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.3928454545454545,
+      "avg_bbox_area": 16087.454545454546
+    },
+    "344": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.39495399999999997,
+      "avg_bbox_area": 15903.969696969696
+    },
+    "345": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.39476296969696967,
+      "avg_bbox_area": 15717.484848484848
+    },
+    "346": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.39235051515151514,
+      "avg_bbox_area": 15555.727272727272
+    },
+    "347": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.39449666666666666,
+      "avg_bbox_area": 15365.30303030303
+    },
+    "348": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.39590172727272727,
+      "avg_bbox_area": 15328.666666666666
+    },
+    "349": {
+      "num_tracks": 33,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.39753627272727277,
+      "avg_bbox_area": 15216.90909090909
+    },
+    "350": {
+      "num_tracks": 34,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.38294008823529413,
+      "avg_bbox_area": 14684.676470588236
+    },
+    "351": {
+      "num_tracks": 34,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.3804570588235294,
+      "avg_bbox_area": 14583.64705882353
+    },
+    "352": {
+      "num_tracks": 34,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.3817856176470589,
+      "avg_bbox_area": 14470.911764705883
+    },
+    "353": {
+      "num_tracks": 35,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.38142445714285717,
+      "avg_bbox_area": 16250.714285714286
+    },
+    "354": {
+      "num_tracks": 35,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.36951645714285714,
+      "avg_bbox_area": 16543.285714285714
+    },
+    "355": {
+      "num_tracks": 35,
+      "num_occluded": 21,
+      "density": "crowded",
+      "avg_visibility": 0.35803797142857147,
+      "avg_bbox_area": 16713.714285714286
+    },
+    "356": {
+      "num_tracks": 35,
+      "num_occluded": 22,
+      "density": "crowded",
+      "avg_visibility": 0.34612588571428576,
+      "avg_bbox_area": 16850.628571428573
+    },
+    "357": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.3338314,
+      "avg_bbox_area": 17029.114285714284
+    },
+    "358": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.3163248285714286,
+      "avg_bbox_area": 17195.428571428572
+    },
+    "359": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.3036036285714286,
+      "avg_bbox_area": 17288.371428571427
+    },
+    "360": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.29020291428571426,
+      "avg_bbox_area": 17332.285714285714
+    },
+    "361": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.27694822857142853,
+      "avg_bbox_area": 17368.6
+    },
+    "362": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2638302857142857,
+      "avg_bbox_area": 17402.742857142857
+    },
+    "363": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2647274285714286,
+      "avg_bbox_area": 17283.85714285714
+    },
+    "364": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.26575457142857145,
+      "avg_bbox_area": 17204.942857142858
+    },
+    "365": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.266235,
+      "avg_bbox_area": 17077.685714285715
+    },
+    "366": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2667316857142857,
+      "avg_bbox_area": 16700.77142857143
+    },
+    "367": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2635739914285714,
+      "avg_bbox_area": 16562.085714285713
+    },
+    "368": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.26129922,
+      "avg_bbox_area": 16383.6
+    },
+    "369": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.25607847142857143,
+      "avg_bbox_area": 16270.6
+    },
+    "370": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.24861029428571432,
+      "avg_bbox_area": 16051.285714285714
+    },
+    "371": {
+      "num_tracks": 36,
+      "num_occluded": 27,
+      "density": "crowded",
+      "avg_visibility": 0.24592703055555554,
+      "avg_bbox_area": 17598.472222222223
+    },
+    "372": {
+      "num_tracks": 36,
+      "num_occluded": 27,
+      "density": "crowded",
+      "avg_visibility": 0.24466786388888892,
+      "avg_bbox_area": 17508.777777777777
+    },
+    "373": {
+      "num_tracks": 36,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.23820252777777778,
+      "avg_bbox_area": 17413.277777777777
+    },
+    "374": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.23029499714285717,
+      "avg_bbox_area": 17770.514285714286
+    },
+    "375": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.23303569999999998,
+      "avg_bbox_area": 17683.571428571428
+    },
+    "376": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24330504,
+      "avg_bbox_area": 17701.82857142857
+    },
+    "377": {
+      "num_tracks": 34,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.24544489117647061,
+      "avg_bbox_area": 18040.147058823528
+    },
+    "378": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2413570970588235,
+      "avg_bbox_area": 18222.529411764706
+    },
+    "379": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24028944705882355,
+      "avg_bbox_area": 18167.20588235294
+    },
+    "380": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2424403558823529,
+      "avg_bbox_area": 18164.264705882353
+    },
+    "381": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24674838235294114,
+      "avg_bbox_area": 18147.470588235294
+    },
+    "382": {
+      "num_tracks": 34,
+      "num_occluded": 22,
+      "density": "crowded",
+      "avg_visibility": 0.255364,
+      "avg_bbox_area": 17937.0
+    },
+    "383": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.25325454285714283,
+      "avg_bbox_area": 17464.114285714284
+    },
+    "384": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2485482285714286,
+      "avg_bbox_area": 17459.914285714287
+    },
+    "385": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2497554,
+      "avg_bbox_area": 17430.542857142857
+    },
+    "386": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24179948571428572,
+      "avg_bbox_area": 17411.285714285714
+    },
+    "387": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.23469277142857145,
+      "avg_bbox_area": 17249.82857142857
+    },
+    "388": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.22456428771428572,
+      "avg_bbox_area": 17016.628571428573
+    },
+    "389": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.2155377257142857,
+      "avg_bbox_area": 16801.914285714287
+    },
+    "390": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.20484485714285716,
+      "avg_bbox_area": 16837.457142857143
+    },
+    "391": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.21140485714285717,
+      "avg_bbox_area": 16900.85714285714
+    },
+    "392": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2197272857142857,
+      "avg_bbox_area": 16913.314285714285
+    },
+    "393": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.22830225714285712,
+      "avg_bbox_area": 16978.85714285714
+    },
+    "394": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.23610782857142862,
+      "avg_bbox_area": 17111.485714285714
+    },
+    "395": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2476682285714286,
+      "avg_bbox_area": 17074.057142857142
+    },
+    "396": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2503733314285715,
+      "avg_bbox_area": 17115.514285714286
+    },
+    "397": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2570958285714286,
+      "avg_bbox_area": 17039.97142857143
+    },
+    "398": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.26333717142857144,
+      "avg_bbox_area": 16923.685714285715
+    },
+    "399": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2587654857142857,
+      "avg_bbox_area": 16857.371428571427
+    },
+    "400": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2519977714285714,
+      "avg_bbox_area": 16770.542857142857
+    },
+    "401": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2487604857142857,
+      "avg_bbox_area": 16716.685714285715
+    },
+    "402": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.24922992571428568,
+      "avg_bbox_area": 16608.628571428573
+    },
+    "403": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2380538285714286,
+      "avg_bbox_area": 16455.02857142857
+    },
+    "404": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.22753074285714286,
+      "avg_bbox_area": 16335.714285714286
+    },
+    "405": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.2237773142857143,
+      "avg_bbox_area": 16230.342857142858
+    },
+    "406": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.22209099999999998,
+      "avg_bbox_area": 16034.857142857143
+    },
+    "407": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.22055705714285714,
+      "avg_bbox_area": 16011.0
+    },
+    "408": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.2246533142857143,
+      "avg_bbox_area": 15882.085714285715
+    },
+    "409": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.22915957142857143,
+      "avg_bbox_area": 15777.4
+    },
+    "410": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.2334475142857143,
+      "avg_bbox_area": 15677.485714285714
+    },
+    "411": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.23239479999999998,
+      "avg_bbox_area": 15609.285714285714
+    },
+    "412": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.23102119999999998,
+      "avg_bbox_area": 15617.171428571428
+    },
+    "413": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.22984797142857144,
+      "avg_bbox_area": 15584.857142857143
+    },
+    "414": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.23094888571428573,
+      "avg_bbox_area": 15422.114285714286
+    },
+    "415": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.23320523529411766,
+      "avg_bbox_area": 15875.176470588236
+    },
+    "416": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2266913823529412,
+      "avg_bbox_area": 15928.911764705883
+    },
+    "417": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.21937170588235297,
+      "avg_bbox_area": 16021.617647058823
+    },
+    "418": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2144129705882353,
+      "avg_bbox_area": 16161.14705882353
+    },
+    "419": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2160210882352941,
+      "avg_bbox_area": 16182.235294117647
+    },
+    "420": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2170628823529412,
+      "avg_bbox_area": 16259.14705882353
+    },
+    "421": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.21752341176470588,
+      "avg_bbox_area": 16360.735294117647
+    },
+    "422": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2159705882352941,
+      "avg_bbox_area": 16477.764705882353
+    },
+    "423": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.21624176470588236,
+      "avg_bbox_area": 16521.058823529413
+    },
+    "424": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.21946576470588236,
+      "avg_bbox_area": 16613.382352941175
+    },
+    "425": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.22567117647058824,
+      "avg_bbox_area": 16540.58823529412
+    },
+    "426": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.22565159999999998,
+      "avg_bbox_area": 30234.114285714284
+    },
+    "427": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.23616477142857142,
+      "avg_bbox_area": 30079.4
+    },
+    "428": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.23885174285714286,
+      "avg_bbox_area": 30067.628571428573
+    },
+    "429": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.24037554285714283,
+      "avg_bbox_area": 30073.371428571427
+    },
+    "430": {
+      "num_tracks": 35,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.25103005714285714,
+      "avg_bbox_area": 29969.571428571428
+    },
+    "431": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24790805714285713,
+      "avg_bbox_area": 30028.542857142857
+    },
+    "432": {
+      "num_tracks": 35,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24815217142857143,
+      "avg_bbox_area": 30053.685714285715
+    },
+    "433": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.25272228571428573,
+      "avg_bbox_area": 30050.17142857143
+    },
+    "434": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.25008314285714284,
+      "avg_bbox_area": 30007.114285714284
+    },
+    "435": {
+      "num_tracks": 35,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2317279342857143,
+      "avg_bbox_area": 30187.97142857143
+    },
+    "436": {
+      "num_tracks": 35,
+      "num_occluded": 27,
+      "density": "crowded",
+      "avg_visibility": 0.21199500857142856,
+      "avg_bbox_area": 30358.371428571427
+    },
+    "437": {
+      "num_tracks": 35,
+      "num_occluded": 27,
+      "density": "crowded",
+      "avg_visibility": 0.20181082857142857,
+      "avg_bbox_area": 29756.914285714287
+    },
+    "438": {
+      "num_tracks": 35,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.1916401714285714,
+      "avg_bbox_area": 29155.82857142857
+    },
+    "439": {
+      "num_tracks": 35,
+      "num_occluded": 27,
+      "density": "crowded",
+      "avg_visibility": 0.18190697142857146,
+      "avg_bbox_area": 28705.714285714286
+    },
+    "440": {
+      "num_tracks": 35,
+      "num_occluded": 27,
+      "density": "crowded",
+      "avg_visibility": 0.1731186514285714,
+      "avg_bbox_area": 28204.657142857144
+    },
+    "441": {
+      "num_tracks": 35,
+      "num_occluded": 28,
+      "density": "crowded",
+      "avg_visibility": 0.17218150857142855,
+      "avg_bbox_area": 28144.542857142857
+    },
+    "442": {
+      "num_tracks": 35,
+      "num_occluded": 28,
+      "density": "crowded",
+      "avg_visibility": 0.1655405657142857,
+      "avg_bbox_area": 28023.97142857143
+    },
+    "443": {
+      "num_tracks": 34,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.18304914117647061,
+      "avg_bbox_area": 28661.176470588234
+    },
+    "444": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.19688884705882354,
+      "avg_bbox_area": 28458.79411764706
+    },
+    "445": {
+      "num_tracks": 34,
+      "num_occluded": 23,
+      "density": "crowded",
+      "avg_visibility": 0.21233832647058826,
+      "avg_bbox_area": 28271.117647058825
+    },
+    "446": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2079480588235294,
+      "avg_bbox_area": 28194.29411764706
+    },
+    "447": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.21441217647058824,
+      "avg_bbox_area": 28069.20588235294
+    },
+    "448": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2225533882352941,
+      "avg_bbox_area": 27950.382352941175
+    },
+    "449": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.22175273529411765,
+      "avg_bbox_area": 27907.058823529413
+    },
+    "450": {
+      "num_tracks": 34,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.2080824411764706,
+      "avg_bbox_area": 28049.235294117647
+    },
+    "451": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.22431650588235294,
+      "avg_bbox_area": 28119.735294117647
+    },
+    "452": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.22187121176470587,
+      "avg_bbox_area": 28259.91176470588
+    },
+    "453": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.21226871176470588,
+      "avg_bbox_area": 28399.029411764706
+    },
+    "454": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.20992535882352942,
+      "avg_bbox_area": 28531.470588235294
+    },
+    "455": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.21125329999999998,
+      "avg_bbox_area": 28820.676470588234
+    },
+    "456": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.20440605,
+      "avg_bbox_area": 29118.441176470587
+    },
+    "457": {
+      "num_tracks": 34,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.19421359117647063,
+      "avg_bbox_area": 29262.79411764706
+    },
+    "458": {
+      "num_tracks": 34,
+      "num_occluded": 26,
+      "density": "crowded",
+      "avg_visibility": 0.1961585382352941,
+      "avg_bbox_area": 29412.382352941175
+    },
+    "459": {
+      "num_tracks": 34,
+      "num_occluded": 25,
+      "density": "crowded",
+      "avg_visibility": 0.2124051911764706,
+      "avg_bbox_area": 29568.323529411766
+    },
+    "460": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.23061020588235295,
+      "avg_bbox_area": 29728.91176470588
+    },
+    "461": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.24209914323529413,
+      "avg_bbox_area": 29902.70588235294
+    },
+    "462": {
+      "num_tracks": 34,
+      "num_occluded": 24,
+      "density": "crowded",
+      "avg_visibility": 0.2577494352941177,
+      "avg_bbox_area": 29617.0
+    },
+    "463": {
+      "num_tracks": 34,
+      "num_occluded": 22,
+      "density": "crowded",
+      "avg_visibility": 0.2713506352941177,
+      "avg_bbox_area": 29257.058823529413
+    },
+    "464": {
+      "num_tracks": 34,
+      "num_occluded": 22,
+      "density": "crowded",
+      "avg_visibility": 0.2845091852941176,
+      "avg_bbox_area": 29090.382352941175
+    },
+    "465": {
+      "num_tracks": 34,
+      "num_occluded": 22,
+      "density": "crowded",
+      "avg_visibility": 0.2975600047058823,
+      "avg_bbox_area": 28929.0
+    },
+    "466": {
+      "num_tracks": 33,
+      "num_occluded": 21,
+      "density": "crowded",
+      "avg_visibility": 0.31363896969696975,
+      "avg_bbox_area": 29411.878787878788
+    },
+    "467": {
+      "num_tracks": 33,
+      "num_occluded": 21,
+      "density": "crowded",
+      "avg_visibility": 0.3202642424242424,
+      "avg_bbox_area": 29132.484848484848
+    },
+    "468": {
+      "num_tracks": 33,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.3359803218181818,
+      "avg_bbox_area": 28845.575757575756
+    },
+    "469": {
+      "num_tracks": 33,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.3708528757575757,
+      "avg_bbox_area": 28373.78787878788
+    },
+    "470": {
+      "num_tracks": 33,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.39689315151515153,
+      "avg_bbox_area": 27936.60606060606
+    },
+    "471": {
+      "num_tracks": 34,
+      "num_occluded": 20,
+      "density": "crowded",
+      "avg_visibility": 0.40239205294117647,
+      "avg_bbox_area": 26805.970588235294
+    },
+    "472": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4206869588235294,
+      "avg_bbox_area": 27187.5
+    },
+    "473": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.42635281176470585,
+      "avg_bbox_area": 27557.20588235294
+    },
+    "474": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.42645317941176475,
+      "avg_bbox_area": 27979.735294117647
+    },
+    "475": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.42836253235294114,
+      "avg_bbox_area": 28449.235294117647
+    },
+    "476": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.42915215882352936,
+      "avg_bbox_area": 28941.70588235294
+    },
+    "477": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4297183176470588,
+      "avg_bbox_area": 29462.20588235294
+    },
+    "478": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.42938094411764705,
+      "avg_bbox_area": 30056.176470588234
+    },
+    "479": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43227253235294116,
+      "avg_bbox_area": 30578.176470588234
+    },
+    "480": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4340500029411765,
+      "avg_bbox_area": 31065.441176470587
+    },
+    "481": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4474749441176471,
+      "avg_bbox_area": 31277.029411764706
+    },
+    "482": {
+      "num_tracks": 34,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4569499588235294,
+      "avg_bbox_area": 31354.529411764706
+    },
+    "483": {
+      "num_tracks": 33,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.46734946969696967,
+      "avg_bbox_area": 32215.545454545456
+    },
+    "484": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4651171333333334,
+      "avg_bbox_area": 32421.78787878788
+    },
+    "485": {
+      "num_tracks": 33,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4629581636363636,
+      "avg_bbox_area": 32426.666666666668
+    },
+    "486": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4618601393939394,
+      "avg_bbox_area": 32479.242424242424
+    },
+    "487": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4551920515151515,
+      "avg_bbox_area": 32644.21212121212
+    },
+    "488": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.46121680624999994,
+      "avg_bbox_area": 21500.375
+    },
+    "489": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.457329503125,
+      "avg_bbox_area": 21713.5625
+    },
+    "490": {
+      "num_tracks": 34,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.44426558529411764,
+      "avg_bbox_area": 20581.0
+    },
+    "491": {
+      "num_tracks": 35,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.43410641714285714,
+      "avg_bbox_area": 20199.428571428572
+    },
+    "492": {
+      "num_tracks": 35,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43243310571428567,
+      "avg_bbox_area": 20265.4
+    },
+    "493": {
+      "num_tracks": 35,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4334063028571428,
+      "avg_bbox_area": 20280.685714285715
+    },
+    "494": {
+      "num_tracks": 35,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.43597477428571424,
+      "avg_bbox_area": 20324.8
+    },
+    "495": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4504469352941176,
+      "avg_bbox_area": 20919.91176470588
+    },
+    "496": {
+      "num_tracks": 34,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.44630433823529414,
+      "avg_bbox_area": 20988.764705882353
+    },
+    "497": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4494925823529411,
+      "avg_bbox_area": 20804.558823529413
+    },
+    "498": {
+      "num_tracks": 34,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.44891992941176473,
+      "avg_bbox_area": 20785.58823529412
+    },
+    "499": {
+      "num_tracks": 34,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4441719029411765,
+      "avg_bbox_area": 20796.882352941175
+    },
+    "500": {
+      "num_tracks": 34,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.43997407352941176,
+      "avg_bbox_area": 20669.558823529413
+    },
+    "501": {
+      "num_tracks": 34,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4398033676470588,
+      "avg_bbox_area": 20532.5
+    },
+    "502": {
+      "num_tracks": 34,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4379678711764705,
+      "avg_bbox_area": 20572.852941176472
+    },
+    "503": {
+      "num_tracks": 34,
+      "num_occluded": 18,
+      "density": "crowded",
+      "avg_visibility": 0.4373500323529411,
+      "avg_bbox_area": 20573.117647058825
+    },
+    "504": {
+      "num_tracks": 34,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.4422512705882353,
+      "avg_bbox_area": 20647.0
+    },
+    "505": {
+      "num_tracks": 34,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.4450004264705883,
+      "avg_bbox_area": 20489.235294117647
+    },
+    "506": {
+      "num_tracks": 34,
+      "num_occluded": 19,
+      "density": "crowded",
+      "avg_visibility": 0.44714499999999996,
+      "avg_bbox_area": 20314.79411764706
+    },
+    "507": {
+      "num_tracks": 34,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.4496459852941176,
+      "avg_bbox_area": 20149.852941176472
+    },
+    "508": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46365481484848486,
+      "avg_bbox_area": 21043.848484848484
+    },
+    "509": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.46340175909090914,
+      "avg_bbox_area": 21406.18181818182
+    },
+    "510": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45895698181818184,
+      "avg_bbox_area": 21868.21212121212
+    },
+    "511": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4563805575757576,
+      "avg_bbox_area": 22389.484848484848
+    },
+    "512": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45358205454545447,
+      "avg_bbox_area": 22754.757575757576
+    },
+    "513": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45364239696969694,
+      "avg_bbox_area": 23147.060606060608
+    },
+    "514": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.45486992121212116,
+      "avg_bbox_area": 23558.424242424244
+    },
+    "515": {
+      "num_tracks": 33,
+      "num_occluded": 17,
+      "density": "crowded",
+      "avg_visibility": 0.45838825454545457,
+      "avg_bbox_area": 23721.878787878788
+    },
+    "516": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.47750565,
+      "avg_bbox_area": 24489.03125
+    },
+    "517": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.490425835483871,
+      "avg_bbox_area": 22656.870967741936
+    },
+    "518": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4931763129032258,
+      "avg_bbox_area": 22702.774193548386
+    },
+    "519": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4983197580645161,
+      "avg_bbox_area": 22678.483870967742
+    },
+    "520": {
+      "num_tracks": 31,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.5129718838709676,
+      "avg_bbox_area": 22626.83870967742
+    },
+    "521": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5164589032258066,
+      "avg_bbox_area": 22469.677419354837
+    },
+    "522": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5187490645161291,
+      "avg_bbox_area": 22326.451612903227
+    },
+    "523": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5236550322580646,
+      "avg_bbox_area": 22138.322580645163
+    },
+    "524": {
+      "num_tracks": 31,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.5264300645161291,
+      "avg_bbox_area": 21931.290322580644
+    },
+    "525": {
+      "num_tracks": 31,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.5216701580645161,
+      "avg_bbox_area": 21853.322580645163
+    },
+    "526": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5142761354838709,
+      "avg_bbox_area": 21715.83870967742
+    },
+    "527": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.5085673467741936,
+      "avg_bbox_area": 21601.612903225807
+    },
+    "528": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4999281838709677,
+      "avg_bbox_area": 21619.09677419355
+    },
+    "529": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4963129580645161,
+      "avg_bbox_area": 21528.1935483871
+    },
+    "530": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4740166625,
+      "avg_bbox_area": 20967.0625
+    },
+    "531": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46797164375,
+      "avg_bbox_area": 20915.0625
+    },
+    "532": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4607471625,
+      "avg_bbox_area": 20946.0625
+    },
+    "533": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.46099383636363633,
+      "avg_bbox_area": 20425.757575757576
+    },
+    "534": {
+      "num_tracks": 33,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.456587896969697,
+      "avg_bbox_area": 20452.727272727272
+    },
+    "535": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45566439393939395,
+      "avg_bbox_area": 20287.454545454544
+    },
+    "536": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45551230303030305,
+      "avg_bbox_area": 20109.18181818182
+    },
+    "537": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.4544056484848485,
+      "avg_bbox_area": 19924.60606060606
+    },
+    "538": {
+      "num_tracks": 33,
+      "num_occluded": 16,
+      "density": "crowded",
+      "avg_visibility": 0.45310781818181817,
+      "avg_bbox_area": 19784.060606060608
+    },
+    "539": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4575008212121212,
+      "avg_bbox_area": 19581.636363636364
+    },
+    "540": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.46404240937499996,
+      "avg_bbox_area": 19977.0625
+    },
+    "541": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.46737772187500004,
+      "avg_bbox_area": 19707.84375
+    },
+    "542": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.48414385151515144,
+      "avg_bbox_area": 19083.303030303032
+    },
+    "543": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.48588635454545454,
+      "avg_bbox_area": 18894.969696969696
+    },
+    "544": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.47299471515151514,
+      "avg_bbox_area": 18772.21212121212
+    },
+    "545": {
+      "num_tracks": 33,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4749750484848485,
+      "avg_bbox_area": 18550.363636363636
+    },
+    "546": {
+      "num_tracks": 33,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4797320787878787,
+      "avg_bbox_area": 18278.333333333332
+    },
+    "547": {
+      "num_tracks": 33,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4876490181818182,
+      "avg_bbox_area": 18004.424242424244
+    },
+    "548": {
+      "num_tracks": 33,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.48753735151515154,
+      "avg_bbox_area": 18139.21212121212
+    },
+    "549": {
+      "num_tracks": 33,
+      "num_occluded": 12,
+      "density": "crowded",
+      "avg_visibility": 0.4875638060606061,
+      "avg_bbox_area": 18355.848484848484
+    },
+    "550": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.49521034687499993,
+      "avg_bbox_area": 14150.96875
+    },
+    "551": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.49485283437499994,
+      "avg_bbox_area": 14282.21875
+    },
+    "552": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.49582236562500004,
+      "avg_bbox_area": 14389.875
+    },
+    "553": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.49437811562499995,
+      "avg_bbox_area": 14496.09375
+    },
+    "554": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.484465334375,
+      "avg_bbox_area": 14758.8125
+    },
+    "555": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.479921603125,
+      "avg_bbox_area": 15000.90625
+    },
+    "556": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.477089478125,
+      "avg_bbox_area": 15213.03125
+    },
+    "557": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.471123665625,
+      "avg_bbox_area": 15408.28125
+    },
+    "558": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.470328728125,
+      "avg_bbox_area": 15595.9375
+    },
+    "559": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.471017134375,
+      "avg_bbox_area": 15703.875
+    },
+    "560": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.471817009375,
+      "avg_bbox_area": 15810.1875
+    },
+    "561": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.47057188437499997,
+      "avg_bbox_area": 15909.3125
+    },
+    "562": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.466956428125,
+      "avg_bbox_area": 15850.5
+    },
+    "563": {
+      "num_tracks": 32,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.46588893124999997,
+      "avg_bbox_area": 15773.65625
+    },
+    "564": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.46117763437500003,
+      "avg_bbox_area": 15784.5
+    },
+    "565": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.460275684375,
+      "avg_bbox_area": 15724.4375
+    },
+    "566": {
+      "num_tracks": 32,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45440626875,
+      "avg_bbox_area": 15417.625
+    },
+    "567": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.452474728125,
+      "avg_bbox_area": 15147.6875
+    },
+    "568": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.451856596875,
+      "avg_bbox_area": 14888.40625
+    },
+    "569": {
+      "num_tracks": 32,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.444805059375,
+      "avg_bbox_area": 14684.1875
+    },
+    "570": {
+      "num_tracks": 31,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.44801877419354835,
+      "avg_bbox_area": 15192.645161290322
+    },
+    "571": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.44508074193548397,
+      "avg_bbox_area": 15369.41935483871
+    },
+    "572": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4373166451612904,
+      "avg_bbox_area": 15591.516129032258
+    },
+    "573": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.43520953225806447,
+      "avg_bbox_area": 15637.90322580645
+    },
+    "574": {
+      "num_tracks": 31,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.434111164516129,
+      "avg_bbox_area": 15823.806451612903
+    },
+    "575": {
+      "num_tracks": 31,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.43303698709677424,
+      "avg_bbox_area": 15881.354838709678
+    },
+    "576": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.44771805000000003,
+      "avg_bbox_area": 12770.766666666666
+    },
+    "577": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45481362000000003,
+      "avg_bbox_area": 12863.5
+    },
+    "578": {
+      "num_tracks": 30,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.45461986,
+      "avg_bbox_area": 12970.7
+    },
+    "579": {
+      "num_tracks": 30,
+      "num_occluded": 15,
+      "density": "crowded",
+      "avg_visibility": 0.4583922386666667,
+      "avg_bbox_area": 13105.033333333333
+    },
+    "580": {
+      "num_tracks": 29,
+      "num_occluded": 14,
+      "density": "crowded",
+      "avg_visibility": 0.4714895734482758,
+      "avg_bbox_area": 13599.0
+    },
+    "581": {
+      "num_tracks": 28,
+      "num_occluded": 13,
+      "density": "crowded",
+      "avg_visibility": 0.4881291646428571,
+      "avg_bbox_area": 13963.964285714286
+    },
+    "582": {
+      "num_tracks": 27,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.5112042962962963,
+      "avg_bbox_area": 14411.074074074075
+    },
+    "583": {
+      "num_tracks": 27,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.5203065185185186,
+      "avg_bbox_area": 14464.62962962963
+    },
+    "584": {
+      "num_tracks": 27,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.5250942222222222,
+      "avg_bbox_area": 14263.666666666666
+    },
+    "585": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.5476196923076924,
+      "avg_bbox_area": 14694.115384615385
+    },
+    "586": {
+      "num_tracks": 26,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5507068461538462,
+      "avg_bbox_area": 14610.653846153846
+    },
+    "587": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.5442535199999999,
+      "avg_bbox_area": 6168.68
+    },
+    "588": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.5380447599999999,
+      "avg_bbox_area": 6207.36
+    },
+    "589": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.539819764,
+      "avg_bbox_area": 6175.2
+    },
+    "590": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.538024136,
+      "avg_bbox_area": 6189.12
+    },
+    "591": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.5148919230769231,
+      "avg_bbox_area": 6118.038461538462
+    },
+    "592": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.5151563461538461,
+      "avg_bbox_area": 6172.2307692307695
+    },
+    "593": {
+      "num_tracks": 26,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.5222603461538461,
+      "avg_bbox_area": 6181.923076923077
+    },
+    "594": {
+      "num_tracks": 26,
+      "num_occluded": 11,
+      "density": "crowded",
+      "avg_visibility": 0.5092570769230769,
+      "avg_bbox_area": 6218.192307692308
+    },
+    "595": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.53042296,
+      "avg_bbox_area": 6444.48
+    },
+    "596": {
+      "num_tracks": 25,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.5314346799999999,
+      "avg_bbox_area": 6478.48
+    },
+    "597": {
+      "num_tracks": 25,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5497072,
+      "avg_bbox_area": 6516.04
+    },
+    "598": {
+      "num_tracks": 25,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5481184,
+      "avg_bbox_area": 6606.52
+    },
+    "599": {
+      "num_tracks": 25,
+      "num_occluded": 9,
+      "density": "crowded",
+      "avg_visibility": 0.5492691999999999,
+      "avg_bbox_area": 6659.8
+    },
+    "600": {
+      "num_tracks": 28,
+      "num_occluded": 10,
+      "density": "crowded",
+      "avg_visibility": 0.509427,
+      "avg_bbox_area": 6198.785714285715
+    }
+  },
+  "occlusion_analysis": {
+    "total_occlusion_events": 179,
+    "tracks_with_occlusions": 57,
+    "avg_occlusion_duration": 54.0,
+    "occlusion_duration_distribution": {
+      "1-10": 50,
+      "10-20": 25,
+      "20-50": 45,
+      "50+": 59
+    },
+    "frames_with_occlusions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565,
+      566,
+      567,
+      568,
+      569,
+      570,
+      571,
+      572,
+      573,
+      574,
+      575,
+      576,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600
+    ]
+  },
+  "crowding_analysis": {
+    "sparse_frames": [],
+    "medium_frames": [],
+    "crowded_frames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245,
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492,
+      493,
+      494,
+      495,
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      533,
+      534,
+      535,
+      536,
+      537,
+      538,
+      539,
+      540,
+      541,
+      542,
+      543,
+      544,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      553,
+      554,
+      555,
+      556,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      564,
+      565,
+      566,
+      567,
+      568,
+      569,
+      570,
+      571,
+      572,
+      573,
+      574,
+      575,
+      576,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600
+    ],
+    "peak_crowding": {
+      "frame": 371,
+      "num_tracks": 36
+    }
+  },
+  "motion_analysis": {
+    "static_tracks": [
+      3,
+      9,
+      10,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      33,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      48,
+      49,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ],
+    "moving_tracks": [
+      2,
+      8,
+      34
+    ],
+    "fast_moving_tracks": [
+      16
+    ]
+  },
+  "spatial_patterns": {
+    "entry_zones": {
+      "center": 56,
+      "right": 2,
+      "left": 4
+    },
+    "exit_zones": {
+      "right": 8,
+      "center": 53,
+      "left": 1
+    }
+  },
+  "hero_tracks": {
+    "long_stable": [
+      26,
+      10,
+      9,
+      15,
+      17
+    ],
+    "occlusion_heavy": [
+      54,
+      41,
+      42,
+      39,
+      26
+    ],
+    "high_motion": [
+      16,
+      8,
+      20,
+      34,
+      38
+    ],
+    "edge_cases": [
+      19,
+      16,
+      23
+    ]
+  },
+  "tta_recommendations": {
+    "clean_segments": [],
+    "occlusion_segments": [
+      {
+        "start": 1,
+        "end": 600,
+        "reason": "Multiple occlusion events"
+      }
+    ],
+    "crowded_segments": [
+      {
+        "start": 1,
+        "end": 600,
+        "reason": "High density, complex interactions"
+      }
+    ],
+    "recommended_test_frames": [
+      1,
+      61,
+      121,
+      181,
+      241,
+      301,
+      361,
+      421,
+      481,
+      541
+    ]
+  }
+}

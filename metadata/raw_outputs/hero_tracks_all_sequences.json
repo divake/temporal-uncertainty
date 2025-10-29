@@ -1,0 +1,808 @@
+{
+  "MOT17-02-FRCNN": {
+    "track_26": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "occlusion_events": 6,
+      "avg_visibility": 0.6480633366666667,
+      "reason": "Long stable track (600 frames, 0.65 avg visibility)"
+    },
+    "track_10": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "occlusion_events": 3,
+      "avg_visibility": 0.44505760666666666,
+      "reason": "Long stable track (600 frames, 0.45 avg visibility)"
+    },
+    "track_9": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        600
+      ],
+      "duration": 600,
+      "occlusion_events": 4,
+      "avg_visibility": 0.3653586815,
+      "reason": "Long stable track (600 frames, 0.37 avg visibility)"
+    },
+    "track_54": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        211,
+        579
+      ],
+      "duration": 369,
+      "occlusion_events": 9,
+      "avg_visibility": 0.34628250948509487,
+      "reason": "Multiple occlusions (9 events)"
+    },
+    "track_41": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        208,
+        580
+      ],
+      "duration": 373,
+      "occlusion_events": 8,
+      "avg_visibility": 0.2066363533780161,
+      "reason": "Multiple occlusions (8 events)"
+    },
+    "track_42": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        209,
+        569
+      ],
+      "duration": 361,
+      "occlusion_events": 8,
+      "avg_visibility": 0.14960266343490303,
+      "reason": "Multiple occlusions (8 events)"
+    },
+    "track_16": {
+      "category": "edge_cases",
+      "lifetime": [
+        426,
+        487
+      ],
+      "duration": 62,
+      "occlusion_events": 2,
+      "avg_visibility": 0.612033064516129,
+      "reason": "Unusual bbox variance (2083685956.5)"
+    },
+    "track_8": {
+      "category": "high_motion",
+      "lifetime": [
+        1,
+        43
+      ],
+      "duration": 43,
+      "occlusion_events": 2,
+      "avg_visibility": 0.45324339534883723,
+      "reason": "High motion (max displacement: 24.0 pixels)"
+    },
+    "track_20": {
+      "category": "high_motion",
+      "lifetime": [
+        1,
+        322
+      ],
+      "duration": 322,
+      "occlusion_events": 0,
+      "avg_visibility": 0.8718774534161492,
+      "reason": "High motion (max displacement: 21.0 pixels)"
+    },
+    "track_19": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        549
+      ],
+      "duration": 549,
+      "occlusion_events": 1,
+      "avg_visibility": 0.9667495591985428,
+      "reason": "Unusual bbox variance (2915771693.2)"
+    },
+    "track_23": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        586
+      ],
+      "duration": 586,
+      "occlusion_events": 4,
+      "avg_visibility": 0.5284037052901024,
+      "reason": "Unusual bbox variance (2002430901.8)"
+    }
+  },
+  "MOT17-04-FRCNN": {
+    "track_60": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        1050
+      ],
+      "duration": 1050,
+      "occlusion_events": 2,
+      "avg_visibility": 0.9332479428571427,
+      "reason": "Long stable track (1050 frames, 0.93 avg visibility)"
+    },
+    "track_1": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        1050
+      ],
+      "duration": 1050,
+      "occlusion_events": 0,
+      "avg_visibility": 0.9264232095238094,
+      "reason": "Long stable track (1050 frames, 0.93 avg visibility)"
+    },
+    "track_92": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        1050
+      ],
+      "duration": 1050,
+      "occlusion_events": 0,
+      "avg_visibility": 0.8918657047619047,
+      "reason": "Long stable track (1050 frames, 0.89 avg visibility)"
+    },
+    "track_94": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        1050
+      ],
+      "duration": 1050,
+      "occlusion_events": 7,
+      "avg_visibility": 0.2135921838095238,
+      "reason": "Multiple occlusions (7 events)"
+    },
+    "track_75": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        1050
+      ],
+      "duration": 1050,
+      "occlusion_events": 6,
+      "avg_visibility": 0.5585186476190477,
+      "reason": "Multiple occlusions (6 events)"
+    },
+    "track_89": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        560
+      ],
+      "duration": 560,
+      "occlusion_events": 6,
+      "avg_visibility": 0.6743237267857143,
+      "reason": "Multiple occlusions (6 events)"
+    },
+    "track_122": {
+      "category": "high_motion",
+      "lifetime": [
+        168,
+        377
+      ],
+      "duration": 210,
+      "occlusion_events": 2,
+      "avg_visibility": 0.797811619047619,
+      "reason": "High motion (max displacement: 7.2 pixels)"
+    },
+    "track_3": {
+      "category": "high_motion",
+      "lifetime": [
+        1,
+        1050
+      ],
+      "duration": 1050,
+      "occlusion_events": 0,
+      "avg_visibility": 0.8025921904761903,
+      "reason": "High motion (max displacement: 7.0 pixels)"
+    },
+    "track_123": {
+      "category": "high_motion",
+      "lifetime": [
+        200,
+        409
+      ],
+      "duration": 210,
+      "occlusion_events": 2,
+      "avg_visibility": 0.48847080952380956,
+      "reason": "High motion (max displacement: 7.0 pixels)"
+    },
+    "track_70": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        690
+      ],
+      "duration": 690,
+      "occlusion_events": 2,
+      "avg_visibility": 0.8296395275362319,
+      "reason": "Unusual bbox variance (58596625.2)"
+    },
+    "track_99": {
+      "category": "edge_cases",
+      "lifetime": [
+        19,
+        789
+      ],
+      "duration": 771,
+      "occlusion_events": 2,
+      "avg_visibility": 0.7309821465629053,
+      "reason": "Unusual bbox variance (35281735.3)"
+    },
+    "track_98": {
+      "category": "edge_cases",
+      "lifetime": [
+        71,
+        1050
+      ],
+      "duration": 980,
+      "occlusion_events": 3,
+      "avg_visibility": 0.776484246632653,
+      "reason": "Unusual bbox variance (34752953.6)"
+    }
+  },
+  "MOT17-05-FRCNN": {
+    "track_128": {
+      "category": "edge_cases",
+      "lifetime": [
+        414,
+        807
+      ],
+      "duration": 394,
+      "occlusion_events": 3,
+      "avg_visibility": 0.6157508781725889,
+      "reason": "Unusual bbox variance (4291737243.1)"
+    },
+    "track_1": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        381
+      ],
+      "duration": 381,
+      "occlusion_events": 2,
+      "avg_visibility": 0.788612501312336,
+      "reason": "Long stable track (381 frames, 0.79 avg visibility)"
+    },
+    "track_2": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        336
+      ],
+      "duration": 336,
+      "occlusion_events": 7,
+      "avg_visibility": 0.3375381726190476,
+      "reason": "Multiple occlusions (7 events)"
+    },
+    "track_54": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        415,
+        612
+      ],
+      "duration": 198,
+      "occlusion_events": 8,
+      "avg_visibility": 0.27730810101010106,
+      "reason": "Multiple occlusions (8 events)"
+    },
+    "track_29": {
+      "category": "high_motion",
+      "lifetime": [
+        270,
+        304
+      ],
+      "duration": 35,
+      "occlusion_events": 7,
+      "avg_visibility": 0.19706520000000002,
+      "reason": "High motion (max displacement: 47.5 pixels)"
+    },
+    "track_20": {
+      "category": "high_motion",
+      "lifetime": [
+        242,
+        308
+      ],
+      "duration": 67,
+      "occlusion_events": 2,
+      "avg_visibility": 0.787607223880597,
+      "reason": "High motion (max displacement: 54.3 pixels)"
+    },
+    "track_45": {
+      "category": "high_motion",
+      "lifetime": [
+        353,
+        396
+      ],
+      "duration": 44,
+      "occlusion_events": 1,
+      "avg_visibility": 0.7670377272727272,
+      "reason": "High motion (max displacement: 47.9 pixels)"
+    },
+    "track_125": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        284
+      ],
+      "duration": 284,
+      "occlusion_events": 2,
+      "avg_visibility": 0.753067238028169,
+      "reason": "Unusual bbox variance (2972002954.2)"
+    },
+    "track_129": {
+      "category": "edge_cases",
+      "lifetime": [
+        583,
+        837
+      ],
+      "duration": 255,
+      "occlusion_events": 1,
+      "avg_visibility": 0.8211559607843137,
+      "reason": "Unusual bbox variance (2378915860.3)"
+    }
+  },
+  "MOT17-09-FRCNN": {
+    "track_1": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        490
+      ],
+      "duration": 490,
+      "occlusion_events": 3,
+      "avg_visibility": 0.28012526785714287,
+      "reason": "Long stable track (490 frames, 0.28 avg visibility)"
+    },
+    "track_22": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        392
+      ],
+      "duration": 392,
+      "occlusion_events": 2,
+      "avg_visibility": 0.6560956530612245,
+      "reason": "Long stable track (392 frames, 0.66 avg visibility)"
+    },
+    "track_21": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        382
+      ],
+      "duration": 382,
+      "occlusion_events": 1,
+      "avg_visibility": 0.7108984109947643,
+      "reason": "Long stable track (382 frames, 0.71 avg visibility)"
+    },
+    "track_10": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        144,
+        428
+      ],
+      "duration": 285,
+      "occlusion_events": 9,
+      "avg_visibility": 0.34078431087719296,
+      "reason": "Multiple occlusions (9 events)"
+    },
+    "track_11": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        186,
+        525
+      ],
+      "duration": 340,
+      "occlusion_events": 7,
+      "avg_visibility": 0.35241792270588235,
+      "reason": "Multiple occlusions (7 events)"
+    },
+    "track_29": {
+      "category": "high_motion",
+      "lifetime": [
+        181,
+        444
+      ],
+      "duration": 264,
+      "occlusion_events": 7,
+      "avg_visibility": 0.4211523416666667,
+      "reason": "High motion (max displacement: 52.4 pixels)"
+    },
+    "track_19": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        200
+      ],
+      "duration": 200,
+      "occlusion_events": 1,
+      "avg_visibility": 0.9524701999999999,
+      "reason": "Unusual bbox variance (35695386480.6)"
+    },
+    "track_20": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        220
+      ],
+      "duration": 220,
+      "occlusion_events": 2,
+      "avg_visibility": 0.8264610909090909,
+      "reason": "Unusual bbox variance (69754039659.0)"
+    },
+    "track_2": {
+      "category": "edge_cases",
+      "lifetime": [
+        222,
+        471
+      ],
+      "duration": 250,
+      "occlusion_events": 2,
+      "avg_visibility": 0.56473864552,
+      "reason": "Unusual bbox variance (12521511710.8)"
+    }
+  },
+  "MOT17-10-FRCNN": {
+    "track_4": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        654
+      ],
+      "duration": 654,
+      "occlusion_events": 4,
+      "avg_visibility": 0.9418371406727828,
+      "reason": "Long stable track (654 frames, 0.94 avg visibility)"
+    },
+    "track_2": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        654
+      ],
+      "duration": 654,
+      "occlusion_events": 2,
+      "avg_visibility": 0.9164827675840979,
+      "reason": "Long stable track (654 frames, 0.92 avg visibility)"
+    },
+    "track_13": {
+      "category": "high_motion",
+      "lifetime": [
+        1,
+        654
+      ],
+      "duration": 654,
+      "occlusion_events": 10,
+      "avg_visibility": 0.8073685805810398,
+      "reason": "High motion (max displacement: 40.0 pixels)"
+    },
+    "track_25": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        164,
+        617
+      ],
+      "duration": 454,
+      "occlusion_events": 17,
+      "avg_visibility": 0.2830437516299559,
+      "reason": "Multiple occlusions (17 events)"
+    },
+    "track_71": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        143,
+        562
+      ],
+      "duration": 420,
+      "occlusion_events": 11,
+      "avg_visibility": 0.47647130952380956,
+      "reason": "Multiple occlusions (11 events)"
+    },
+    "track_22": {
+      "category": "high_motion",
+      "lifetime": [
+        1,
+        34
+      ],
+      "duration": 34,
+      "occlusion_events": 0,
+      "avg_visibility": 0.6774858823529413,
+      "reason": "High motion (max displacement: 38.6 pixels)"
+    },
+    "track_1": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        98
+      ],
+      "duration": 98,
+      "occlusion_events": 0,
+      "avg_visibility": 0.9724995918367347,
+      "reason": "Unusual bbox variance (4077590126.1)"
+    },
+    "track_12": {
+      "category": "edge_cases",
+      "lifetime": [
+        1,
+        530
+      ],
+      "duration": 530,
+      "occlusion_events": 3,
+      "avg_visibility": 0.6822492347169812,
+      "reason": "Unusual bbox variance (3321005367.4)"
+    },
+    "track_9": {
+      "category": "edge_cases",
+      "lifetime": [
+        98,
+        400
+      ],
+      "duration": 303,
+      "occlusion_events": 3,
+      "avg_visibility": 0.8438893729372937,
+      "reason": "Unusual bbox variance (2078705244.0)"
+    }
+  },
+  "MOT17-11-FRCNN": {
+    "track_1": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        900
+      ],
+      "duration": 900,
+      "occlusion_events": 2,
+      "avg_visibility": 0.8927679188888888,
+      "reason": "Long stable track (900 frames, 0.89 avg visibility)"
+    },
+    "track_25": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        900
+      ],
+      "duration": 900,
+      "occlusion_events": 8,
+      "avg_visibility": 0.6184089386666666,
+      "reason": "Multiple occlusions (8 events)"
+    },
+    "track_14": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        679
+      ],
+      "duration": 679,
+      "occlusion_events": 2,
+      "avg_visibility": 0.8847392871870398,
+      "reason": "Long stable track (679 frames, 0.88 avg visibility)"
+    },
+    "track_30": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        150
+      ],
+      "duration": 150,
+      "occlusion_events": 8,
+      "avg_visibility": 0.22211172,
+      "reason": "Multiple occlusions (8 events)"
+    },
+    "track_29": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        1,
+        143
+      ],
+      "duration": 143,
+      "occlusion_events": 6,
+      "avg_visibility": 0.42516396503496506,
+      "reason": "Multiple occlusions (6 events)"
+    },
+    "track_44": {
+      "category": "edge_cases",
+      "lifetime": [
+        619,
+        729
+      ],
+      "duration": 111,
+      "occlusion_events": 1,
+      "avg_visibility": 0.8334045045045045,
+      "reason": "Unusual bbox variance (202926481850.0)"
+    },
+    "track_27": {
+      "category": "high_motion",
+      "lifetime": [
+        250,
+        345
+      ],
+      "duration": 96,
+      "occlusion_events": 1,
+      "avg_visibility": 0.8352343750000001,
+      "reason": "High motion (max displacement: 64.5 pixels)"
+    },
+    "track_42": {
+      "category": "high_motion",
+      "lifetime": [
+        490,
+        713
+      ],
+      "duration": 224,
+      "occlusion_events": 3,
+      "avg_visibility": 0.3534965446428571,
+      "reason": "High motion (max displacement: 63.6 pixels)"
+    },
+    "track_48": {
+      "category": "edge_cases",
+      "lifetime": [
+        639,
+        742
+      ],
+      "duration": 104,
+      "occlusion_events": 1,
+      "avg_visibility": 0.3449958288461538,
+      "reason": "Unusual bbox variance (142660012428.0)"
+    },
+    "track_36": {
+      "category": "edge_cases",
+      "lifetime": [
+        773,
+        887
+      ],
+      "duration": 115,
+      "occlusion_events": 2,
+      "avg_visibility": 0.721904043478261,
+      "reason": "Unusual bbox variance (141621619660.5)"
+    }
+  },
+  "MOT17-13-FRCNN": {
+    "track_39": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        396
+      ],
+      "duration": 396,
+      "occlusion_events": 5,
+      "avg_visibility": 0.842780851010101,
+      "reason": "Long stable track (396 frames, 0.84 avg visibility)"
+    },
+    "track_47": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        370
+      ],
+      "duration": 370,
+      "occlusion_events": 8,
+      "avg_visibility": 0.3597299567567568,
+      "reason": "Long stable track (370 frames, 0.36 avg visibility)"
+    },
+    "track_49": {
+      "category": "long_stable",
+      "lifetime": [
+        1,
+        367
+      ],
+      "duration": 367,
+      "occlusion_events": 4,
+      "avg_visibility": 0.9740381198910082,
+      "reason": "Long stable track (367 frames, 0.97 avg visibility)"
+    },
+    "track_142": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        313,
+        468
+      ],
+      "duration": 156,
+      "occlusion_events": 13,
+      "avg_visibility": 0.41935249358974364,
+      "reason": "Multiple occlusions (13 events)"
+    },
+    "track_68": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        330,
+        430
+      ],
+      "duration": 101,
+      "occlusion_events": 9,
+      "avg_visibility": 0.2885861188118811,
+      "reason": "Multiple occlusions (9 events)"
+    },
+    "track_34": {
+      "category": "occlusion_heavy",
+      "lifetime": [
+        13,
+        268
+      ],
+      "duration": 256,
+      "occlusion_events": 8,
+      "avg_visibility": 0.41161726582031255,
+      "reason": "Multiple occlusions (8 events)"
+    },
+    "track_22": {
+      "category": "high_motion",
+      "lifetime": [
+        480,
+        519
+      ],
+      "duration": 40,
+      "occlusion_events": 0,
+      "avg_visibility": 0.72731875,
+      "reason": "High motion (max displacement: 70.8 pixels)"
+    },
+    "track_139": {
+      "category": "high_motion",
+      "lifetime": [
+        280,
+        438
+      ],
+      "duration": 159,
+      "occlusion_events": 4,
+      "avg_visibility": 0.41357481132075474,
+      "reason": "High motion (max displacement: 65.7 pixels)"
+    },
+    "track_144": {
+      "category": "high_motion",
+      "lifetime": [
+        410,
+        477
+      ],
+      "duration": 68,
+      "occlusion_events": 2,
+      "avg_visibility": 0.6206473382352942,
+      "reason": "High motion (max displacement: 65.1 pixels)"
+    },
+    "track_135": {
+      "category": "edge_cases",
+      "lifetime": [
+        296,
+        440
+      ],
+      "duration": 145,
+      "occlusion_events": 3,
+      "avg_visibility": 0.6295785586206897,
+      "reason": "Unusual bbox variance (340896061.0)"
+    },
+    "track_133": {
+      "category": "edge_cases",
+      "lifetime": [
+        179,
+        442
+      ],
+      "duration": 264,
+      "occlusion_events": 6,
+      "avg_visibility": 0.6277604477272727,
+      "reason": "Unusual bbox variance (257195284.6)"
+    },
+    "track_25": {
+      "category": "edge_cases",
+      "lifetime": [
+        516,
+        585
+      ],
+      "duration": 70,
+      "occlusion_events": 1,
+      "avg_visibility": 0.892434857142857,
+      "reason": "Unusual bbox variance (247807433.1)"
+    }
+  }
+}

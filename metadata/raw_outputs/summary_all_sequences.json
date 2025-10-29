@@ -1,0 +1,74 @@
+{
+  "all_sequences": {
+    "MOT17-02-FRCNN": {
+      "frames": 600,
+      "unique_tracks": 62,
+      "avg_track_length": 299.69354838709677,
+      "occlusion_rate": 0.9193548387096774,
+      "avg_crowding": 30.968333333333334,
+      "scene_type": "indoor_crowded"
+    },
+    "MOT17-04-FRCNN": {
+      "frames": 1050,
+      "unique_tracks": 83,
+      "avg_track_length": 572.9759036144578,
+      "occlusion_rate": 0.9156626506024096,
+      "avg_crowding": 45.29238095238095,
+      "scene_type": "indoor_crowded"
+    },
+    "MOT17-05-FRCNN": {
+      "frames": 837,
+      "unique_tracks": 133,
+      "avg_track_length": 52.00751879699248,
+      "occlusion_rate": 0.8947368421052632,
+      "avg_crowding": 8.264038231780168,
+      "scene_type": "street_medium_density"
+    },
+    "MOT17-09-FRCNN": {
+      "frames": 525,
+      "unique_tracks": 26,
+      "avg_track_length": 204.80769230769232,
+      "occlusion_rate": 1.0,
+      "avg_crowding": 10.142857142857142,
+      "scene_type": "street_medium_density"
+    },
+    "MOT17-10-FRCNN": {
+      "frames": 654,
+      "unique_tracks": 57,
+      "avg_track_length": 225.24561403508773,
+      "occlusion_rate": 0.8421052631578947,
+      "avg_crowding": 19.631498470948014,
+      "scene_type": "indoor_crowded"
+    },
+    "MOT17-11-FRCNN": {
+      "frames": 900,
+      "unique_tracks": 75,
+      "avg_track_length": 125.81333333333333,
+      "occlusion_rate": 0.8133333333333334,
+      "avg_crowding": 10.484444444444444,
+      "scene_type": "street_medium_density"
+    },
+    "MOT17-13-FRCNN": {
+      "frames": 750,
+      "unique_tracks": 110,
+      "avg_track_length": 105.83636363636364,
+      "occlusion_rate": 0.7181818181818181,
+      "avg_crowding": 15.522666666666666,
+      "scene_type": "indoor_crowded"
+    }
+  },
+  "cross_sequence_comparison": {
+    "shortest_sequence": "MOT17-09-FRCNN",
+    "longest_sequence": "MOT17-04-FRCNN",
+    "most_crowded": "MOT17-04-FRCNN",
+    "least_crowded": "MOT17-05-FRCNN",
+    "most_occlusions": "MOT17-09-FRCNN",
+    "cleanest": "MOT17-13-FRCNN"
+  },
+  "recommended_sequence_usage": {
+    "baseline_testing": "MOT17-05-FRCNN",
+    "occlusion_analysis": "MOT17-09-FRCNN",
+    "crowding_analysis": "MOT17-04-FRCNN",
+    "robustness_testing": "MOT17-04-FRCNN"
+  }
+}
