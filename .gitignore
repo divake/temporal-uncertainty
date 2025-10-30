@@ -10,6 +10,16 @@ github_repos/
 # Results/outputs (regeneratable)
 results/
 phase2_pipeline/results/
+phase2_pipeline/analysis/results/
+phase2_pipeline/analysis/comprehensive_results/
+
+# Analysis output files
+*.txt
+*.json
+*.csv
+*.pkl
+phase2_pipeline/analysis/*.json
+phase2_pipeline/analysis/*.csv
 
 # Python cache
 __pycache__/

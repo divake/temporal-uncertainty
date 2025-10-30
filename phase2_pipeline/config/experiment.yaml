@@ -14,8 +14,8 @@ experiment:
 
   # Frame range
   start_frame: 1
-  # end_frame: 900  # Full sequence
-  end_frame: 100  # Use for quick testing
+  end_frame: 900  # Full sequence
+  # end_frame: 100  # Use for quick testing
 
   # GPU settings
   device: "cuda:0"  # Primary GPU
