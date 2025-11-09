@@ -8,6 +8,7 @@ from sklearn.neighbors import NearestNeighbors
 from scipy.linalg import cholesky, LinAlgError
 from scipy.spatial.distance import cdist
 import warnings
+from .uncertainty_base import UncertaintyModel
 
 
 class BaselineAleatoric:
@@ -98,7 +99,7 @@ class BaselineAleatoric:
         }
 
 
-class EnhancedAleatoric:
+class EnhancedAleatoric(UncertaintyModel):
     """
     Enhanced aleatoric uncertainty using Mahalanobis distance and softmax weighting.
     Key improvements:
@@ -107,7 +108,8 @@ class EnhancedAleatoric:
     3. Weighted variance computation
     """
 
-    def __init__(self, k_neighbors=10, regularization=1e-4):
+    def __init__(self, k_neighbors=10, regularization=1e-4, name="enhanced_aleatoric"):
+        super().__init__(name)
         self.k = k_neighbors
         self.regularization = regularization
         self.residuals_cal = None
@@ -146,6 +148,16 @@ class EnhancedAleatoric:
 
         # Compute adaptive bandwidth using median heuristic
         self._compute_bandwidth()
+
+        # Mark as fitted and store metadata
+        self.is_fitted = True
+        self.metadata = {
+            'k_neighbors': self.k,
+            'regularization': self.regularization,
+            'bandwidth': self.bandwidth,
+            'n_cal': len(X_cal),
+            'n_features': X_cal.shape[1]
+        }
 
         return self
 
