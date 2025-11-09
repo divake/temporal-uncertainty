@@ -4,6 +4,10 @@
 # Model weights (large)
 /models/
 
+# YOLO cache data files (large .npz files)
+yolo_cache/data/
+*.npz
+
 # GitHub repos (cloned, not our code)
 github_repos/
 
