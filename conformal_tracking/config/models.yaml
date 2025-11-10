@@ -12,3 +12,23 @@ mahalanobis:
   thresholds:
     low_medium: 0.3   # Low uncertainty: [0, 0.3)
     medium_high: 0.7  # Medium: [0.3, 0.7), High: [0.7, 1.0]
+
+epistemic:
+  # Spectral collapse detector parameters
+  spectral:
+    k_neighbors: 50  # Number of neighbors for local covariance
+
+  # Repulsive void detector parameters
+  repulsive:
+    k_neighbors: 100  # Number of neighbors for force computation
+    temperature: 1.0  # Controls force decay rate
+
+  # Weight combination strategy
+  weights:
+    mode: 'optimize'  # Options: 'equal', 'optimize', 'manual'
+    manual: [0.45, 0.45, 0.1]  # If mode='manual'
+
+  # Optimization settings for weight learning
+  optimization:
+    objective: 'orthogonality'  # Minimize correlation with aleatoric
+    regularization: 0.01  # Weight penalty for extreme values
