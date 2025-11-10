@@ -1,0 +1,91 @@
+{
+  "experiment_name": "Experiment 1C - All Sequences",
+  "config": "IoU >= 0.3, Confidence >= 0.3",
+  "timestamp": "2025-11-10T04:48:28.671960",
+  "sequences": {
+    "MOT17-02": {
+      "pearson_r": 0.3344947518014559,
+      "p_value": 5.0538554261488767e-51,
+      "n_samples": 1905,
+      "variance_explained": 0.11188673898271757,
+      "excellent_count": 1621,
+      "good_count": 232,
+      "poor_count": 52,
+      "excellent_unc": 0.4427372039210029,
+      "good_unc": 0.5774718951305605,
+      "poor_unc": 0.7001099037818541
+    },
+    "MOT17-04": {
+      "pearson_r": 0.16438012637369634,
+      "p_value": 1.5648299969829726e-54,
+      "n_samples": 8831,
+      "variance_explained": 0.02702082594663238,
+      "excellent_count": 7342,
+      "good_count": 1088,
+      "poor_count": 401,
+      "excellent_unc": 0.28345408434003855,
+      "good_unc": 0.3119663192177425,
+      "poor_unc": 0.36158563800057536
+    },
+    "MOT17-05": {
+      "pearson_r": 0.08920256807232083,
+      "p_value": 4.661529479012462e-05,
+      "n_samples": 2078,
+      "variance_explained": 0.00795709815069703,
+      "excellent_count": 1388,
+      "good_count": 582,
+      "poor_count": 108,
+      "excellent_unc": 0.43170717495074235,
+      "good_unc": 0.43823889852523046,
+      "poor_unc": 0.5192149140260407
+    },
+    "MOT17-09": {
+      "pearson_r": 0.21171463175090727,
+      "p_value": 1.373357042363899e-18,
+      "n_samples": 1691,
+      "variance_explained": 0.04482308529742227,
+      "excellent_count": 1404,
+      "good_count": 236,
+      "poor_count": 51,
+      "excellent_unc": 0.43319472484298716,
+      "good_unc": 0.4818572975255164,
+      "poor_unc": 0.6622070779014619
+    },
+    "MOT17-10": {
+      "pearson_r": 0.21385245864289595,
+      "p_value": 2.930670630171541e-27,
+      "n_samples": 2501,
+      "variance_explained": 0.04573287406761153,
+      "excellent_count": 1855,
+      "good_count": 490,
+      "poor_count": 156,
+      "excellent_unc": 0.3597616028263628,
+      "good_unc": 0.423765898656724,
+      "poor_unc": 0.519605656795024
+    },
+    "MOT17-11": {
+      "pearson_r": 0.3779525430539638,
+      "p_value": 2.1441582447144112e-98,
+      "n_samples": 2878,
+      "variance_explained": 0.14284812480095838,
+      "excellent_count": 2548,
+      "good_count": 219,
+      "poor_count": 111,
+      "excellent_unc": 0.3439750528916833,
+      "good_unc": 0.48140621978696063,
+      "poor_unc": 0.584794151176755
+    },
+    "MOT17-13": {
+      "pearson_r": 0.1795692321556063,
+      "p_value": 6.6901333155960165e-12,
+      "n_samples": 1440,
+      "variance_explained": 0.03224510913695403,
+      "excellent_count": 1043,
+      "good_count": 340,
+      "poor_count": 57,
+      "excellent_unc": 0.4684044232992544,
+      "good_unc": 0.5252362236113064,
+      "poor_unc": 0.6041675828326987
+    }
+  }
+}

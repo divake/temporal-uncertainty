@@ -1,29 +1,17 @@
-# Experiment Configuration
-# Settings for running experiments
-
 experiment:
-  name: "aleatoric_mot17_11"
-  description: "Mahalanobis-based aleatoric uncertainty on MOT17-11"
-
-  # Output directories
+  name: aleatoric_mot17_11
+  description: Mahalanobis-based aleatoric uncertainty on MOT17-11
   output:
-    results_dir: "results/aleatoric_mot17_11"
-    plots_dir: "results/aleatoric_mot17_11/plots"
-    save_intermediate: true  # Save intermediate diagnostic plots
-
-  # Evaluation metrics
+    results_dir: results/aleatoric_mot17_13
+    plots_dir: results/aleatoric_mot17_13/plots
+    save_intermediate: true
   evaluation:
-    # Correlation metrics
     metrics:
-      - "pearson"
-      - "spearman"
-
-    # Additional analysis
-    analyze_by_confidence: true  # Analyze uncertainty by confidence bins
-    analyze_by_iou: true  # Analyze uncertainty by IoU bins
-
-  # Visualization settings
+    - pearson
+    - spearman
+    analyze_by_confidence: true
+    analyze_by_iou: true
   visualization:
     dpi: 150
-    style: "default"
-    save_format: "png"
+    style: default
+    save_format: png

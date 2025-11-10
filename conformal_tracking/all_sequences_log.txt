@@ -1,0 +1,1556 @@
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-02-FRCNN.npz
+Sequence: MOT17-02-FRCNN
+
+1. Loading raw data...
+   Total detections: 48923
+   Feature dimension: 256
+   Matched detections: 12947 (26.5%)
+   Unmatched detections: 35976 (73.5%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 12947 samples
+   After confidence filter: 3810 samples
+
+   Feature statistics:
+     Norm - Mean: 4.1396
+     Norm - Std:  0.8743
+
+   IoU statistics:
+     Mean: 0.8177
+     Std:  0.1181
+     Min:  0.3061
+     Max:  0.9952
+
+   Conformity score statistics:
+     Mean: 0.1823
+     Std:  0.1181
+     Min:  0.0048
+     Max:  0.6939
+
+   Confidence statistics:
+     Mean: 0.6686
+     Std:  0.1624
+     Min:  0.3000
+     Max:  0.9177
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 1905 samples
+   Test set:        1905 samples
+
+   Calibration statistics:
+     IoU Mean: 0.8203
+     Conformity Mean: 0.1797
+
+   Test statistics:
+     IoU Mean: 0.8150
+     Conformity Mean: 0.1850
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 1905
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 2.9872
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 8.8912
+   Condition number (before reg): 2.97e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000003
+   Condition number (after reg): 2.82e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 10984.7250
+
+5. Calibration Mahalanobis distances:
+   Min: 7.8986
+   Mean: 15.3838
+   Median: 14.5013
+   Max: 36.1706
+   Std: 4.2220
+
+   Log normalization range:
+   log_M_min: 2.0667
+   log_M_max: 3.5882
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 1905
+
+Raw Mahalanobis distances (test):
+  Min: 8.2849
+  Mean: 16.9321
+  Median: 15.3800
+  Max: 75.7383
+  Std: 6.0940
+
+Normalized uncertainty (test):
+  Min: 0.0314
+  Mean: 0.4662
+  Median: 0.4380
+  Max: 1.0000
+  Std: 0.1951
+
+  Category distribution:
+    Low (0-0.3):      20.3%
+    Medium (0.3-0.7):  66.6%
+    High (0.7-1.0):    13.2%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.3349, p = 3.81e-51
+    Spearman: ρ =  0.2693, p = 5.34e-33
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.3345, p = 5.05e-51
+    Spearman: ρ =  0.2693, p = 5.20e-33
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.443 ± 0.181
+  Good (0.5≤IoU<0.7):  0.577 ± 0.201
+  Poor (IoU<0.5):      0.700 ± 0.256
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      20.3%
+  Medium (0.3-0.7):  66.6%
+  High (0.7-1.0):    13.2%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_02/plots
+
+Key Result: Pearson r = 0.3349
+================================================================================
+
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-04-FRCNN.npz
+Sequence: MOT17-04-FRCNN
+
+1. Loading raw data...
+   Total detections: 143659
+   Feature dimension: 256
+   Matched detections: 37626 (26.2%)
+   Unmatched detections: 106033 (73.8%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 37626 samples
+   After confidence filter: 17662 samples
+
+   Feature statistics:
+     Norm - Mean: 4.5603
+     Norm - Std:  0.9401
+
+   IoU statistics:
+     Mean: 0.8050
+     Std:  0.1311
+     Min:  0.3008
+     Max:  0.9913
+
+   Conformity score statistics:
+     Mean: 0.1950
+     Std:  0.1311
+     Min:  0.0087
+     Max:  0.6992
+
+   Confidence statistics:
+     Mean: 0.6139
+     Std:  0.1594
+     Min:  0.3000
+     Max:  0.9104
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 8831 samples
+   Test set:        8831 samples
+
+   Calibration statistics:
+     IoU Mean: 0.8043
+     Conformity Mean: 0.1957
+
+   Test statistics:
+     IoU Mean: 0.8057
+     Conformity Mean: 0.1943
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 8831
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 3.2871
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 10.8891
+   Condition number (before reg): 3.88e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000004
+   Condition number (after reg): 3.66e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 11054.0124
+
+5. Calibration Mahalanobis distances:
+   Min: 7.9371
+   Mean: 15.3340
+   Median: 14.4853
+   Max: 72.3855
+   Std: 4.4483
+
+   Log normalization range:
+   log_M_min: 2.0715
+   log_M_max: 4.2820
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 8831
+
+Raw Mahalanobis distances (test):
+  Min: 7.9206
+  Mean: 15.6776
+  Median: 14.6863
+  Max: 77.7702
+  Std: 4.8033
+
+Normalized uncertainty (test):
+  Min: 0.0000
+  Mean: 0.2905
+  Median: 0.2784
+  Max: 1.0000
+  Std: 0.1214
+
+  Category distribution:
+    Low (0-0.3):      57.0%
+    Medium (0.3-0.7):  42.5%
+    High (0.7-1.0):     0.5%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.1754, p = 6.06e-62
+    Spearman: ρ =  0.1139, p = 6.98e-27
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.1644, p = 1.56e-54
+    Spearman: ρ =  0.1139, p = 6.98e-27
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.283 ± 0.116
+  Good (0.5≤IoU<0.7):  0.312 ± 0.134
+  Poor (IoU<0.5):      0.362 ± 0.146
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      57.0%
+  Medium (0.3-0.7):  42.5%
+  High (0.7-1.0):     0.5%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_04/plots
+
+Key Result: Pearson r = 0.1754
+================================================================================
+
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-05-FRCNN.npz
+Sequence: MOT17-05-FRCNN
+
+1. Loading raw data...
+   Total detections: 28404
+   Feature dimension: 256
+   Matched detections: 5930 (20.9%)
+   Unmatched detections: 22474 (79.1%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 5930 samples
+   After confidence filter: 4155 samples
+
+   Feature statistics:
+     Norm - Mean: 3.5316
+     Norm - Std:  0.9566
+
+   IoU statistics:
+     Mean: 0.7488
+     Std:  0.1373
+     Min:  0.3049
+     Max:  0.9781
+
+   Conformity score statistics:
+     Mean: 0.2512
+     Std:  0.1373
+     Min:  0.0219
+     Max:  0.6951
+
+   Confidence statistics:
+     Mean: 0.7684
+     Std:  0.1497
+     Min:  0.3010
+     Max:  0.9399
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 2077 samples
+   Test set:        2078 samples
+
+   Calibration statistics:
+     IoU Mean: 0.7484
+     Conformity Mean: 0.2516
+
+   Test statistics:
+     IoU Mean: 0.7492
+     Conformity Mean: 0.2508
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 2077
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 2.5405
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 7.3470
+   Condition number (before reg): 1.09e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000003
+   Condition number (after reg): 1.07e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 5680.9446
+
+5. Calibration Mahalanobis distances:
+   Min: 6.6393
+   Mean: 14.9271
+   Median: 13.6849
+   Max: 40.1298
+   Std: 5.6903
+
+   Log normalization range:
+   log_M_min: 1.8930
+   log_M_max: 3.6921
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 2078
+
+Raw Mahalanobis distances (test):
+  Min: 6.4821
+  Mean: 15.9224
+  Median: 14.1988
+  Max: 86.2284
+  Std: 7.6081
+
+Normalized uncertainty (test):
+  Min: 0.0000
+  Mean: 0.4381
+  Median: 0.4225
+  Max: 1.0000
+  Std: 0.2078
+
+  Category distribution:
+    Low (0-0.3):      26.9%
+    Medium (0.3-0.7):  62.4%
+    High (0.7-1.0):    10.7%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.1128, p = 2.54e-07
+    Spearman: ρ =  0.0505, p = 2.14e-02
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.0892, p = 4.66e-05
+    Spearman: ρ =  0.0504, p = 2.15e-02
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.432 ± 0.190
+  Good (0.5≤IoU<0.7):  0.438 ± 0.239
+  Poor (IoU<0.5):      0.519 ± 0.226
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      26.9%
+  Medium (0.3-0.7):  62.4%
+  High (0.7-1.0):    10.7%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_05/plots
+
+Key Result: Pearson r = 0.1128
+================================================================================
+
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-09-FRCNN.npz
+Sequence: MOT17-09-FRCNN
+
+1. Loading raw data...
+   Total detections: 25175
+   Feature dimension: 256
+   Matched detections: 4600 (18.3%)
+   Unmatched detections: 20575 (81.7%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 4600 samples
+   After confidence filter: 3381 samples
+
+   Feature statistics:
+     Norm - Mean: 4.0475
+     Norm - Std:  0.8980
+
+   IoU statistics:
+     Mean: 0.8025
+     Std:  0.1191
+     Min:  0.3016
+     Max:  0.9807
+
+   Conformity score statistics:
+     Mean: 0.1975
+     Std:  0.1191
+     Min:  0.0193
+     Max:  0.6984
+
+   Confidence statistics:
+     Mean: 0.7253
+     Std:  0.1559
+     Min:  0.3016
+     Max:  0.9383
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 1690 samples
+   Test set:        1691 samples
+
+   Calibration statistics:
+     IoU Mean: 0.8019
+     Conformity Mean: 0.1981
+
+   Test statistics:
+     IoU Mean: 0.8031
+     Conformity Mean: 0.1969
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 1690
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 2.8189
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 9.2997
+   Condition number (before reg): 1.49e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000004
+   Condition number (after reg): 1.45e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 6298.0476
+
+5. Calibration Mahalanobis distances:
+   Min: 8.3138
+   Mean: 15.4305
+   Median: 14.7465
+   Max: 36.0909
+   Std: 4.1113
+
+   Log normalization range:
+   log_M_min: 2.1179
+   log_M_max: 3.5860
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 1691
+
+Raw Mahalanobis distances (test):
+  Min: 8.0678
+  Mean: 16.9708
+  Median: 15.6292
+  Max: 74.3208
+  Std: 6.5233
+
+Normalized uncertainty (test):
+  Min: 0.0000
+  Mean: 0.4469
+  Median: 0.4300
+  Max: 1.0000
+  Std: 0.1982
+
+  Category distribution:
+    Low (0-0.3):      24.8%
+    Medium (0.3-0.7):  64.6%
+    High (0.7-1.0):    10.6%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.2270, p = 3.37e-21
+    Spearman: ρ =  0.1429, p = 3.58e-09
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.2117, p = 1.37e-18
+    Spearman: ρ =  0.1429, p = 3.58e-09
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.433 ± 0.187
+  Good (0.5≤IoU<0.7):  0.482 ± 0.229
+  Poor (IoU<0.5):      0.662 ± 0.209
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      24.8%
+  Medium (0.3-0.7):  64.6%
+  High (0.7-1.0):    10.6%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_09/plots
+
+Key Result: Pearson r = 0.2270
+================================================================================
+
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-10-FRCNN.npz
+Sequence: MOT17-10-FRCNN
+
+1. Loading raw data...
+   Total detections: 44669
+   Feature dimension: 256
+   Matched detections: 11459 (25.7%)
+   Unmatched detections: 33210 (74.3%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 11459 samples
+   After confidence filter: 5002 samples
+
+   Feature statistics:
+     Norm - Mean: 4.3805
+     Norm - Std:  1.0272
+
+   IoU statistics:
+     Mean: 0.7550
+     Std:  0.1300
+     Min:  0.3007
+     Max:  0.9798
+
+   Conformity score statistics:
+     Mean: 0.2450
+     Std:  0.1300
+     Min:  0.0202
+     Max:  0.6993
+
+   Confidence statistics:
+     Mean: 0.6538
+     Std:  0.1555
+     Min:  0.3007
+     Max:  0.9299
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 2501 samples
+   Test set:        2501 samples
+
+   Calibration statistics:
+     IoU Mean: 0.7552
+     Conformity Mean: 0.2448
+
+   Test statistics:
+     IoU Mean: 0.7547
+     Conformity Mean: 0.2453
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 2501
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 3.2522
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 9.8563
+   Condition number (before reg): 2.69e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000004
+   Condition number (after reg): 2.61e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 6536.1320
+
+5. Calibration Mahalanobis distances:
+   Min: 7.9983
+   Mean: 15.2578
+   Median: 14.1701
+   Max: 43.0756
+   Std: 4.7154
+
+   Log normalization range:
+   log_M_min: 2.0792
+   log_M_max: 3.7630
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 2501
+
+Raw Mahalanobis distances (test):
+  Min: 7.9982
+  Mean: 16.0979
+  Median: 14.4709
+  Max: 87.2417
+  Std: 6.1582
+
+Normalized uncertainty (test):
+  Min: 0.0000
+  Mean: 0.3823
+  Median: 0.3521
+  Max: 1.0000
+  Std: 0.1828
+
+  Category distribution:
+    Low (0-0.3):      37.4%
+    Medium (0.3-0.7):  56.3%
+    High (0.7-1.0):     6.3%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.2050, p = 3.82e-25
+    Spearman: ρ =  0.1448, p = 3.47e-13
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.2139, p = 2.93e-27
+    Spearman: ρ =  0.1448, p = 3.48e-13
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.360 ± 0.171
+  Good (0.5≤IoU<0.7):  0.424 ± 0.198
+  Poor (IoU<0.5):      0.520 ± 0.179
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      37.4%
+  Medium (0.3-0.7):  56.3%
+  High (0.7-1.0):     6.3%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_10/plots
+
+Key Result: Pearson r = 0.2050
+================================================================================
+
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-11-FRCNN.npz
+Sequence: MOT17-11-FRCNN
+
+1. Loading raw data...
+   Total detections: 50546
+   Feature dimension: 256
+   Matched detections: 7747 (15.3%)
+   Unmatched detections: 42799 (84.7%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 7747 samples
+   After confidence filter: 5756 samples
+
+   Feature statistics:
+     Norm - Mean: 3.8948
+     Norm - Std:  1.1381
+
+   IoU statistics:
+     Mean: 0.8293
+     Std:  0.1267
+     Min:  0.3008
+     Max:  0.9938
+
+   Conformity score statistics:
+     Mean: 0.1707
+     Std:  0.1267
+     Min:  0.0062
+     Max:  0.6992
+
+   Confidence statistics:
+     Mean: 0.7875
+     Std:  0.1411
+     Min:  0.3022
+     Max:  0.9593
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 2878 samples
+   Test set:        2878 samples
+
+   Calibration statistics:
+     IoU Mean: 0.8293
+     Conformity Mean: 0.1707
+
+   Test statistics:
+     IoU Mean: 0.8293
+     Conformity Mean: 0.1707
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 2878
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 2.6357
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 9.3597
+   Condition number (before reg): 1.83e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000004
+   Condition number (after reg): 1.79e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 5315.0885
+
+5. Calibration Mahalanobis distances:
+   Min: 8.6796
+   Mean: 15.2416
+   Median: 14.0304
+   Max: 42.4292
+   Std: 4.7847
+
+   Log normalization range:
+   log_M_min: 2.1610
+   log_M_max: 3.7478
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 2878
+
+Raw Mahalanobis distances (test):
+  Min: 8.4061
+  Mean: 16.2415
+  Median: 14.7804
+  Max: 86.1390
+  Std: 5.7626
+
+Normalized uncertainty (test):
+  Min: 0.0000
+  Mean: 0.3637
+  Median: 0.3355
+  Max: 1.0000
+  Std: 0.1869
+
+  Category distribution:
+    Low (0-0.3):      42.0%
+    Medium (0.3-0.7):  52.1%
+    High (0.7-1.0):     5.9%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.3722, p = 2.83e-95
+    Spearman: ρ =  0.3489, p = 3.69e-83
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.3780, p = 2.14e-98
+    Spearman: ρ =  0.3489, p = 3.67e-83
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.344 ± 0.173
+  Good (0.5≤IoU<0.7):  0.481 ± 0.198
+  Poor (IoU<0.5):      0.585 ± 0.244
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      42.0%
+  Medium (0.3-0.7):  52.1%
+  High (0.7-1.0):     5.9%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_11/plots
+
+Key Result: Pearson r = 0.3722
+================================================================================
+
+
+================================================================================
+MAHALANOBIS ALEATORIC UNCERTAINTY - MOT17-11
+================================================================================
+
+[1/6] Loading configurations...
+  Results will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13
+  Plots will be saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots
+
+[2/6] Loading and preparing data...
+
+============================================================
+LOADING MOT17 CACHE
+============================================================
+Path: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n/MOT17-13-FRCNN.npz
+Sequence: MOT17-13-FRCNN
+
+1. Loading raw data...
+   Total detections: 38308
+   Feature dimension: 256
+   Matched detections: 9615 (25.1%)
+   Unmatched detections: 28693 (74.9%)
+
+2. Applying filters...
+   Confidence threshold: 0.3
+   After matching filter: 9615 samples
+   After confidence filter: 2879 samples
+
+   Feature statistics:
+     Norm - Mean: 4.9924
+     Norm - Std:  1.3073
+
+   IoU statistics:
+     Mean: 0.7635
+     Std:  0.1262
+     Min:  0.3052
+     Max:  0.9834
+
+   Conformity score statistics:
+     Mean: 0.2365
+     Std:  0.1262
+     Min:  0.0166
+     Max:  0.6948
+
+   Confidence statistics:
+     Mean: 0.5842
+     Std:  0.1454
+     Min:  0.3002
+     Max:  0.9032
+
+3. Splitting data...
+   Split ratio (calibration): 0.5
+   Random seed: 42
+
+   Calibration set: 1439 samples
+   Test set:        1440 samples
+
+   Calibration statistics:
+     IoU Mean: 0.7669
+     Conformity Mean: 0.2331
+
+   Test statistics:
+     IoU Mean: 0.7600
+     Conformity Mean: 0.2400
+============================================================
+LOADING COMPLETE ✓
+============================================================
+
+
+  Plotting data distributions...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots/01_data_distributions.png
+
+  Data distribution plots complete ✓
+
+[3/6] Fitting Mahalanobis uncertainty model...
+
+============================================================
+FITTING MAHALANOBIS UNCERTAINTY
+============================================================
+Calibration samples: 1439
+Feature dimension: 256
+
+1. Mean vector (μ):
+   Shape: (256,)
+   Mean norm: 3.5876
+
+2. Covariance matrix (Σ):
+   Shape: (256, 256)
+   Trace: 13.7114
+   Condition number (before reg): 7.18e+04
+
+3. Regularization:
+   Lambda: 0.0001
+   Reg value: 0.000005
+   Condition number (after reg): 6.64e+04
+
+4. Inverse covariance (Σ⁻¹):
+   Shape: (256, 256)
+   Max element: 12506.0785
+
+5. Calibration Mahalanobis distances:
+   Min: 8.2471
+   Mean: 15.4067
+   Median: 14.4928
+   Max: 34.7768
+   Std: 4.1633
+
+   Log normalization range:
+   log_M_min: 2.1099
+   log_M_max: 3.5490
+
+============================================================
+FITTING COMPLETE ✓
+============================================================
+
+
+  Plotting Mahalanobis diagnostics...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots/02_mahalanobis_diagnostics.png
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots/02_gaussian_parameters.png
+
+[4/6] Predicting uncertainty on test set...
+
+============================================================
+PREDICTING UNCERTAINTY
+============================================================
+Test samples: 1440
+
+Raw Mahalanobis distances (test):
+  Min: 8.4957
+  Mean: 17.7507
+  Median: 15.8845
+  Max: 88.1247
+  Std: 7.1753
+
+Normalized uncertainty (test):
+  Min: 0.0206
+  Mean: 0.4872
+  Median: 0.4555
+  Max: 1.0000
+  Std: 0.2119
+
+  Category distribution:
+    Low (0-0.3):      20.6%
+    Medium (0.3-0.7):  63.1%
+    High (0.7-1.0):    16.3%
+
+============================================================
+PREDICTION COMPLETE ✓
+============================================================
+
+
+[5/6] Evaluating and visualizing results...
+
+  Plotting uncertainty vs conformity...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots/03_uncertainty_vs_conformity.png
+
+  Plotting uncertainty by categories...
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots/04_uncertainty_by_categories.png
+
+[6/6] Saving evaluation results...
+
+  Saved: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/results.json
+
+============================================================
+EVALUATION RESULTS
+============================================================
+
+Correlations with Conformity Score (1 - IoU):
+  Raw Uncertainty:
+    Pearson:  r =  0.2009, p = 1.42e-14
+    Spearman: ρ =  0.1669, p = 1.88e-10
+
+  Normalized Uncertainty:
+    Pearson:  r =  0.1796, p = 6.69e-12
+    Spearman: ρ =  0.1667, p = 1.96e-10
+
+Uncertainty by IoU Quality:
+  Excellent (IoU≥0.7): 0.468 ± 0.200
+  Good (0.5≤IoU<0.7):  0.525 ± 0.225
+  Poor (IoU<0.5):      0.604 ± 0.270
+
+Uncertainty Category Distribution:
+  Low (0-0.3):      20.6%
+  Medium (0.3-0.7):  63.1%
+  High (0.7-1.0):    16.3%
+
+============================================================
+
+
+================================================================================
+EXPERIMENT COMPLETE ✓
+================================================================================
+
+Results saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13
+Plots saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/aleatoric_mot17_13/plots
+
+Key Result: Pearson r = 0.2009
+================================================================================
+
+
+================================================================================
+RUNNING EXPERIMENT 1C ON ALL MOT17 SEQUENCES
+Configuration: IoU >= 0.3, Confidence >= 0.3
+================================================================================
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-02-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-02-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_02/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-02-FRCNN
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-04-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-04-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_04/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-04-FRCNN
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-05-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-05-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_05/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-05-FRCNN
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-09-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-09-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_09/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-09-FRCNN
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-10-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-10-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_10/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-10-FRCNN
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-11-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-11-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_11/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-11-FRCNN
+
+================================================================================
+RUNNING EXPERIMENT: MOT17-13-FRCNN
+================================================================================
+
+[Config] Updating configuration files...
+  ✓ Updated config: selected_sequence = MOT17-13-FRCNN
+  ✓ Updated output dirs: results/aleatoric_mot17_13/
+
+[Experiment] Running aleatoric uncertainty experiment...
+
+✓ Experiment completed successfully for MOT17-13-FRCNN
+
+================================================================================
+
+================================================================================
+COLLECTING RESULTS SUMMARY
+================================================================================
+
+  MOT17-02:
+    Pearson r = 0.3345 (p = 5.05e-51)
+    Samples: 1905 (Excellent: 1621, Good: 232, Poor: 52)
+
+  MOT17-04:
+    Pearson r = 0.1644 (p = 1.56e-54)
+    Samples: 8831 (Excellent: 7342, Good: 1088, Poor: 401)
+
+  MOT17-05:
+    Pearson r = 0.0892 (p = 4.66e-05)
+    Samples: 2078 (Excellent: 1388, Good: 582, Poor: 108)
+
+  MOT17-09:
+    Pearson r = 0.2117 (p = 1.37e-18)
+    Samples: 1691 (Excellent: 1404, Good: 236, Poor: 51)
+
+  MOT17-10:
+    Pearson r = 0.2139 (p = 2.93e-27)
+    Samples: 2501 (Excellent: 1855, Good: 490, Poor: 156)
+
+  MOT17-11:
+    Pearson r = 0.3780 (p = 2.14e-98)
+    Samples: 2878 (Excellent: 2548, Good: 219, Poor: 111)
+
+  MOT17-13:
+    Pearson r = 0.1796 (p = 6.69e-12)
+    Samples: 1440 (Excellent: 1043, Good: 340, Poor: 57)
+
+✓ Summary saved to: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/all_sequences_summary.json
+
+============================================================
+AGGREGATE STATISTICS
+============================================================
+  Mean Pearson r: 0.2245
+  Min Pearson r:  0.0892
+  Max Pearson r:  0.3780
+============================================================
+
+
+================================================================================
+FINAL REPORT
+================================================================================
+
+✓ Successful: 7/7
+    - MOT17-02-FRCNN
+    - MOT17-04-FRCNN
+    - MOT17-05-FRCNN
+    - MOT17-09-FRCNN
+    - MOT17-10-FRCNN
+    - MOT17-11-FRCNN
+    - MOT17-13-FRCNN
+
+================================================================================
+ALL EXPERIMENTS COMPLETE
+================================================================================
+
+Results available in: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/
+Summary: /ssd_4TB/divake/temporal_uncertainty/conformal_tracking/results/all_sequences_summary.json
+================================================================================
+

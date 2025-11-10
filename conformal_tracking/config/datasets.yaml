@@ -1,27 +1,17 @@
-# Dataset Configuration
-# Paths and settings for MOT17 dataset
-
 mot17:
-  cache_dir: "/ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n"
-
+  cache_dir: /ssd_4TB/divake/temporal_uncertainty/yolo_cache/data/mot17/yolov8n
   sequences:
-    MOT17-02: "MOT17-02-FRCNN.npz"
-    MOT17-04: "MOT17-04-FRCNN.npz"
-    MOT17-05: "MOT17-05-FRCNN.npz"
-    MOT17-09: "MOT17-09-FRCNN.npz"
-    MOT17-10: "MOT17-10-FRCNN.npz"
-    MOT17-11: "MOT17-11-FRCNN.npz"
-    MOT17-13: "MOT17-13-FRCNN.npz"
-
-  # Selected sequence for initial experiments
-  selected_sequence: "MOT17-11-FRCNN"
-
-  # Data split settings
+    MOT17-02: MOT17-02-FRCNN.npz
+    MOT17-04: MOT17-04-FRCNN.npz
+    MOT17-05: MOT17-05-FRCNN.npz
+    MOT17-09: MOT17-09-FRCNN.npz
+    MOT17-10: MOT17-10-FRCNN.npz
+    MOT17-11: MOT17-11-FRCNN.npz
+    MOT17-13: MOT17-13-FRCNN.npz
+  selected_sequence: MOT17-13-FRCNN
   split:
-    ratio: 0.5  # 50% calibration, 50% test
+    ratio: 0.5
     random_seed: 42
-
-  # Filter settings
   filters:
-    confidence_threshold: 0.3  # Changed from 0.5 to include lower confidence detections
-    layer_id: 21  # Use Layer 21 features
+    confidence_threshold: 0.3
+    layer_id: 21
