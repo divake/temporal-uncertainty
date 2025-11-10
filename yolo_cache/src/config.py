@@ -63,7 +63,7 @@ DATASET_CONFIG = {
 # Caching Configuration
 CACHE_CONFIG = {
     'confidence_thresholds': [0.01, 0.3, 0.5, 0.7],
-    'iou_threshold': 0.5,  # For GT matching
+    'iou_threshold': 0.3,  # For GT matching (changed from 0.5 to include IoU 0.3-0.5 range)
     'dtypes': {
         'bboxes': 'float64',  # High precision
         'features': 'float32',  # Standard

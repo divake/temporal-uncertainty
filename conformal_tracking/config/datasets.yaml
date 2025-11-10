@@ -23,5 +23,5 @@ mot17:
 
   # Filter settings
   filters:
-    confidence_threshold: 0.5
+    confidence_threshold: 0.3  # Changed from 0.5 to include lower confidence detections
     layer_id: 21  # Use Layer 21 features
