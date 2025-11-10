@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Results and outputs (plots, logs, cached data)
+results/*/plots/*.png
+results/*/plots/*.jpg
+results/*/plots/*.pdf
+results/*/*.json
+experiment_log.txt
+*.log
+
+# Keep results directory structure
+!results/.gitkeep
+
+# Cache files
+*.npz
+*.pkl
+*.cache
+
+# OS
+.DS_Store
+Thumbs.db
