@@ -1,0 +1,14 @@
+# Model Configuration
+# Hyperparameters for uncertainty quantification methods
+
+mahalanobis:
+  # Regularization parameter for covariance matrix
+  reg_lambda: 1.0e-4
+
+  # Small constant to avoid log(0) and sqrt(negative)
+  eps: 1.0e-10
+
+  # Uncertainty interpretation thresholds
+  thresholds:
+    low_medium: 0.3   # Low uncertainty: [0, 0.3)
+    medium_high: 0.7  # Medium: [0.3, 0.7), High: [0.7, 1.0]
