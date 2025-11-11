@@ -66,11 +66,13 @@ class GradientDivergenceDetector:
         Returns:
             self
         """
+        # Get number of samples
+        n_samples = len(X_cal_layers[list(X_cal_layers.keys())[0]])
+
         if self.verbose:
             print("\n" + "="*60)
             print("FITTING GRADIENT DIVERGENCE DETECTOR")
             print("="*60)
-            n_samples = len(X_cal_layers[list(X_cal_layers.keys())[0]])
             print(f"Calibration samples: {n_samples}")
             print(f"Layer pairs: {self.layer_pairs}")
 
