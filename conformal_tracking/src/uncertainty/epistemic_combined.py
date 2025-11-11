@@ -15,9 +15,9 @@ from typing import Dict, Optional, Tuple, Union
 from scipy.optimize import minimize
 import json
 
-from epistemic_spectral import SpectralCollapseDetector
-from epistemic_repulsive import RepulsiveVoidDetector
-from epistemic_gradient import GradientDivergenceDetector
+from .epistemic_spectral import SpectralCollapseDetector
+from .epistemic_repulsive import RepulsiveVoidDetector
+from .epistemic_gradient import GradientDivergenceDetector
 
 
 class EpistemicUncertainty:
