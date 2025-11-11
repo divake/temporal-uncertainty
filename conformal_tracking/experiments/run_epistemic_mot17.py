@@ -470,7 +470,8 @@ def main():
         layer_id=dataset_cfg['mot17']['filters']['layer_id'],
         conf_threshold=dataset_cfg['mot17']['filters']['confidence_threshold'],
         split_ratio=dataset_cfg['mot17']['split']['ratio'],
-        random_seed=dataset_cfg['mot17']['split']['random_seed']
+        random_seed=dataset_cfg['mot17']['split']['random_seed'],
+        load_all_layers=True  # Enable multi-layer loading for gradient method
     )
 
     # Plot data distributions
@@ -480,6 +481,10 @@ def main():
     # Get data
     cal_data = loader.get_calibration_data()
     test_data = loader.get_test_data()
+
+    # Get multi-layer features for gradient method
+    cal_layers = loader.get_calibration_layers()
+    test_layers = loader.get_test_layers()
 
     # Fit Mahalanobis model for aleatoric (reuse)
     print("\n[3/7] Fitting Mahalanobis model for aleatoric...")
@@ -509,6 +514,7 @@ def main():
 
     epistemic_model.fit(
         cal_data['features'],
+        X_cal_layers=cal_layers,  # Pass multi-layer features for gradient method
         mahalanobis_model=mahalanobis_model,
         aleatoric_cal=aleatoric_cal,
         conformity_cal=cal_data['conformity_scores'],
@@ -520,6 +526,7 @@ def main():
     print("\n[6/7] Predicting epistemic uncertainty on test set...")
     epistemic_results = epistemic_model.predict(
         test_data['features'],
+        X_test_layers=test_layers,  # Pass multi-layer features for gradient method
         return_components=True,
         plot_diagnostics=True,
         save_dir=plots_dir / 'test'

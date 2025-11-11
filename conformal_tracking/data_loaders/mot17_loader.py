@@ -33,6 +33,7 @@ class MOT17DataLoader:
     def __init__(self,
                  cache_path: Path,
                  layer_id: int = 21,
+                 load_all_layers: bool = False,
                  conf_threshold: float = 0.5,
                  split_ratio: float = 0.5,
                  random_seed: int = 42):
@@ -48,6 +49,7 @@ class MOT17DataLoader:
         """
         self.cache_path = Path(cache_path)
         self.layer_id = layer_id
+        self.load_all_layers = load_all_layers
         self.conf_threshold = conf_threshold
         self.split_ratio = split_ratio
         self.random_seed = random_seed
@@ -78,9 +80,18 @@ class MOT17DataLoader:
         """Load raw data from cache."""
         print(f"\n1. Loading raw data...")
 
-        # Load features (Layer 21)
+        # Load features (Layer 21 by default)
         self.features_raw = self.cache.get_features(layer_id=self.layer_id)  # [N, D]
         N, D = self.features_raw.shape
+
+        # Load all layers if requested
+        if self.load_all_layers:
+            self.features_all_layers = {}
+            for layer in [4, 9, 15, 21]:
+                self.features_all_layers[layer] = self.cache.get_features(layer_id=layer)
+            print(f"   Loaded all layers: {list(self.features_all_layers.keys())}")
+        else:
+            self.features_all_layers = None
 
         # Load IoUs
         self.ious_raw = self.cache.get_ious()  # [N_matched]
@@ -173,6 +184,16 @@ class MOT17DataLoader:
         self.conf_cal = self.confidences[cal_indices]
         self.conf_test = self.confidences[test_indices]
 
+        # Split multi-layer features if loaded
+        if self.features_all_layers is not None:
+            self.X_cal_layers = {layer: features[cal_indices]
+                                for layer, features in self.features_all_layers.items()}
+            self.X_test_layers = {layer: features[test_indices]
+                                 for layer, features in self.features_all_layers.items()}
+        else:
+            self.X_cal_layers = None
+            self.X_test_layers = None
+
         print(f"\n   Calibration set: {N_cal} samples")
         print(f"   Test set:        {N_test} samples")
 
@@ -220,6 +241,14 @@ class MOT17DataLoader:
             'ious': self.ious_test,
             'confidences': self.conf_test
         }
+
+    def get_calibration_layers(self) -> Optional[Dict[int, np.ndarray]]:
+        """Get calibration data from all layers (if loaded)."""
+        return self.X_cal_layers
+
+    def get_test_layers(self) -> Optional[Dict[int, np.ndarray]]:
+        """Get test data from all layers (if loaded)."""
+        return self.X_test_layers
 
     def plot_data_distributions(self, save_dir: Optional[Path] = None, prefix: str = ""):
         """

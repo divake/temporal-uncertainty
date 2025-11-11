@@ -17,6 +17,7 @@ import json
 
 from epistemic_spectral import SpectralCollapseDetector
 from epistemic_repulsive import RepulsiveVoidDetector
+from epistemic_gradient import GradientDivergenceDetector
 
 
 class EpistemicUncertainty:
@@ -57,6 +58,10 @@ class EpistemicUncertainty:
             verbose=verbose
         )
 
+        self.gradient_detector = GradientDivergenceDetector(
+            verbose=verbose
+        )
+
         # Weight configuration
         if weights == 'equal':
             self.weights = [0.5, 0.5, 0.0]  # No gradient by default
@@ -77,6 +82,7 @@ class EpistemicUncertainty:
         self.fit_diagnostics = {}
 
     def fit(self, X_calibration: np.ndarray,
+            X_cal_layers: Optional[Dict[int, np.ndarray]] = None,
             mahalanobis_model=None,
             aleatoric_cal: Optional[np.ndarray] = None,
             conformity_cal: Optional[np.ndarray] = None,
@@ -124,6 +130,22 @@ class EpistemicUncertainty:
             save_dir=save_dir
         )
 
+        # Fit gradient detector if multi-layer data provided
+        if X_cal_layers is not None:
+            if self.verbose:
+                print("\n[2.5/3] Fitting Gradient Divergence Detector...")
+
+            self.gradient_detector.fit(
+                X_cal_layers,
+                mahalanobis_model=mahalanobis_model,
+                save_dir=save_dir
+            )
+            gradient_available = True
+        else:
+            gradient_available = False
+            if self.verbose:
+                print("\n⚠️  No multi-layer data provided, gradient method disabled")
+
         # Step 2: Compute epistemic on calibration set for weight optimization
         if self.verbose:
             print("\n[3/3] Computing calibration epistemic components...")
@@ -131,11 +153,18 @@ class EpistemicUncertainty:
         spectral_cal = self.spectral_detector.predict(X_calibration, return_diagnostics=False)
         repulsive_cal = self.repulsive_detector.predict(X_calibration, return_diagnostics=False)
 
+        if gradient_available:
+            gradient_cal = self.gradient_detector.predict(X_cal_layers, return_diagnostics=False)
+            gradient_uncertainty = gradient_cal['epistemic']
+        else:
+            gradient_uncertainty = np.zeros(len(X_calibration))
+
         self.cal_results = {
             'spectral': spectral_cal['epistemic'],
             'repulsive': repulsive_cal['epistemic'],
-            'gradient': np.zeros(len(X_calibration))  # Placeholder
+            'gradient': gradient_uncertainty
         }
+        self.gradient_available = gradient_available
 
         # Step 3: Optimize weights if requested
         if hasattr(self, 'optimize_weights_flag') and self.optimize_weights_flag:
@@ -170,6 +199,7 @@ class EpistemicUncertainty:
             print("="*80 + "\n")
 
     def predict(self, X_test: np.ndarray,
+                X_test_layers: Optional[Dict[int, np.ndarray]] = None,
                 return_components: bool = True,
                 plot_diagnostics: bool = False,
                 save_dir: Optional[Path] = None) -> Dict[str, np.ndarray]:
@@ -178,6 +208,7 @@ class EpistemicUncertainty:
 
         Args:
             X_test: Test features [N_test, D]
+            X_test_layers: Optional dict mapping layer IDs to features for gradient method
             return_components: Whether to return individual components
             plot_diagnostics: Whether to generate diagnostic plots
             save_dir: Directory to save plots
@@ -192,11 +223,19 @@ class EpistemicUncertainty:
         spectral_results = self.spectral_detector.predict(X_test, return_diagnostics=True)
         repulsive_results = self.repulsive_detector.predict(X_test, return_diagnostics=True)
 
+        # Get gradient predictions if available
+        if hasattr(self, 'gradient_available') and self.gradient_available and X_test_layers is not None:
+            gradient_results = self.gradient_detector.predict(X_test_layers, return_diagnostics=True)
+            gradient_uncertainty = gradient_results['epistemic']
+        else:
+            gradient_uncertainty = np.zeros_like(spectral_results['epistemic'])
+            gradient_results = None
+
         # Combine with weights
         combined = self._combine_sources(
             spectral_results['epistemic'],
             repulsive_results['epistemic'],
-            np.zeros_like(spectral_results['epistemic'])  # No gradient yet
+            gradient_uncertainty
         )
 
         results = {'combined': combined}
@@ -204,7 +243,7 @@ class EpistemicUncertainty:
         if return_components:
             results['spectral'] = spectral_results['epistemic']
             results['repulsive'] = repulsive_results['epistemic']
-            results['gradient'] = np.zeros_like(combined)
+            results['gradient'] = gradient_uncertainty
 
             # Add diagnostics
             results['spectral_diagnostics'] = {
@@ -215,6 +254,13 @@ class EpistemicUncertainty:
                 'force_magnitudes': repulsive_results['force_magnitudes'],
                 'direction_entropies': repulsive_results['direction_entropies']
             }
+
+            # Add gradient diagnostics if available
+            if gradient_results is not None:
+                results['gradient_diagnostics'] = {
+                    'pair_divergences': gradient_results.get('pair_divergences', {}),
+                    'mean_divergence': gradient_results.get('mean_divergence', None)
+                }
 
         # Generate test diagnostic plots
         if plot_diagnostics and save_dir is not None:
@@ -227,6 +273,12 @@ class EpistemicUncertainty:
             self.repulsive_detector.plot_test_diagnostics(
                 repulsive_results, save_dir, prefix="combined_"
             )
+
+            # Plot gradient diagnostics if available
+            if gradient_results is not None:
+                self.gradient_detector.plot_test_diagnostics(
+                    gradient_results, save_dir, prefix="combined_"
+                )
 
         return results
 
