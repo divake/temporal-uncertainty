@@ -96,9 +96,13 @@ def plot_1_main_scatter(data):
     ax.grid(True, alpha=0.3, linestyle='--', linewidth=1)
     ax.set_aspect('equal', adjustable='box')
 
+    # Manually set x-axis ticks to shift "1.0" label slightly left
+    ax.set_xticks([0.0, 0.2, 0.4, 0.6, 0.8, 0.98])
+    ax.set_xticklabels(['0.0', '0.2', '0.4', '0.6', '0.8', '1.0'])
+
     # Colorbar
     cbar = plt.colorbar(scatter, ax=ax, pad=0.02, fraction=0.046)
-    cbar.set_label('Conformity (1 - IoU)', fontsize=24, fontweight='bold')
+    cbar.set_label('Conformity Score', fontsize=24, fontweight='bold')
     cbar.ax.tick_params(labelsize=20)
 
     plt.tight_layout()
