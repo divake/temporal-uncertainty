@@ -109,14 +109,15 @@ class DatasetLoaderFactory:
         Create appropriate loader for dataset type.
 
         Args:
-            dataset_type: 'mot17', 'kitti', etc.
+            dataset_type: 'mot17', 'mot20', 'dancetrack', etc.
             sequence_path: Path to sequence directory
             config: Dataset configuration dict
 
         Returns:
             Dataset loader instance
         """
-        if dataset_type == 'mot17':
+        if dataset_type in ['mot17', 'mot20', 'dancetrack']:
+            # All use the same MOT format
             return MOT17Loader(sequence_path, config)
         else:
             raise ValueError(f"Unknown dataset type: {dataset_type}")
